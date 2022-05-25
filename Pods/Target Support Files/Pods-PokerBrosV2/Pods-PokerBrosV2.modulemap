@@ -1,0 +1,6 @@
+framework module Pods_PokerBrosV2 {
+  umbrella header "Pods-PokerBrosV2-umbrella.h"
+
+  export *
+  module * { export * }
+}
