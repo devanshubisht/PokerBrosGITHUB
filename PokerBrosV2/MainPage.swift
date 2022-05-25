@@ -8,7 +8,11 @@
 import UIKit
 
 class MainPage: UIViewController {
-
+    
+    @IBOutlet weak var LogInButton: UIButton!
+    
+    @IBOutlet weak var SignUpButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
