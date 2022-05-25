@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		89199162B375D569C33936E9 /* Pods_PokerBrosV2_PokerBrosV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C705C450E6048C3AF132519 /* Pods_PokerBrosV2_PokerBrosV2UITests.framework */; };
 		AE16BD0E3C93A1846A609238 /* Pods_PokerBrosV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BEBF7405A2A74E71074F65 /* Pods_PokerBrosV2Tests.framework */; };
+		B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACA283E5FD900FA89EB /* MainPage.swift */; };
+		B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */; };
+		B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACE283E5FFA00FA89EB /* LogInPage.swift */; };
+		B81BBAD4283E60A400FA89EB /* MainPageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBAD3283E60A400FA89EB /* MainPageUI.swift */; };
+		B81BBAD6283E60FE00FA89EB /* LoginUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBAD5283E60FE00FA89EB /* LoginUI.swift */; };
+		B81BBAD8283E611700FA89EB /* SignUpUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBAD7283E611700FA89EB /* SignUpUI.swift */; };
 		B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996B283D2A8700F80FFD /* AppDelegate.swift */; };
 		B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */; };
 		B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996F283D2A8700F80FFD /* ViewController.swift */; };
@@ -53,6 +59,12 @@
 		8524267318002F8D3AF4BAA6 /* Pods-PokerBrosV2-PokerBrosV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2-PokerBrosV2UITests.debug.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2-PokerBrosV2UITests/Pods-PokerBrosV2-PokerBrosV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91BEBF7405A2A74E71074F65 /* Pods_PokerBrosV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerBrosV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6E3F80E4F08CCA6FC4DF1D /* Pods-PokerBrosV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2.debug.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2/Pods-PokerBrosV2.debug.xcconfig"; sourceTree = "<group>"; };
+		B81BBACA283E5FD900FA89EB /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		B81BBACE283E5FFA00FA89EB /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		B81BBAD3283E60A400FA89EB /* MainPageUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageUI.swift; sourceTree = "<group>"; };
+		B81BBAD5283E60FE00FA89EB /* LoginUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUI.swift; sourceTree = "<group>"; };
+		B81BBAD7283E611700FA89EB /* SignUpUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUI.swift; sourceTree = "<group>"; };
 		B8A79968283D2A8700F80FFD /* PokerBrosV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerBrosV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A7996B283D2A8700F80FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +126,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B81BBAD2283E609100FA89EB /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B81BBAD3283E60A400FA89EB /* MainPageUI.swift */,
+				B81BBAD5283E60FE00FA89EB /* LoginUI.swift */,
+				B81BBAD7283E611700FA89EB /* SignUpUI.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		B8A7995F283D2A8700F80FFD = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +164,10 @@
 				B8A7996B283D2A8700F80FFD /* AppDelegate.swift */,
 				B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */,
 				B8A7996F283D2A8700F80FFD /* ViewController.swift */,
+				B81BBAD2283E609100FA89EB /* SwiftUI */,
+				B81BBACA283E5FD900FA89EB /* MainPage.swift */,
+				B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */,
+				B81BBACE283E5FFA00FA89EB /* LogInPage.swift */,
 				B8A79971283D2A8700F80FFD /* Main.storyboard */,
 				B8A799A8283DE71B00F80FFD /* Welcome.swift */,
 				B8A79977283D2A8800F80FFD /* Assets.xcassets */,
@@ -422,11 +448,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
 				B8A799A9283DE71B00F80FFD /* Welcome.swift in Sources */,
+				B81BBAD8283E611700FA89EB /* SignUpUI.swift in Sources */,
 				B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */,
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
+				B81BBAD6283E60FE00FA89EB /* LoginUI.swift in Sources */,
 				B8A79976283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld in Sources */,
+				B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */,
+				B81BBAD4283E60A400FA89EB /* MainPageUI.swift in Sources */,
+				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
