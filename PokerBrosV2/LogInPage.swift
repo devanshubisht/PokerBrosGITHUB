@@ -61,7 +61,8 @@ class LogInPage: UIViewController {
         ErrorLabel.alpha = 1
     }
 
-    @IBAction func loginTapped(_ sender: Any ) {
+    @IBAction func loginTapped(_ sender: Any) {
+    
         
         let error = validateFields()
         

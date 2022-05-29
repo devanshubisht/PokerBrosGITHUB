@@ -76,7 +76,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="LoginTapped:" destination="cXQ-UX-KVc" eventType="touchUpInside" id="V4a-dC-jFX"/>
+                                            <action selector="loginTapped:" destination="cXQ-UX-KVc" eventType="touchUpInside" id="4Oc-Aq-bgd"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-Qe-mI7">
@@ -107,7 +107,7 @@
                     <navigationItem key="navigationItem" id="fcg-Vw-3UT"/>
                     <connections>
                         <outlet property="ErrorLabel" destination="3s9-Qe-mI7" id="MP9-YH-V8Q"/>
-                        <outlet property="LogInButton" destination="qX9-jM-N2D" id="2Do-m8-300"/>
+                        <outlet property="LogInButton" destination="qX9-jM-N2D" id="bHx-bK-AV8"/>
                         <outlet property="PasswordText" destination="fee-9h-tR4" id="Pzb-1r-1Ni"/>
                         <outlet property="UsernameText" destination="oUj-aW-42B" id="cbF-ci-SCZ"/>
                     </connections>
