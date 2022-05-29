@@ -28,9 +28,9 @@
 		B8A799A1283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A2283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A3283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
-		B8A799A9283DE71B00F80FFD /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A799A8283DE71B00F80FFD /* Welcome.swift */; };
-		B8A799AA283DE71B00F80FFD /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A799A8283DE71B00F80FFD /* Welcome.swift */; };
-		B8A799AB283DE71B00F80FFD /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A799A8283DE71B00F80FFD /* Welcome.swift */; };
+		C7F997372843528000C504B3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F997362843528000C504B3 /* HomePage.swift */; };
+		C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973928437E1A00C504B3 /* Constants.swift */; };
+		C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973F284388F900C504B3 /* ProfilePage.swift */; };
 		D6805DCFAF29C3C452CA6AAE /* Pods_PokerBrosV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D36C34559F6FE0503B93BA /* Pods_PokerBrosV2.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,8 +80,10 @@
 		B8A7998F283D2A8800F80FFD /* PokerBrosV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerBrosV2UITests.swift; sourceTree = "<group>"; };
 		B8A79991283D2A8800F80FFD /* PokerBrosV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerBrosV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B8A799A8283DE71B00F80FFD /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2Tests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2Tests/Pods-PokerBrosV2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C7F997362843528000C504B3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		C7F9973928437E1A00C504B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7F9973F284388F900C504B3 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		EC8324533BD091C69C356F4C /* Pods-PokerBrosV2-PokerBrosV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2-PokerBrosV2UITests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2-PokerBrosV2UITests/Pods-PokerBrosV2-PokerBrosV2UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,17 +163,19 @@
 		B8A7996A283D2A8700F80FFD /* PokerBrosV2 */ = {
 			isa = PBXGroup;
 			children = (
+				C7F9973828437E0200C504B3 /* Helpers */,
 				B8A7996B283D2A8700F80FFD /* AppDelegate.swift */,
 				B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */,
 				B8A7996F283D2A8700F80FFD /* ViewController.swift */,
-				B81BBAD2283E609100FA89EB /* SwiftUI */,
 				B81BBACA283E5FD900FA89EB /* MainPage.swift */,
 				B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */,
 				B81BBACE283E5FFA00FA89EB /* LogInPage.swift */,
+				C7F997362843528000C504B3 /* HomePage.swift */,
+				C7F9973F284388F900C504B3 /* ProfilePage.swift */,
 				B8A79971283D2A8700F80FFD /* Main.storyboard */,
 				B8A79979283D2A8800F80FFD /* LaunchScreen.storyboard */,
-				B8A799A8283DE71B00F80FFD /* Welcome.swift */,
 				B8A79977283D2A8800F80FFD /* Assets.xcassets */,
+				B81BBAD2283E609100FA89EB /* SwiftUI */,
 				B8A7997C283D2A8800F80FFD /* Info.plist */,
 				B8A79974283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld */,
 				B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */,
@@ -204,6 +208,14 @@
 				91BEBF7405A2A74E71074F65 /* Pods_PokerBrosV2Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7F9973828437E0200C504B3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7F9973928437E1A00C504B3 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,8 +461,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
+				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
+				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
-				B8A799A9283DE71B00F80FFD /* Welcome.swift in Sources */,
 				B81BBAD8283E611700FA89EB /* SignUpUI.swift in Sources */,
 				B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */,
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
@@ -459,6 +472,7 @@
 				B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */,
 				B81BBAD4283E60A400FA89EB /* MainPageUI.swift in Sources */,
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
+				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +480,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A799AA283DE71B00F80FFD /* Welcome.swift in Sources */,
 				B8A79986283D2A8800F80FFD /* PokerBrosV2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +489,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A79992283D2A8800F80FFD /* PokerBrosV2UITestsLaunchTests.swift in Sources */,
-				B8A799AB283DE71B00F80FFD /* Welcome.swift in Sources */,
 				B8A79990283D2A8800F80FFD /* PokerBrosV2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

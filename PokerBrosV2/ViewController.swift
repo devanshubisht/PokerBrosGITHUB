@@ -44,13 +44,8 @@ class ViewController: UIViewController {
                         print("yo")
                     }
                 }
-            
+            }
         }
-        
-    
-    }
-
-
     }
     
     

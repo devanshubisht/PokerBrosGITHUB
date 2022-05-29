@@ -73,7 +73,7 @@ struct SignUp: View {
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
             })
-            // This line will reduce the use of unwanted hstack anf spacers...
+            // This line will reduce the use of unwanted hstack and spacers...
             .frame(maxWidth: .infinity, alignment:  .trailing)
             .padding(.top,10)
             
