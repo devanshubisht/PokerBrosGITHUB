@@ -1,21 +1,19 @@
 //
-//  ProfilePage.swift
+//  Quiz.swift
 //  PokerBrosV2
 //
-//  Created by Ang Yuze on 29/5/22.
+//  Created by Ang Yuze on 30/5/22.
 //
 
 import UIKit
-import SwiftUI
 
-class ProfilePage: UIViewController {
+class Quiz: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    
 
+        // Do any additional setup after loading the view.
+    }
     
 
     /*
