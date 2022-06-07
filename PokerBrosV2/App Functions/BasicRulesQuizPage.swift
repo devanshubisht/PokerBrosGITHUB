@@ -50,6 +50,36 @@ class BasicRulesQuizPage: UIViewController, UITableViewDelegate, UITableViewData
                       Answer(text: "5", correct: true),
                       Answer(text: "6", correct: false)
         ]))
+        
+        gameModels.append(Question(text: "Is a set stronger than a Straight?", answers: [Answer(text: "yes", correct: false),
+             Answer(text: "no", correct: true)
+        ]))
+        
+        gameModels.append(Question(text: "Can one win with a Three-high combination?", answers: [Answer(text: "yes", correct: false),
+             Answer(text: "no", correct: true)
+        ]))
+        
+        gameModels.append(Question(text: "Can Quads beat a Straight Flush?", answers: [Answer(text: "yes", correct: false),
+             Answer(text: "no", correct: true)
+        ]))
+        
+        gameModels.append(Question(text: "How many suits are there in a normal deck of Poker?", answers: [Answer(text: "1", correct: false),
+             Answer(text: "2", correct: false),
+             Answer(text: "3", correct: false),
+             Answer(text: "4", correct: true)
+        ]))
+        
+        gameModels.append(Question(text: "Is Royal Flush the same as a Straight Flush?", answers: [Answer(text: "yes", correct: false),
+                      Answer(text: "no", correct: true)
+        ]))
+        
+        gameModels.append(Question(text: "Does the pair in a Full House matters?", answers: [Answer(text: "yes", correct: true),
+             Answer(text: "no", correct: false)
+        ]))
+        
+        gameModels.append(Question(text: "The board is '3 4 5'. Player A has 'A 2', Player B has '6 7'. Who wins?", answers: [Answer(text: "Player A", correct: false),
+             Answer(text: "Player B", correct: true)
+        ]))
     }
     
     // Table view functions
@@ -87,21 +117,25 @@ class BasicRulesQuizPage: UIViewController, UITableViewDelegate, UITableViewData
                     alert.addAction(UIAlertAction(title: "Good job!", style: .cancel, handler: nil))
                     present(alert, animated: true)
                     
-                    // transition back to BasicRulesPage
-                    /*let quizController =
-                    self.storyboard?.instantiateViewController(identifier:
-                    Constants.Storyboard.quizViewController) as?
-                    Quiz
+                    let seconds = 2.0
+                    DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                        // Put your code which should be executed with a delay here
+                        // transition back to BasicRulesPage
+                        let quizController =
+                        self.storyboard?.instantiateViewController(identifier:
+                        Constants.Storyboard.quizViewController) as?
+                        Quiz
+                        
+                        self.view.window?.rootViewController = quizController
+                        self.view.window?.makeKeyAndVisible()
+                    }
                     
-                    self.view.window?.rootViewController = quizController
-                    self.view.window?.makeKeyAndVisible()
-                     */
                 }
             }
         } else {
             // wrong
             let alert = UIAlertController(title: "Trolling", message: "Stop being a fish!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "I am a donkey", style: .cancel, handler: nil))
             present(alert, animated: true)
         }
     }

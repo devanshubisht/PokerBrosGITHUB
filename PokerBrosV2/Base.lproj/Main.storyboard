@@ -325,7 +325,7 @@
                                 <rect key="frame" x="67" y="319" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="PREFLOP RANGE / ACTION" cornerStyle="small">
+                                <buttonConfiguration key="configuration" style="gray" title="PREFLOP RANGE " cornerStyle="small">
                                     <backgroundConfiguration key="background">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
@@ -333,6 +333,9 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3Di-4h-pbL" kind="show" id="Vu4-mT-8SF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D8e-l7-rZp"/>
@@ -343,6 +346,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2a-FT-SzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3934.7826086956525" y="83.705357142857139"/>
+        </scene>
+        <!--Preflop Range Page-->
+        <scene sceneID="tei-N8-RX6">
+            <objects>
+                <viewController id="3Di-4h-pbL" customClass="PreflopRangePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rDW-QJ-Nee">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="gk0-23-7CQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vXA-qG-2rh"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zya-6d-DbJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKS-5Y-vJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4677" y="281"/>
         </scene>
         <!--Basic Rules Page-->
         <scene sceneID="rFu-B1-YpQ">
@@ -423,7 +448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvm-Av-JvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4676.811594202899" y="-253.125"/>
+            <point key="canvasLocation" x="4677" y="-361"/>
         </scene>
         <!--Basic Rules Quiz Page-->
         <scene sceneID="g2h-uE-R2q">
@@ -474,7 +499,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Kf-xP-nfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5369.5652173913049" y="-253.125"/>
+            <point key="canvasLocation" x="5367" y="-362"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="Eep-Ph-2BF">
@@ -714,6 +739,7 @@
         <image name="leaderboard" width="192" height="192"/>
         <image name="overview" width="414" height="3000"/>
         <image name="pot odds" width="192" height="192"/>
+        <image name="preflopRange" width="414" height="170"/>
         <image name="scenario" width="192" height="192"/>
         <image name="sign in" width="1125" height="2436"/>
         <image name="sign up" width="1125" height="2436"/>

@@ -30,6 +30,7 @@
 		B8A799A3283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E628446D69000931E7 /* BasicRulesPage.swift */; };
 		C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */; };
+		C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666EA2844F83D000931E7 /* PreflopRangePage.swift */; };
 		C78B64EC28440DB6001989BA /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B64EB28440DB6001989BA /* Quiz.swift */; };
 		C7F997372843528000C504B3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F997362843528000C504B3 /* HomePage.swift */; };
 		C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973928437E1A00C504B3 /* Constants.swift */; };
@@ -86,6 +87,7 @@
 		C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2Tests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2Tests/Pods-PokerBrosV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C74666E628446D69000931E7 /* BasicRulesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesPage.swift; sourceTree = "<group>"; };
 		C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesQuizPage.swift; sourceTree = "<group>"; };
+		C74666EA2844F83D000931E7 /* PreflopRangePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangePage.swift; sourceTree = "<group>"; };
 		C78B64EB28440DB6001989BA /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		C7F997362843528000C504B3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		C7F9973928437E1A00C504B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				C78B64EB28440DB6001989BA /* Quiz.swift */,
 				C74666E628446D69000931E7 /* BasicRulesPage.swift */,
 				C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */,
+				C74666EA2844F83D000931E7 /* PreflopRangePage.swift */,
 			);
 			path = "App Functions";
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
+				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
