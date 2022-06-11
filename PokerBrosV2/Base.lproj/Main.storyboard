@@ -162,8 +162,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-bs-xCg">
                                 <rect key="frame" x="0.0" y="384" width="414" height="458"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
+                                        <rect key="frame" x="8" y="-145" width="414" height="1000"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-ef-90e" userLabel="Equity">
                                                 <rect key="frame" x="11" y="404" width="192" height="192"/>
@@ -291,6 +291,9 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="4Se-iV-Jsk" kind="show" id="4rw-ZR-6cy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-BI-NtG">
                                 <rect key="frame" x="67" y="195" width="280" height="76"/>
@@ -322,7 +325,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOW-f9-aaA">
-                                <rect key="frame" x="67" y="319" width="280" height="76"/>
+                                <rect key="frame" x="67" y="321" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="PREFLOP RANGE " cornerStyle="small">
@@ -333,9 +336,6 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <segue destination="3Di-4h-pbL" kind="show" id="Vu4-mT-8SF"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D8e-l7-rZp"/>
@@ -346,28 +346,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2a-FT-SzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3934.7826086956525" y="83.705357142857139"/>
-        </scene>
-        <!--Preflop Range Page-->
-        <scene sceneID="tei-N8-RX6">
-            <objects>
-                <viewController id="3Di-4h-pbL" customClass="PreflopRangePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rDW-QJ-Nee">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="gk0-23-7CQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vXA-qG-2rh"/>
-                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zya-6d-DbJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bKS-5Y-vJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4677" y="281"/>
         </scene>
         <!--Basic Rules Page-->
         <scene sceneID="rFu-B1-YpQ">
@@ -392,12 +370,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8T-0K-XGA">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2879"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overview" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-Xl-Vi6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="basics" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-Xl-Vi6">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlI-fS-dZu">
-                                                <rect key="frame" x="67" y="1701" width="280" height="76"/>
+                                                <rect key="frame" x="67" y="2644" width="280" height="76"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="START QUIZ" cornerStyle="small">
@@ -410,6 +388,22 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <segue destination="FRN-xf-CS3" kind="show" id="JQV-mx-HP7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1b-Jm-dux">
+                                                <rect key="frame" x="67" y="2770" width="280" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="52M-g9-4BJ" kind="show" id="Uec-N4-Evx"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -728,17 +722,264 @@
             </objects>
             <point key="canvasLocation" x="40.579710144927539" y="83.705357142857139"/>
         </scene>
+        <!--Preflop Range Page-->
+        <scene sceneID="U3q-D8-C7q">
+            <objects>
+                <viewController id="Ots-ey-BV4" customClass="PreflopRangePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BmN-Ui-OYs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quiz background" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-9m-smy">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="414" id="UlF-BI-Rub"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="fX5-FT-knQ">
+                                <rect key="frame" x="0.0" y="36" width="414" height="170"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSy-6Y-THe">
+                                <rect key="frame" x="0.0" y="190" width="414" height="618"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzb-0C-bLg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflop" translatesAutoresizingMaskIntoConstraints="NO" id="780-WC-lB9">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-js-0nc">
+                                                <rect key="frame" x="67" y="1846" width="280" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="START QUIZ" cornerStyle="small">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="cse-3v-XQN" kind="show" id="ske-Nw-anw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evs-My-J9R">
+                                                <rect key="frame" x="67" y="1972" width="280" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="52M-g9-4BJ" kind="show" id="9yX-QS-4XV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3000" id="cUd-aP-X8J"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lzb-0C-bLg" firstAttribute="leading" secondItem="LSy-6Y-THe" secondAttribute="leading" id="5ol-Eu-jWa"/>
+                                    <constraint firstAttribute="bottom" secondItem="lzb-0C-bLg" secondAttribute="bottom" id="dEK-XB-j34"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzb-0C-bLg" secondAttribute="trailing" id="fPT-HN-OxU"/>
+                                    <constraint firstItem="lzb-0C-bLg" firstAttribute="top" secondItem="LSy-6Y-THe" secondAttribute="top" id="hC5-y0-QvG"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rxG-7f-7DN"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rxG-7f-7DN" firstAttribute="bottom" secondItem="Oxu-9m-smy" secondAttribute="bottom" constant="153" id="1p4-dR-9ON"/>
+                            <constraint firstItem="lzb-0C-bLg" firstAttribute="height" secondItem="BmN-Ui-OYs" secondAttribute="height" multiplier="3.56295" id="5bB-J8-Yz2"/>
+                            <constraint firstItem="fX5-FT-knQ" firstAttribute="trailing" secondItem="Oxu-9m-smy" secondAttribute="trailing" id="97J-cg-waf"/>
+                            <constraint firstItem="Oxu-9m-smy" firstAttribute="top" secondItem="fX5-FT-knQ" secondAttribute="bottom" constant="51" id="AHp-0S-2d5"/>
+                            <constraint firstItem="fX5-FT-knQ" firstAttribute="top" secondItem="BmN-Ui-OYs" secondAttribute="top" constant="20" symbolic="YES" id="Dao-2B-kd5"/>
+                            <constraint firstItem="LSy-6Y-THe" firstAttribute="top" secondItem="fX5-FT-knQ" secondAttribute="bottom" id="F3w-gK-3kC"/>
+                            <constraint firstItem="LSy-6Y-THe" firstAttribute="leading" secondItem="rxG-7f-7DN" secondAttribute="leading" id="Hbr-ha-fIx"/>
+                            <constraint firstItem="LSy-6Y-THe" firstAttribute="trailing" secondItem="rxG-7f-7DN" secondAttribute="trailing" id="LEZ-zP-jKl"/>
+                            <constraint firstItem="fX5-FT-knQ" firstAttribute="leading" secondItem="LSy-6Y-THe" secondAttribute="leading" id="YqX-Vb-EGf"/>
+                            <constraint firstItem="lzb-0C-bLg" firstAttribute="width" secondItem="BmN-Ui-OYs" secondAttribute="width" id="bWO-BY-Gdi"/>
+                            <constraint firstItem="fX5-FT-knQ" firstAttribute="leading" secondItem="Oxu-9m-smy" secondAttribute="leading" id="pmr-ma-NYK"/>
+                            <constraint firstItem="LSy-6Y-THe" firstAttribute="bottom" secondItem="rxG-7f-7DN" secondAttribute="bottom" id="tvh-Qa-xjG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGg-B6-oPw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZI-0V-rnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4677" y="298"/>
+        </scene>
+        <!--Preflop Range Quiz Page-->
+        <scene sceneID="YbX-uC-O6X">
+            <objects>
+                <viewController storyboardIdentifier="BRquiz" id="cse-3v-XQN" customClass="PreflopRangeQuizPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MC7-dC-4yG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-5V-MNe">
+                                <rect key="frame" x="0.0" y="-14" width="414" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odu-hO-feR">
+                                <rect key="frame" x="0.0" y="212" width="414" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TDV-iI-WKC">
+                                <rect key="frame" x="0.0" y="505" width="414" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="separatorColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="67" id="xB3-M9-icO">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xB3-M9-icO" id="78l-bq-m6w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Ai-xE-7Ns"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uhi-8U-Aq3"/>
+                    <connections>
+                        <outlet property="label" destination="odu-hO-feR" id="dNz-qu-d2P"/>
+                        <outlet property="table" destination="TDV-iI-WKC" id="OUo-Wd-IWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5G3-9V-iUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5367" y="298"/>
+        </scene>
+        <!--Preflop Range Page-->
+        <scene sceneID="sRC-Es-7A6">
+            <objects>
+                <viewController id="4Se-iV-Jsk" customClass="PreflopRangePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dm1-XC-02N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quiz background" translatesAutoresizingMaskIntoConstraints="NO" id="Nnq-nY-SmJ">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="414" id="hX1-1x-auh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="lUl-nd-ZDN">
+                                <rect key="frame" x="0.0" y="36" width="414" height="170"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAO-Cu-Mzl">
+                                <rect key="frame" x="0.0" y="190" width="414" height="618"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGj-rp-qSt">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2879"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postflop" translatesAutoresizingMaskIntoConstraints="NO" id="aEj-PM-NoM">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDc-ye-xxY">
+                                                <rect key="frame" x="67" y="2692" width="280" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="START QUIZ" cornerStyle="small">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNP-oi-hPf">
+                                                <rect key="frame" x="67" y="2818" width="280" height="76"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="52M-g9-4BJ" kind="show" id="sMN-pN-4Yc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3000" id="Ite-BL-vPf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SGj-rp-qSt" firstAttribute="top" secondItem="rAO-Cu-Mzl" secondAttribute="top" id="DDX-Qs-sKQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="SGj-rp-qSt" secondAttribute="bottom" id="SFv-S1-3VM"/>
+                                    <constraint firstAttribute="trailing" secondItem="SGj-rp-qSt" secondAttribute="trailing" id="Ymj-eu-fGA"/>
+                                    <constraint firstItem="SGj-rp-qSt" firstAttribute="leading" secondItem="rAO-Cu-Mzl" secondAttribute="leading" id="bBa-te-xd6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IvJ-ed-Rfb"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IvJ-ed-Rfb" firstAttribute="bottom" secondItem="Nnq-nY-SmJ" secondAttribute="bottom" constant="153" id="2Gt-qD-upN"/>
+                            <constraint firstItem="lUl-nd-ZDN" firstAttribute="trailing" secondItem="Nnq-nY-SmJ" secondAttribute="trailing" id="5GS-PH-P5n"/>
+                            <constraint firstItem="rAO-Cu-Mzl" firstAttribute="trailing" secondItem="IvJ-ed-Rfb" secondAttribute="trailing" id="8zZ-fC-xV8"/>
+                            <constraint firstItem="Nnq-nY-SmJ" firstAttribute="top" secondItem="lUl-nd-ZDN" secondAttribute="bottom" constant="51" id="A4e-hk-di2"/>
+                            <constraint firstItem="rAO-Cu-Mzl" firstAttribute="bottom" secondItem="IvJ-ed-Rfb" secondAttribute="bottom" id="JRL-yK-6f7"/>
+                            <constraint firstItem="lUl-nd-ZDN" firstAttribute="leading" secondItem="rAO-Cu-Mzl" secondAttribute="leading" id="LP8-6m-NL5"/>
+                            <constraint firstItem="rAO-Cu-Mzl" firstAttribute="top" secondItem="lUl-nd-ZDN" secondAttribute="bottom" id="SDy-UO-Ixl"/>
+                            <constraint firstItem="SGj-rp-qSt" firstAttribute="height" secondItem="Dm1-XC-02N" secondAttribute="height" multiplier="3.56295" id="Xkk-IM-cGS"/>
+                            <constraint firstItem="lUl-nd-ZDN" firstAttribute="top" secondItem="Dm1-XC-02N" secondAttribute="top" constant="20" symbolic="YES" id="cmd-t2-FD4"/>
+                            <constraint firstItem="rAO-Cu-Mzl" firstAttribute="leading" secondItem="IvJ-ed-Rfb" secondAttribute="leading" id="hQa-Vc-0ag"/>
+                            <constraint firstItem="SGj-rp-qSt" firstAttribute="width" secondItem="Dm1-XC-02N" secondAttribute="width" id="iTW-NH-fYQ"/>
+                            <constraint firstItem="lUl-nd-ZDN" firstAttribute="leading" secondItem="Nnq-nY-SmJ" secondAttribute="leading" id="svE-xn-5FH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k1e-F7-OG3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0j-Nt-0Yk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4677" y="955"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sMN-pN-4Yc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Quiz" width="192" height="192"/>
         <image name="Quiz background" width="192" height="192"/>
         <image name="Welcome Page" width="1125" height="2436"/>
         <image name="basic rules" width="414" height="170"/>
+        <image name="basics" width="414" height="3000"/>
         <image name="equity" width="192" height="192"/>
         <image name="home" width="1125" height="2436"/>
         <image name="leaderboard" width="192" height="192"/>
-        <image name="overview" width="414" height="3000"/>
+        <image name="postflop" width="414" height="3000"/>
         <image name="pot odds" width="192" height="192"/>
+        <image name="preflop" width="414" height="3000"/>
         <image name="preflopRange" width="414" height="170"/>
         <image name="scenario" width="192" height="192"/>
         <image name="sign in" width="1125" height="2436"/>
