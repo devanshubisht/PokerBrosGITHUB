@@ -225,7 +225,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C78B64EA28440D98001989BA /* App Functions */ = {
+		C786853A2855D6BF002A9504 /* Quiz function */ = {
 			isa = PBXGroup;
 			children = (
 				C78B64EB28440DB6001989BA /* Quiz.swift */,
@@ -235,6 +235,14 @@
 				C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */,
 				C78685342855D112002A9504 /* PostFlopPage.swift */,
 				C78685382855D162002A9504 /* PostflopQuizPage.swift */,
+			);
+			path = "Quiz function";
+			sourceTree = "<group>";
+		};
+		C78B64EA28440D98001989BA /* App Functions */ = {
+			isa = PBXGroup;
+			children = (
+				C786853A2855D6BF002A9504 /* Quiz function */,
 			);
 			path = "App Functions";
 			sourceTree = "<group>";

@@ -998,7 +998,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comingsoon" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-VF-skw">
-                                <rect key="frame" x="0.0" y="-39" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="-36" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1064,8 +1064,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4rw-ZR-6cy"/>
-        <segue reference="sMN-pN-4Yc"/>
+        <segue reference="npe-BZ-7Pf"/>
         <segue reference="kgT-aw-YOA"/>
     </inferredMetricsTieBreakers>
     <resources>
