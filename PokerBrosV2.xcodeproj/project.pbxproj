@@ -32,6 +32,8 @@
 		C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E628446D69000931E7 /* BasicRulesPage.swift */; };
 		C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */; };
 		C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666EA2844F83D000931E7 /* PreflopRangePage.swift */; };
+		C78685352855D112002A9504 /* PostFlopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78685342855D112002A9504 /* PostFlopPage.swift */; };
+		C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78685382855D162002A9504 /* PostflopQuizPage.swift */; };
 		C78B64EC28440DB6001989BA /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B64EB28440DB6001989BA /* Quiz.swift */; };
 		C7F997372843528000C504B3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F997362843528000C504B3 /* HomePage.swift */; };
 		C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973928437E1A00C504B3 /* Constants.swift */; };
@@ -90,6 +92,8 @@
 		C74666E628446D69000931E7 /* BasicRulesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesPage.swift; sourceTree = "<group>"; };
 		C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesQuizPage.swift; sourceTree = "<group>"; };
 		C74666EA2844F83D000931E7 /* PreflopRangePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangePage.swift; sourceTree = "<group>"; };
+		C78685342855D112002A9504 /* PostFlopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFlopPage.swift; sourceTree = "<group>"; };
+		C78685382855D162002A9504 /* PostflopQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostflopQuizPage.swift; sourceTree = "<group>"; };
 		C78B64EB28440DB6001989BA /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		C7F997362843528000C504B3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		C7F9973928437E1A00C504B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */,
 				C74666EA2844F83D000931E7 /* PreflopRangePage.swift */,
 				C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */,
+				C78685342855D112002A9504 /* PostFlopPage.swift */,
+				C78685382855D162002A9504 /* PostflopQuizPage.swift */,
 			);
 			path = "App Functions";
 			sourceTree = "<group>";
@@ -500,6 +506,8 @@
 				B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */,
 				B81BBAD4283E60A400FA89EB /* MainPageUI.swift in Sources */,
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
+				C78685352855D112002A9504 /* PostFlopPage.swift in Sources */,
+				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,7 +686,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MBFH28UH6J;
+				DEVELOPMENT_TEAM = 5GW4SQPFNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerBrosV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -707,7 +715,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MBFH28UH6J;
+				DEVELOPMENT_TEAM = 5GW4SQPFNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerBrosV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

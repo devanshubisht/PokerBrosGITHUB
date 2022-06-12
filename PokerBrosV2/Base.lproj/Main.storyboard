@@ -280,7 +280,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJv-ki-SvN">
-                                <rect key="frame" x="67" y="447" width="280" height="76"/>
+                                <rect key="frame" x="67" y="417" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="POST-FLOP ACTION" cornerStyle="small">
@@ -296,7 +296,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDD-BI-NtG">
-                                <rect key="frame" x="67" y="195" width="280" height="76"/>
+                                <rect key="frame" x="67" y="165" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="BASIC RULES" cornerStyle="small">
@@ -311,21 +311,8 @@
                                     <segue destination="jQW-ah-K2I" kind="show" id="01C-76-bk2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4W-JJ-1gM">
-                                <rect key="frame" x="67" y="573" width="280" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="PLAYER TYPE" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
-                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOW-f9-aaA">
-                                <rect key="frame" x="67" y="321" width="280" height="76"/>
+                                <rect key="frame" x="67" y="291" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="PREFLOP RANGE " cornerStyle="small">
@@ -336,6 +323,41 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ots-ey-BV4" kind="show" id="ZqK-dL-ebt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-Hf-BJR">
+                                <rect key="frame" x="163" y="677" width="88" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GBe-rT-5zh" kind="show" id="kgT-aw-YOA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4W-JJ-1gM">
+                                <rect key="frame" x="67" y="543" width="280" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="PLAYER TYPE " cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GAD-c1-AFD" kind="show" id="XQC-WK-OMm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D8e-l7-rZp"/>
@@ -727,7 +749,7 @@
             <objects>
                 <viewController id="Ots-ey-BV4" customClass="PreflopRangePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BmN-Ui-OYs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quiz background" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-9m-smy">
@@ -743,12 +765,8 @@
                                 <rect key="frame" x="0.0" y="190" width="414" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzb-0C-bLg">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2879"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflop" translatesAutoresizingMaskIntoConstraints="NO" id="780-WC-lB9">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-js-0nc">
                                                 <rect key="frame" x="67" y="1846" width="280" height="76"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -781,6 +799,10 @@
                                                     <segue destination="52M-g9-4BJ" kind="show" id="9yX-QS-4XV"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflop" translatesAutoresizingMaskIntoConstraints="NO" id="780-WC-lB9">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="3000"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -822,13 +844,13 @@
         <!--Preflop Range Quiz Page-->
         <scene sceneID="YbX-uC-O6X">
             <objects>
-                <viewController storyboardIdentifier="BRquiz" id="cse-3v-XQN" customClass="PreflopRangeQuizPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PRquiz" id="cse-3v-XQN" customClass="PreflopRangeQuizPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MC7-dC-4yG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-5V-MNe">
-                                <rect key="frame" x="0.0" y="-14" width="414" height="204"/>
+                                <rect key="frame" x="0.0" y="10" width="414" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odu-hO-feR">
@@ -870,10 +892,10 @@
             </objects>
             <point key="canvasLocation" x="5367" y="298"/>
         </scene>
-        <!--Preflop Range Page-->
+        <!--Post Flop Page-->
         <scene sceneID="sRC-Es-7A6">
             <objects>
-                <viewController id="4Se-iV-Jsk" customClass="PreflopRangePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Se-iV-Jsk" customClass="PostFlopPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dm1-XC-02N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -884,7 +906,7 @@
                                     <constraint firstAttribute="height" constant="414" id="hX1-1x-auh"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="preflopRange" translatesAutoresizingMaskIntoConstraints="NO" id="lUl-nd-ZDN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="postflopaction" translatesAutoresizingMaskIntoConstraints="NO" id="lUl-nd-ZDN">
                                 <rect key="frame" x="0.0" y="36" width="414" height="170"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAO-Cu-Mzl">
@@ -909,6 +931,9 @@
                                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="XmP-8P-LmM" kind="show" id="xqN-sZ-tmf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNP-oi-hPf">
                                                 <rect key="frame" x="67" y="2818" width="280" height="76"/>
@@ -964,9 +989,84 @@
             </objects>
             <point key="canvasLocation" x="4677" y="955"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="nfl-r6-VyW">
+            <objects>
+                <viewController id="GAD-c1-AFD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lm4-Cm-33z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comingsoon" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-VF-skw">
+                                <rect key="frame" x="0.0" y="-39" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kVQ-XY-wc9"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WRR-Ra-VWg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqR-f3-zAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4676.811594202899" y="1608.4821428571429"/>
+        </scene>
+        <!--Postflop Quiz Page-->
+        <scene sceneID="9wu-Vk-Nvx">
+            <objects>
+                <viewController storyboardIdentifier="PFAquiz" id="XmP-8P-LmM" customClass="PostflopQuizPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pg2-eP-cce">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postflopaction" translatesAutoresizingMaskIntoConstraints="NO" id="eBK-fx-wuO">
+                                <rect key="frame" x="0.0" y="14" width="414" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-80-FwH">
+                                <rect key="frame" x="0.0" y="212" width="414" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aKT-N2-Lgj">
+                                <rect key="frame" x="0.0" y="505" width="414" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="separatorColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="67" id="6um-9y-trP">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6um-9y-trP" id="nfl-hV-s1i">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K4N-LW-5nI"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bID-96-Lcg"/>
+                    <connections>
+                        <outlet property="label" destination="4cL-80-FwH" id="0Wf-fk-NyW"/>
+                        <outlet property="table" destination="aKT-N2-Lgj" id="8zx-xC-6nF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hh-Ws-eqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5367" y="955"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="4rw-ZR-6cy"/>
         <segue reference="sMN-pN-4Yc"/>
+        <segue reference="kgT-aw-YOA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Quiz" width="192" height="192"/>
@@ -974,10 +1074,12 @@
         <image name="Welcome Page" width="1125" height="2436"/>
         <image name="basic rules" width="414" height="170"/>
         <image name="basics" width="414" height="3000"/>
+        <image name="comingsoon" width="1125" height="2436"/>
         <image name="equity" width="192" height="192"/>
         <image name="home" width="1125" height="2436"/>
         <image name="leaderboard" width="192" height="192"/>
         <image name="postflop" width="414" height="3000"/>
+        <image name="postflopaction" width="414" height="170"/>
         <image name="pot odds" width="192" height="192"/>
         <image name="preflop" width="414" height="3000"/>
         <image name="preflopRange" width="414" height="170"/>

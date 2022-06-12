@@ -1,17 +1,17 @@
 //
-//  PreflopRangeQuizPage.swift
+//  PostflopQuizPage.swift
 //  PokerBrosV2
 //
-//  Created by Ang Yuze on 10/6/22.
+//  Created by Ang Yuze on 12/6/22.
 //
 
 import UIKit
 
-class PreflopRangeQuizPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PostflopQuizPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var gameModels = [Question1]()
+    var gameModels = [Question2]()
     
-    var currentQuestion: Question1?
+    var currentQuestion: Question2?
     
     @IBOutlet var label : UILabel!
     @IBOutlet var table: UITableView!
@@ -24,44 +24,44 @@ class PreflopRangeQuizPage: UIViewController, UITableViewDelegate, UITableViewDa
         configureUI(question: gameModels.first!)
     }
     
-    private func configureUI(question: Question1) {
+    private func configureUI(question: Question2) {
         label.text = question.text
         currentQuestion = question
         table.reloadData()
     }
     
-    private func checkAnswer(answer: Answer1, question: Question1) -> Bool {
+    private func checkAnswer(answer: Answer2, question: Question2) -> Bool {
         return question.answers.contains(where: {$0.text == answer.text}) && answer.correct
     }
     
     private func setupQuestions() {
-        gameModels.append(Question1(text: "What does the 'Poker Matrix' show?",
-            answers: [Answer1(text: "Random numbers and alphabets", correct: false),
-                      Answer1(text: "Probability of any possible starting hand", correct: true),
-                      Answer1(text: "Tells the future", correct: false)
+        gameModels.append(Question2(text: "What does the 'Poker Matrix' show?",
+            answers: [Answer2(text: "Random numbers and alphabets", correct: false),
+                      Answer2(text: "Probability of any possible starting hand", correct: true),
+                      Answer2(text: "Tells the future", correct: false)
         ]))
         
-        gameModels.append(Question1(text: "How many possible starting hands are there, not considering suits?",answers: [
-                      Answer1(text: "104", correct: false),
-                      Answer1(text: "169", correct: true),
-                      Answer1(text: "240", correct: false)
+        gameModels.append(Question2(text: "How many possible starting hands are there, not considering suits?",answers: [
+                      Answer2(text: "104", correct: false),
+                      Answer2(text: "169", correct: true),
+                      Answer2(text: "240", correct: false)
         ]))
         
-        gameModels.append(Question1(text: "When a very tight player open raises pre flop, should you be careful navigating through post flop?",
+        gameModels.append(Question2(text: "When a very tight player open raises pre flop, should you be careful navigating through post flop?",
             answers: [
-                      Answer1(text: "For sure", correct: true),
-                      Answer1(text: "Nah hes a pu**y", correct: false)
+                      Answer2(text: "For sure", correct: true),
+                      Answer2(text: "Nah hes a pu**y", correct: false)
         ]))
         
-        gameModels.append(Question1(text: "Would you want to 3-bet a tight player that open raises with 7 10 offsuit?",
-    answers: [Answer1(text: "yes", correct: false),
-             Answer1(text: "no", correct: true)
+        gameModels.append(Question2(text: "Would you want to 3-bet a tight player that open raises with 7 10 offsuit?",
+    answers: [Answer2(text: "yes", correct: false),
+             Answer2(text: "no", correct: true)
         ]))
         
-        gameModels.append(Question1(text: "How many unique combinations of starting hands are there, considering suits?",
-    answers: [Answer1(text: "1048", correct: false),
-             Answer1(text: "1326", correct: true),
-              Answer1(text: "1894", correct: false)
+        gameModels.append(Question2(text: "How many unique combinations of starting hands are there, considering suits?",
+    answers: [Answer2(text: "1048", correct: false),
+             Answer2(text: "1326", correct: true),
+              Answer2(text: "1894", correct: false)
         ]))
     }
     
@@ -124,12 +124,12 @@ class PreflopRangeQuizPage: UIViewController, UITableViewDelegate, UITableViewDa
     }
 }
 
-struct Question1 {
+struct Question2 {
     let text : String
-    let answers : [Answer1]
+    let answers : [Answer2]
 }
 
-struct Answer1 {
+struct Answer2 {
     let text : String
     let correct : Bool // true / false
 }

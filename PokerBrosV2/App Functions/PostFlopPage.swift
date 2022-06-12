@@ -1,13 +1,13 @@
 //
-//  PreflopRangePage.swift
+//  PostFlopPage.swift
 //  PokerBrosV2
 //
-//  Created by Ang Yuze on 30/5/22.
+//  Created by Ang Yuze on 12/6/22.
 //
 
 import UIKit
 
-class PreflopRangePage: UIViewController {
+class PostFlopPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +17,10 @@ class PreflopRangePage: UIViewController {
     
 
     @IBAction func startGame1() {
-        let vc = storyboard?.instantiateViewController(identifier: "PRquiz") as! PreflopRangeQuizPage
+        let vc = storyboard?.instantiateViewController(identifier: "PFAquiz") as! PreflopRangeQuizPage
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
 
 }
+
