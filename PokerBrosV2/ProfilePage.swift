@@ -6,12 +6,36 @@
 //
 
 import UIKit
+import Photos
 import SwiftUI
+import Firebase
+import FirebaseFirestore
+import FirebaseStorage
+import FirebaseStorageUI
 
 class ProfilePage: UIViewController {
-
+    
+    
+    @IBOutlet weak var ProfileImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        receiveimage()
+    }
+    
+    func receiveimage () {
+        
+        let storage = Storage.storage()
+        let storageRef = storage.reference()
+        let uid1 = Auth.auth().currentUser?.uid
+        
+        let ref = storageRef.child("profile/"+uid1!)
+        
+        ProfileImage.sd_setImage(with: ref)
+
+        }
+
+    
     }
     
     
@@ -28,4 +52,3 @@ class ProfilePage: UIViewController {
     }
     */
 
-}

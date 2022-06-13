@@ -10,6 +10,8 @@ pod 'Firebase/Core'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
+pod 'FirebaseStorageUI'
 
   target 'PokerBrosV2Tests' do
     inherit! :search_paths

@@ -9,6 +9,9 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+
+
+
 class SignUpPage: UIViewController {
 
     @IBOutlet weak var FirstNameText: UITextField!
@@ -22,24 +25,35 @@ class SignUpPage: UIViewController {
     @IBOutlet weak var SignUpButton: UIButton!
     
     @IBOutlet weak var ErrorLabel: UILabel!
+    @IBOutlet weak var ProfileImage: UIImageView!
+    var image: UIImage? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupAvatar()
+        
         HideError()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupAvatar(){
+        
+        ProfileImage.layer.cornerRadius = 40
+        ProfileImage.clipsToBounds = true
+        ProfileImage.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self , action: #selector(presentPicker))
+        ProfileImage.addGestureRecognizer(tapGesture)
+        
     }
-    */
     
+    @objc func presentPicker() {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        picker.delegate = self
+        self.present(picker, animated: true, completion: nil)
+    }
+        
     func HideError(){
         ErrorLabel.alpha = 0 
     }
@@ -57,9 +71,20 @@ class SignUpPage: UIViewController {
         return nil
         
     }
-
+ 
     
     @IBAction func SignUpTapped(_ sender: Any) {
+        
+        guard let imageSelected = self.image else{
+            showError("Profile Picture not available")
+            // show error
+            return
+        }
+        
+        guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
+            return
+            
+        }
         
         let err = validateFields()
         
@@ -81,16 +106,34 @@ class SignUpPage: UIViewController {
                     self.showError("Error creating user")
                 }
                 else {
-                    let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid ]) { (error) in
-                        
+                    let storageRef = Storage.storage().reference(forURL: "gs://artermis-poker-bros.appspot.com/")
+                    let storageProfileRef = storageRef.child("profile").child(result!.user.uid)
+                    
+                    let metadata = StorageMetadata()
+                    
+                    metadata.contentType = "image/jpg"
+                    storageProfileRef.putData(imageData, metadata: metadata) { (storageMetaData, error) in
                         if error != nil {
-                            // Show error message
-                            self.showError("Error saving user data")
+                            print(error?.localizedDescription)
+                            return
+                        }
+                        
+                        storageProfileRef.downloadURL { (url, error) in
+                            if let metaImageUrl = url?.absoluteString{
+                                
+                                let db = Firestore.firestore()
+                                db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid, "ProfileImageUrl" :metaImageUrl ]) { (error) in
+                                    
+                                    if error != nil {
+                                        // Show error message
+                                        self.showError("Error saving user data")
+                                    }
+                                }
+                            }
                         }
                     }
-                    
+             
                     // Transition to Home screen
                     self.transitionToHome()
                 }
@@ -98,6 +141,7 @@ class SignUpPage: UIViewController {
         
     }
     }
+    
     
     func showError(_ message:String) {
         
@@ -120,3 +164,22 @@ class SignUpPage: UIViewController {
     
     
 }
+
+extension SignUpPage : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController,
+                                        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as?
+            UIImage {
+            image = imageSelected
+            ProfileImage.image = imageSelected
+            
+        }
+        
+        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as?
+            UIImage{
+            image = imageOriginal
+            ProfileImage.image = imageOriginal
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    }
