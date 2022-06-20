@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseStorage
 
 
 
@@ -106,7 +107,6 @@ class SignUpPage: UIViewController {
                     self.showError("Error creating user")
                 }
                 else {
-                    
                     let storageRef = Storage.storage().reference(forURL: "gs://artermis-poker-bros.appspot.com/")
                     let storageProfileRef = storageRef.child("profile").child(result!.user.uid)
                     

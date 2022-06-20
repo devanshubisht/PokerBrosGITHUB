@@ -28,6 +28,13 @@
 		B8A799A1283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A2283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A3283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
+		C70517812858BC3D0085795D /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517802858BC3D0085795D /* Tracker.swift */; };
+		C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517822858BCA10085795D /* TrackerCocoa.swift */; };
+		C70517852858C4680085795D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517842858C4680085795D /* Extensions.swift */; };
+		C70517872858CA2F0085795D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517862858CA2F0085795D /* GameModel.swift */; };
+		C70517892858CB820085795D /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517882858CB820085795D /* PreviewData.swift */; };
+		C705178D2858CD010085795D /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705178C2858CD010085795D /* GameRow.swift */; };
+		C705178F2859021D0085795D /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705178E2859021D0085795D /* GameListViewModel.swift */; };
 		C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */; };
 		C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E628446D69000931E7 /* BasicRulesPage.swift */; };
 		C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */; };
@@ -88,6 +95,13 @@
 		B8A79991283D2A8800F80FFD /* PokerBrosV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerBrosV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2Tests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2Tests/Pods-PokerBrosV2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C70517802858BC3D0085795D /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		C70517822858BCA10085795D /* TrackerCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoa.swift; sourceTree = "<group>"; };
+		C70517842858C4680085795D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C70517862858CA2F0085795D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		C70517882858CB820085795D /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		C705178C2858CD010085795D /* GameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
+		C705178E2859021D0085795D /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
 		C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangeQuizPage.swift; sourceTree = "<group>"; };
 		C74666E628446D69000931E7 /* BasicRulesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesPage.swift; sourceTree = "<group>"; };
 		C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesQuizPage.swift; sourceTree = "<group>"; };
@@ -225,6 +239,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C705177F2858BC070085795D /* Tracker function */ = {
+			isa = PBXGroup;
+			children = (
+				C70517802858BC3D0085795D /* Tracker.swift */,
+				C70517822858BCA10085795D /* TrackerCocoa.swift */,
+				C70517862858CA2F0085795D /* GameModel.swift */,
+				C705178C2858CD010085795D /* GameRow.swift */,
+				C705178E2859021D0085795D /* GameListViewModel.swift */,
+				C70517882858CB820085795D /* PreviewData.swift */,
+			);
+			path = "Tracker function";
+			sourceTree = "<group>";
+		};
 		C786853A2855D6BF002A9504 /* Quiz function */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +269,7 @@
 		C78B64EA28440D98001989BA /* App Functions */ = {
 			isa = PBXGroup;
 			children = (
+				C705177F2858BC070085795D /* Tracker function */,
 				C786853A2855D6BF002A9504 /* Quiz function */,
 			);
 			path = "App Functions";
@@ -251,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F9973928437E1A00C504B3 /* Constants.swift */,
+				C70517842858C4680085795D /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -497,17 +526,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70517892858CB820085795D /* PreviewData.swift in Sources */,
+				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
+				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
+				C70517812858BC3D0085795D /* Tracker.swift in Sources */,
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
 				B81BBAD8283E611700FA89EB /* SignUpUI.swift in Sources */,
+				C705178F2859021D0085795D /* GameListViewModel.swift in Sources */,
 				B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */,
+				C70517852858C4680085795D /* Extensions.swift in Sources */,
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
 				B81BBAD6283E60FE00FA89EB /* LoginUI.swift in Sources */,
 				B8A79976283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld in Sources */,
@@ -516,6 +551,7 @@
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
 				C78685352855D112002A9504 /* PostFlopPage.swift in Sources */,
 				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
+				C705178D2858CD010085795D /* GameRow.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
