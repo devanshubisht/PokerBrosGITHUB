@@ -11,12 +11,12 @@
         <!--Log In Page-->
         <scene sceneID="FwQ-zv-b3O">
             <objects>
-                <viewController id="cXQ-UX-KVc" customClass="LogInPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cXQ-UX-KVc" customClass="LogInPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xab-zl-l7R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign in" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-SG-xyz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign in" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-SG-xyz">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ppd-cm-lO4">
@@ -129,7 +129,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome Page" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-mq-HG1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome Page" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-mq-HG1">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -154,16 +154,16 @@
         <!--Profile Page-->
         <scene sceneID="QwR-Dh-cLl">
             <objects>
-                <viewController id="GBe-rT-5zh" customClass="ProfilePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="GBe-rT-5zh" customClass="ProfilePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="U7B-Hv-23u">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-bs-xCg">
-                                <rect key="frame" x="0.0" y="384" width="414" height="458"/>
+                                <rect key="frame" x="0.0" y="384" width="325" height="458"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
-                                        <rect key="frame" x="0.0" y="-145" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="-145" width="325" height="1000"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-ef-90e" userLabel="Equity">
                                                 <rect key="frame" x="11" y="404" width="192" height="192"/>
@@ -185,7 +185,7 @@
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="52M-g9-4BJ" kind="show" id="npe-BZ-7Pf"/>
+                                                    <segue destination="fZb-Uc-3kg" kind="show" id="PZp-Mb-zdH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-4I-1tu" userLabel="Tracker">
@@ -248,8 +248,8 @@
                                     <constraint firstAttribute="bottom" secondItem="7pX-Hj-1aR" secondAttribute="bottom" id="zLu-yo-ZLl"/>
                                 </constraints>
                             </scrollView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-3W-lKG">
-                                <rect key="frame" x="101" y="103" width="213" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-3W-lKG">
+                                <rect key="frame" x="101" y="103" width="124" height="200"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9Qt-S9-exU"/>
@@ -268,6 +268,8 @@
                             <constraint firstItem="7pX-Hj-1aR" firstAttribute="height" secondItem="U7B-Hv-23u" secondAttribute="height" multiplier="1.18765" id="6Z8-fX-Krx"/>
                             <constraint firstItem="7pX-Hj-1aR" firstAttribute="width" secondItem="U7B-Hv-23u" secondAttribute="width" id="GBt-Q0-CgC"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="xav-mg-4oW" secondAttribute="top" constant="340" id="PeJ-AP-jfx"/>
+                            <constraint firstItem="4B4-3W-lKG" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" constant="101" id="UbV-U5-g3h"/>
+                            <constraint firstItem="xav-mg-4oW" firstAttribute="trailing" secondItem="4B4-3W-lKG" secondAttribute="trailing" constant="100" id="aPi-Hb-rMa"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="trailing" secondItem="xav-mg-4oW" secondAttribute="trailing" id="kXb-CI-Tvk"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="4B4-3W-lKG" secondAttribute="bottom" constant="81" id="l6o-az-tW4"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" id="sgC-Hi-j96"/>
@@ -286,9 +288,9 @@
         <!--Quiz-->
         <scene sceneID="zFa-Oe-1hC">
             <objects>
-                <viewController storyboardIdentifier="QuizVC" id="52M-g9-4BJ" customClass="Quiz" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizVC" modalPresentationStyle="fullScreen" id="52M-g9-4BJ" customClass="Quiz" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Daf-FV-O7g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Quiz background" translatesAutoresizingMaskIntoConstraints="NO" id="0jN-FC-5jN">
@@ -377,7 +379,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D8e-l7-rZp"/>
-                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="U0e-Hs-bQ8"/>
                 </viewController>
@@ -536,12 +538,12 @@
         <!--Main Page-->
         <scene sceneID="Eep-Ph-2BF">
             <objects>
-                <viewController id="FpT-Mr-TzZ" customClass="MainPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="FpT-Mr-TzZ" customClass="MainPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UNH-Bs-bRa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="8Kl-uA-UaC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="8Kl-uA-UaC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-8U-nxE">
@@ -620,12 +622,12 @@
         <!--Sign Up Page-->
         <scene sceneID="m8T-1X-LKC">
             <objects>
-                <viewController id="TIH-2a-h9p" customClass="SignUpPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="TIH-2a-h9p" customClass="SignUpPage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LNh-Tt-QuH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign up" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-1n-EVt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign up" translatesAutoresizingMaskIntoConstraints="NO" id="n9U-1n-EVt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-xB-U7D">
@@ -1118,10 +1120,109 @@
             </objects>
             <point key="canvasLocation" x="5286" y="-877"/>
         </scene>
+        <!--Pot Odds-->
+        <scene sceneID="Wob-Jc-wJ3">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fZb-Uc-3kg" customClass="PotOdds" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zey-ov-WfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Quiz background" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-mZ-1It">
+                                <rect key="frame" x="0.0" y="241" width="417" height="414"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-ax-gev">
+                                <rect key="frame" x="68" y="263" width="280" height="76"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="POT ODDS INTRODUCTION" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuR-cL-dFF">
+                                <rect key="frame" x="68" y="392" width="280" height="76"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="POT ODDS CALCULATOR" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="LZI-ay-3Q7" kind="show" id="44x-ec-5Vh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHl-1u-yWX">
+                                <rect key="frame" x="163" y="532" width="88" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GBe-rT-5zh" kind="show" id="Q9e-HV-DeZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cnC-mJ-fUD"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.12156862745098039" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LHl-1u-yWX" firstAttribute="centerY" secondItem="zey-ov-WfQ" secondAttribute="centerY" id="365-cu-JSs"/>
+                            <constraint firstAttribute="trailing" secondItem="PY8-mZ-1It" secondAttribute="trailing" constant="-3" id="5cI-if-REr"/>
+                            <constraint firstItem="AuR-cL-dFF" firstAttribute="leading" secondItem="cnC-mJ-fUD" secondAttribute="leading" constant="68" id="6Rm-mT-C5p"/>
+                            <constraint firstItem="AuR-cL-dFF" firstAttribute="top" secondItem="cDE-ax-gev" secondAttribute="bottom" constant="53" id="CaA-Pf-Gld"/>
+                            <constraint firstItem="cnC-mJ-fUD" firstAttribute="bottom" secondItem="PY8-mZ-1It" secondAttribute="bottom" constant="207" id="GcA-ZL-TLw"/>
+                            <constraint firstItem="LHl-1u-yWX" firstAttribute="leading" secondItem="cnC-mJ-fUD" secondAttribute="leading" constant="163" id="IIM-ON-Z4n"/>
+                            <constraint firstItem="cnC-mJ-fUD" firstAttribute="trailing" secondItem="LHl-1u-yWX" secondAttribute="trailing" constant="163" id="Kkg-Nv-hW4"/>
+                            <constraint firstItem="LHl-1u-yWX" firstAttribute="top" secondItem="AuR-cL-dFF" secondAttribute="bottom" constant="64" id="OQk-8d-6lb"/>
+                            <constraint firstItem="cnC-mJ-fUD" firstAttribute="bottom" secondItem="LHl-1u-yWX" secondAttribute="bottom" constant="294" id="Ry6-fI-YAX"/>
+                            <constraint firstItem="cnC-mJ-fUD" firstAttribute="trailing" secondItem="AuR-cL-dFF" secondAttribute="trailing" constant="66" id="SYo-rc-3Au"/>
+                            <constraint firstItem="PY8-mZ-1It" firstAttribute="top" secondItem="cnC-mJ-fUD" secondAttribute="top" constant="197" id="bg5-QY-dW1"/>
+                            <constraint firstItem="cDE-ax-gev" firstAttribute="leading" secondItem="cnC-mJ-fUD" secondAttribute="leading" constant="68" id="eVs-6U-gfg"/>
+                            <constraint firstItem="cDE-ax-gev" firstAttribute="top" secondItem="cnC-mJ-fUD" secondAttribute="top" constant="219" id="gK5-ys-u8b"/>
+                            <constraint firstItem="cDE-ax-gev" firstAttribute="centerY" secondItem="zey-ov-WfQ" secondAttribute="centerY" id="gz2-sB-EBF"/>
+                            <constraint firstItem="PY8-mZ-1It" firstAttribute="leading" secondItem="cnC-mJ-fUD" secondAttribute="leading" id="hlH-yL-qDW"/>
+                            <constraint firstItem="AuR-cL-dFF" firstAttribute="centerY" secondItem="zey-ov-WfQ" secondAttribute="centerY" id="sxc-2h-Cii"/>
+                            <constraint firstItem="cnC-mJ-fUD" firstAttribute="trailing" secondItem="cDE-ax-gev" secondAttribute="trailing" constant="66" id="wqi-eL-pAd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ggF-eD-naT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yai-8O-Q8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584" y="860"/>
+        </scene>
+        <!--Pot Odds Calc-->
+        <scene sceneID="dFH-WC-bjU">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="LZI-ay-3Q7" customClass="PotOddsCalc" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dcz-W3-9jq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="H9m-vz-C9V"/>
+                        <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9tE-0f-XXB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-ZU-lxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3370" y="860"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="npe-BZ-7Pf"/>
-        <segue reference="zbE-nn-Lho"/>
+        <segue reference="ZqK-dL-ebt"/>
+        <segue reference="9yX-QS-4XV"/>
+        <segue reference="Q9e-HV-DeZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Quiz" width="192" height="192"/>
