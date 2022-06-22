@@ -1,13 +1,13 @@
 //
-//  FilteredDetailView.swift
+//  FilteredDetailView1.swift
 //  PokerBrosV2
 //
-//  Created by Ang Yuze on 21/6/22.
+//  Created by Ang Yuze on 22/6/22.
 //
 
 import SwiftUI
 
-struct FilteredDetailView: View {
+struct FilteredDetailView1: View {
     @EnvironmentObject var expenseViewModel: ExpenseViewModel
     // MARK: Environment Values
     @Environment(\.self) var env
@@ -44,7 +44,7 @@ struct FilteredDetailView: View {
                 }
                 
                 // MARK: Expense Card View For Currently Selected Date
-                ExpenseCard()
+                ExpenseCard(isFilter: true)
                     .environmentObject(expenseViewModel)
                 
                 CustomSegmentedControl()
@@ -95,7 +95,7 @@ struct FilteredDetailView: View {
             Color.black
                 .opacity(expenseViewModel.showFilterView ? 0.25 : 0)
                 .ignoresSafeArea()
-            
+            // MARK: Based on The Data Filter Expenses Array
             if expenseViewModel.showFilterView {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Start Date")
@@ -177,9 +177,9 @@ struct FilteredDetailView: View {
     }
 }
 
-struct FilteredDetailView_Previews: PreviewProvider {
+struct FilteredDetailView1_Previews: PreviewProvider {
     static var previews: some View {
-        FilteredDetailView()
+        FilteredDetailView1()
             .environmentObject(ExpenseViewModel())
     }
 }

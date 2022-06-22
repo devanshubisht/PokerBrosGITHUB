@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct TransactionCardView: View {
-    var expense: Expense
     @EnvironmentObject var expenseViewModel: ExpenseViewModel
-    
+    var expense: Expense
     var body: some View {
         HStack(spacing: 12) {
             // MARK: First Letter Avatar
@@ -42,7 +41,6 @@ struct TransactionCardView: View {
                 Text(expense.date.formatted(date: .numeric, time: .omitted))
                     .font(.caption)
                     .opacity(0.5)
-                    
             }
         }
         .padding()
@@ -50,7 +48,49 @@ struct TransactionCardView: View {
             RoundedRectangle(cornerRadius: 15, style: .continuous).fill(.gray).opacity(0.05)
         }
     }
+    
+    /*// MARK: Custom Segmented Control
+    @ViewBuilder
+    func CustomSegmentedControl() -> some View {
+        HStack(spacing: 0) {
+            ForEach([ExpenseType.income, ExpenseType.expense], id: \.rawValue) { tab in
+                Text(tab.rawValue.capitalized)
+                    .fontWeight(.semibold)
+                    .foregroundColor(expenseViewModel.tabName == tab ? .white : .black)
+                    .opacity(expenseViewModel.tabName == tab ? 1 : 0.7)
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity)
+                    .background {
+                        // MARK: With MatchedGeometry Effect
+                        if expenseViewModel.tabName == tab {
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                .fill(
+                                    LinearGradient(colors: [
+                                    Color("Color1"),
+                                    Color("Color2"),
+                                    Color("Color3"),
+                                    ], startPoint: .topLeading, endPoint: .bottomTrailing)
+                                )
+                                .matchedGeometryEffect(id: "TAB", in: animation)
+                        }
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        withAnimation {expenseViewModel.tabName = tab}
+                    }
+            }
+        }
+        .padding(5)
+        .background {
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(.white)
+        }
+    }
+     */
 }
+
+
+
 
 struct TransactionCardView_Previews: PreviewProvider {
     static var previews: some View {

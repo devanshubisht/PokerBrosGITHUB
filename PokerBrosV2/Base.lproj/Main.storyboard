@@ -156,15 +156,15 @@
         <scene sceneID="QwR-Dh-cLl">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="GBe-rT-5zh" customClass="ProfilePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="U7B-Hv-23u">
+                    <view key="view" contentMode="scaleToFill" id="U7B-Hv-23u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-bs-xCg">
-                                <rect key="frame" x="0.0" y="384" width="325" height="478"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-bs-xCg">
+                                <rect key="frame" x="0.0" y="384" width="414" height="478"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="1064"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-ef-90e" userLabel="Equity">
                                                 <rect key="frame" x="11" y="404" width="192" height="192"/>
@@ -255,7 +255,7 @@
                                 </constraints>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-3W-lKG">
-                                <rect key="frame" x="101" y="103" width="124" height="200"/>
+                                <rect key="frame" x="101" y="103" width="213" height="200"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9Qt-S9-exU"/>
@@ -1234,7 +1234,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sMN-pN-4Yc"/>
+        <segue reference="vAd-ba-Frk"/>
         <segue reference="Q9e-HV-DeZ"/>
     </inferredMetricsTieBreakers>
     <resources>
