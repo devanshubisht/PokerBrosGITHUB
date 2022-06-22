@@ -23,11 +23,6 @@ class ProfilePage: UIViewController {
         receiveimage()
     }
     
-    @IBSegueAction func TrackerSegue(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: Home())
-    }
-    
-    
     func receiveimage () {
         
         let storage = Storage.storage()
