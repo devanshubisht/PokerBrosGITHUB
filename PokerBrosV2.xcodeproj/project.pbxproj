@@ -12,9 +12,6 @@
 		B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACA283E5FD900FA89EB /* MainPage.swift */; };
 		B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */; };
 		B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACE283E5FFA00FA89EB /* LogInPage.swift */; };
-		B81BBAD4283E60A400FA89EB /* MainPageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBAD3283E60A400FA89EB /* MainPageUI.swift */; };
-		B81BBAD6283E60FE00FA89EB /* LoginUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBAD5283E60FE00FA89EB /* LoginUI.swift */; };
-		B81BBAD8283E611700FA89EB /* SignUpUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBAD7283E611700FA89EB /* SignUpUI.swift */; };
 		B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996B283D2A8700F80FFD /* AppDelegate.swift */; };
 		B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */; };
 		B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996F283D2A8700F80FFD /* ViewController.swift */; };
@@ -42,6 +39,15 @@
 		C78685352855D112002A9504 /* PostFlopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78685342855D112002A9504 /* PostFlopPage.swift */; };
 		C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78685382855D162002A9504 /* PostflopQuizPage.swift */; };
 		C78B64EC28440DB6001989BA /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B64EB28440DB6001989BA /* Quiz.swift */; };
+		C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265B82860E5A500CEF89A /* TrackerApp.swift */; };
+		C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BB2860EC6E00CEF89A /* Home.swift */; };
+		C7D265BE2860EC8A00CEF89A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BD2860EC8A00CEF89A /* ContentView.swift */; };
+		C7D265C02860ED3000CEF89A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BF2860ED3000CEF89A /* Expense.swift */; };
+		C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */; };
+		C7D265C42861119C00CEF89A /* TrackerCocoa1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C32861119C00CEF89A /* TrackerCocoa1.swift */; };
+		C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C5286115EA00CEF89A /* TransactionCardView.swift */; };
+		C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */; };
+		C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C928625C6200CEF89A /* ExpenseCard.swift */; };
 		C7F997372843528000C504B3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F997362843528000C504B3 /* HomePage.swift */; };
 		C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973928437E1A00C504B3 /* Constants.swift */; };
 		C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973F284388F900C504B3 /* ProfilePage.swift */; };
@@ -76,9 +82,6 @@
 		B81BBACA283E5FD900FA89EB /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		B81BBACE283E5FFA00FA89EB /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
-		B81BBAD3283E60A400FA89EB /* MainPageUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageUI.swift; sourceTree = "<group>"; };
-		B81BBAD5283E60FE00FA89EB /* LoginUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUI.swift; sourceTree = "<group>"; };
-		B81BBAD7283E611700FA89EB /* SignUpUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUI.swift; sourceTree = "<group>"; };
 		B8A79968283D2A8700F80FFD /* PokerBrosV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerBrosV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A7996B283D2A8700F80FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +112,15 @@
 		C78685342855D112002A9504 /* PostFlopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFlopPage.swift; sourceTree = "<group>"; };
 		C78685382855D162002A9504 /* PostflopQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostflopQuizPage.swift; sourceTree = "<group>"; };
 		C78B64EB28440DB6001989BA /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		C7D265B82860E5A500CEF89A /* TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerApp.swift; sourceTree = "<group>"; };
+		C7D265BB2860EC6E00CEF89A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C7D265BD2860EC8A00CEF89A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7D265BF2860ED3000CEF89A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		C7D265C32861119C00CEF89A /* TrackerCocoa1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoa1.swift; sourceTree = "<group>"; };
+		C7D265C5286115EA00CEF89A /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredDetailView.swift; sourceTree = "<group>"; };
+		C7D265C928625C6200CEF89A /* ExpenseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCard.swift; sourceTree = "<group>"; };
 		C7F997362843528000C504B3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		C7F9973928437E1A00C504B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C7F9973F284388F900C504B3 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
@@ -156,16 +168,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B81BBAD2283E609100FA89EB /* SwiftUI */ = {
-			isa = PBXGroup;
-			children = (
-				B81BBAD3283E60A400FA89EB /* MainPageUI.swift */,
-				B81BBAD5283E60FE00FA89EB /* LoginUI.swift */,
-				B81BBAD7283E611700FA89EB /* SignUpUI.swift */,
-			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
 		B8A7995F283D2A8700F80FFD = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +206,7 @@
 				B8A79971283D2A8700F80FFD /* Main.storyboard */,
 				B8A79979283D2A8800F80FFD /* LaunchScreen.storyboard */,
 				B8A79977283D2A8800F80FFD /* Assets.xcassets */,
-				B81BBAD2283E609100FA89EB /* SwiftUI */,
+				C705177F2858BC070085795D /* Tracker function */,
 				B8A7997C283D2A8800F80FFD /* Info.plist */,
 				B8A79974283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld */,
 				B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */,
@@ -242,6 +244,7 @@
 		C705177F2858BC070085795D /* Tracker function */ = {
 			isa = PBXGroup;
 			children = (
+				C7D265B82860E5A500CEF89A /* TrackerApp.swift */,
 				C70517802858BC3D0085795D /* Tracker.swift */,
 				C70517822858BCA10085795D /* TrackerCocoa.swift */,
 				C70517862858CA2F0085795D /* GameModel.swift */,
@@ -269,10 +272,25 @@
 		C78B64EA28440D98001989BA /* App Functions */ = {
 			isa = PBXGroup;
 			children = (
-				C705177F2858BC070085795D /* Tracker function */,
+				C7D265BA2860EC2E00CEF89A /* Tracker function */,
 				C786853A2855D6BF002A9504 /* Quiz function */,
 			);
 			path = "App Functions";
+			sourceTree = "<group>";
+		};
+		C7D265BA2860EC2E00CEF89A /* Tracker function */ = {
+			isa = PBXGroup;
+			children = (
+				C7D265C32861119C00CEF89A /* TrackerCocoa1.swift */,
+				C7D265BB2860EC6E00CEF89A /* Home.swift */,
+				C7D265C5286115EA00CEF89A /* TransactionCardView.swift */,
+				C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */,
+				C7D265C928625C6200CEF89A /* ExpenseCard.swift */,
+				C7D265BF2860ED3000CEF89A /* Expense.swift */,
+				C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */,
+				C7D265BD2860EC8A00CEF89A /* ContentView.swift */,
+			);
+			path = "Tracker function";
 			sourceTree = "<group>";
 		};
 		C7F9973828437E0200C504B3 /* Helpers */ = {
@@ -529,27 +547,33 @@
 				C70517892858CB820085795D /* PreviewData.swift in Sources */,
 				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
+				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
+				C7D265C02860ED3000CEF89A /* Expense.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
+				C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */,
 				C70517812858BC3D0085795D /* Tracker.swift in Sources */,
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
+				C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */,
+				C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
-				B81BBAD8283E611700FA89EB /* SignUpUI.swift in Sources */,
+				C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */,
 				C705178F2859021D0085795D /* GameListViewModel.swift in Sources */,
 				B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */,
 				C70517852858C4680085795D /* Extensions.swift in Sources */,
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
-				B81BBAD6283E60FE00FA89EB /* LoginUI.swift in Sources */,
 				B8A79976283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld in Sources */,
+				C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */,
 				B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */,
-				B81BBAD4283E60A400FA89EB /* MainPageUI.swift in Sources */,
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
 				C78685352855D112002A9504 /* PostFlopPage.swift in Sources */,
+				C7D265BE2860EC8A00CEF89A /* ContentView.swift in Sources */,
+				C7D265C42861119C00CEF89A /* TrackerCocoa1.swift in Sources */,
 				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
 				C705178D2858CD010085795D /* GameRow.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
