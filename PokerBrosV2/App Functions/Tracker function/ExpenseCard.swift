@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExpenseCard: View {
     @EnvironmentObject var expenseViewModel: ExpenseViewModel
+    var isFilter: Bool = false
     var body: some View {
         GeometryReader { proxy in
             RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -21,7 +22,7 @@ struct ExpenseCard: View {
             VStack(spacing: 15) {
                 VStack(spacing: 15) {
                     // MARK: Currently Going Month Date String
-                    Text(expenseViewModel.currentMonthDateString())
+                    Text(isFilter ? expenseViewModel.convertDateToString() : expenseViewModel.currentMonthDateString())
                         .font(.callout)
                         .fontWeight(.semibold)
                     
