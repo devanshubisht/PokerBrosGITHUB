@@ -19,6 +19,16 @@ class ExpenseViewModel: ObservableObject {
     // MARK: Filter View
     @Published var showFilterView: Bool = false
     
+    // MARK: New Expense Properties
+    @Published var addNewExpense: Bool = false
+    @Published var amount: String = ""
+    @Published var type: ExpenseType = .all
+    @Published var date: Date = Date()
+    @Published var remark: String = ""
+    @Published var bigBlind: String = ""
+    @Published var smallBlind: String = ""
+    
+    
     
     init() {
         // MARK: Fetching Current Month Starting Date

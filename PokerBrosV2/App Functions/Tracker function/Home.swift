@@ -26,9 +26,9 @@ struct Home: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
                     NavigationLink {
-                        FilteredDetailView()
+                        FilteredDetailView1()
                             .environmentObject(expenseViewModel)
-                    } label: {
+                    } label: { 
                         Image(systemName: "hexagon.fill")
                             .foregroundColor(.yellow)
                             .overlay(content: {
@@ -50,6 +50,11 @@ struct Home: View {
         .background {
             Color("")
                 .ignoresSafeArea()
+        }
+        .fullScreenCover(isPresented: $expenseViewModel.addNewExpense) {
+            
+        } content: {NewExpense()
+            .environmentObject(expenseViewModel)
         }
     }
     

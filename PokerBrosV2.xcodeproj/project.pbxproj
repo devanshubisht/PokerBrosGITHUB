@@ -33,6 +33,8 @@
 		C705178D2858CD010085795D /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705178C2858CD010085795D /* GameRow.swift */; };
 		C705178F2859021D0085795D /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705178E2859021D0085795D /* GameListViewModel.swift */; };
 		C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */; };
+		C71E6B2E286335D400A240CC /* FilteredDetailView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E6B2D286335D300A240CC /* FilteredDetailView1.swift */; };
+		C71E6B3028634AF200A240CC /* NewExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E6B2F28634AF200A240CC /* NewExpense.swift */; };
 		C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E628446D69000931E7 /* BasicRulesPage.swift */; };
 		C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */; };
 		C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666EA2844F83D000931E7 /* PreflopRangePage.swift */; };
@@ -46,7 +48,6 @@
 		C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */; };
 		C7D265C42861119C00CEF89A /* TrackerCocoaOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */; };
 		C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C5286115EA00CEF89A /* TransactionCardView.swift */; };
-		C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */; };
 		C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C928625C6200CEF89A /* ExpenseCard.swift */; };
 		C7F997372843528000C504B3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F997362843528000C504B3 /* HomePage.swift */; };
 		C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973928437E1A00C504B3 /* Constants.swift */; };
@@ -106,6 +107,8 @@
 		C705178C2858CD010085795D /* GameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
 		C705178E2859021D0085795D /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
 		C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangeQuizPage.swift; sourceTree = "<group>"; };
+		C71E6B2D286335D300A240CC /* FilteredDetailView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredDetailView1.swift; sourceTree = "<group>"; };
+		C71E6B2F28634AF200A240CC /* NewExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpense.swift; sourceTree = "<group>"; };
 		C74666E628446D69000931E7 /* BasicRulesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesPage.swift; sourceTree = "<group>"; };
 		C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesQuizPage.swift; sourceTree = "<group>"; };
 		C74666EA2844F83D000931E7 /* PreflopRangePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangePage.swift; sourceTree = "<group>"; };
@@ -119,7 +122,6 @@
 		C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 		C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoaOLD.swift; sourceTree = "<group>"; };
 		C7D265C5286115EA00CEF89A /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
-		C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredDetailView.swift; sourceTree = "<group>"; };
 		C7D265C928625C6200CEF89A /* ExpenseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCard.swift; sourceTree = "<group>"; };
 		C7F997362843528000C504B3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		C7F9973928437E1A00C504B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -302,8 +304,14 @@
 				C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */,
 				C7D265BB2860EC6E00CEF89A /* Home.swift */,
 				C7D265C5286115EA00CEF89A /* TransactionCardView.swift */,
-				C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */,
+				C71E6B2D286335D300A240CC /* FilteredDetailView1.swift */,
 				C7D265C928625C6200CEF89A /* ExpenseCard.swift */,
+<<<<<<< HEAD
+=======
+				C7D265BF2860ED3000CEF89A /* Expense.swift */,
+				C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */,
+				C71E6B2F28634AF200A240CC /* NewExpense.swift */,
+>>>>>>> 614438be7caf2c93625b16cf7b61fe8ff5ead8e8
 				C7D265BD2860EC8A00CEF89A /* ContentView.swift */,
 			);
 			path = "Tracker function";
@@ -569,6 +577,7 @@
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
 				C7D265C02860ED3000CEF89A /* Expense.swift in Sources */,
+				C71E6B3028634AF200A240CC /* NewExpense.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
 				C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */,
@@ -576,7 +585,6 @@
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
 				C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */,
-				C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
 				C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */,
 				C705178F2859021D0085795D /* GameListViewModel.swift in Sources */,
@@ -592,6 +600,7 @@
 				C7D265C42861119C00CEF89A /* TrackerCocoaOLD.swift in Sources */,
 				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
 				C705178D2858CD010085795D /* GameRow.swift in Sources */,
+				C71E6B2E286335D400A240CC /* FilteredDetailView1.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
