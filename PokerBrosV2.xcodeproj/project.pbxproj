@@ -44,7 +44,7 @@
 		C7D265BE2860EC8A00CEF89A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BD2860EC8A00CEF89A /* ContentView.swift */; };
 		C7D265C02860ED3000CEF89A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BF2860ED3000CEF89A /* Expense.swift */; };
 		C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */; };
-		C7D265C42861119C00CEF89A /* TrackerCocoa1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C32861119C00CEF89A /* TrackerCocoa1.swift */; };
+		C7D265C42861119C00CEF89A /* TrackerCocoaOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */; };
 		C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C5286115EA00CEF89A /* TransactionCardView.swift */; };
 		C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */; };
 		C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C928625C6200CEF89A /* ExpenseCard.swift */; };
@@ -117,7 +117,7 @@
 		C7D265BD2860EC8A00CEF89A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7D265BF2860ED3000CEF89A /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
-		C7D265C32861119C00CEF89A /* TrackerCocoa1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoa1.swift; sourceTree = "<group>"; };
+		C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoaOLD.swift; sourceTree = "<group>"; };
 		C7D265C5286115EA00CEF89A /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredDetailView.swift; sourceTree = "<group>"; };
 		C7D265C928625C6200CEF89A /* ExpenseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCard.swift; sourceTree = "<group>"; };
@@ -166,6 +166,22 @@
 				C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8999A3E286390BB0079EE6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B8999A3F286390CF0079EE6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7D265BF2860ED3000CEF89A /* Expense.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B8A7995F283D2A8700F80FFD = {
@@ -272,6 +288,8 @@
 		C78B64EA28440D98001989BA /* App Functions */ = {
 			isa = PBXGroup;
 			children = (
+				B8999A3F286390CF0079EE6B /* Model */,
+				B8999A3E286390BB0079EE6B /* ViewModel */,
 				C7D265BA2860EC2E00CEF89A /* Tracker function */,
 				C786853A2855D6BF002A9504 /* Quiz function */,
 			);
@@ -281,13 +299,11 @@
 		C7D265BA2860EC2E00CEF89A /* Tracker function */ = {
 			isa = PBXGroup;
 			children = (
-				C7D265C32861119C00CEF89A /* TrackerCocoa1.swift */,
+				C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */,
 				C7D265BB2860EC6E00CEF89A /* Home.swift */,
 				C7D265C5286115EA00CEF89A /* TransactionCardView.swift */,
 				C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */,
 				C7D265C928625C6200CEF89A /* ExpenseCard.swift */,
-				C7D265BF2860ED3000CEF89A /* Expense.swift */,
-				C7D265C12860EED200CEF89A /* ExpenseViewModel.swift */,
 				C7D265BD2860EC8A00CEF89A /* ContentView.swift */,
 			);
 			path = "Tracker function";
@@ -573,7 +589,7 @@
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
 				C78685352855D112002A9504 /* PostFlopPage.swift in Sources */,
 				C7D265BE2860EC8A00CEF89A /* ContentView.swift in Sources */,
-				C7D265C42861119C00CEF89A /* TrackerCocoa1.swift in Sources */,
+				C7D265C42861119C00CEF89A /* TrackerCocoaOLD.swift in Sources */,
 				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
 				C705178D2858CD010085795D /* GameRow.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
@@ -754,7 +770,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5GW4SQPFNM;
+				DEVELOPMENT_TEAM = MBFH28UH6J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerBrosV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -783,7 +799,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5GW4SQPFNM;
+				DEVELOPMENT_TEAM = MBFH28UH6J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerBrosV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

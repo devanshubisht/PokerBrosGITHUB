@@ -30,7 +30,7 @@ struct Home: View {
                             .environmentObject(expenseViewModel)
                     } label: {
                         Image(systemName: "hexagon.fill")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.yellow)
                             .overlay(content: {
                                 Circle()
                                     .stroke(.white, lineWidth: 2)

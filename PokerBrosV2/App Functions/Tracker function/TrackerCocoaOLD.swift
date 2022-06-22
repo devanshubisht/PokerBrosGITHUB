@@ -8,19 +8,19 @@
 import UIKit
 import SwiftUI
 
-class TrackerCocoa1: UIViewController {
+// class TrackerCocoa1: UIViewController {
 
-    @IBOutlet weak var theContainer : UIView!
+//    @IBOutlet weak var theContainer : UIView!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
         
-        let childView = UIHostingController(rootView: Home())
-        addChild(childView)
-        childView.view.frame = theContainer.bounds
-        theContainer.addSubview(childView.view)
+ //       let childView = UIHostingController(rootView: Home())
+  //      addChild(childView)
+   //     childView.view.frame = theContainer.bounds
+    //    theContainer.addSubview(childView.view)
 
-    }
+   // }
 
 
     /*
@@ -33,4 +33,4 @@ class TrackerCocoa1: UIViewController {
     }
     */
 
-}
+//}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AdJ-Cp-0kY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FpT-Mr-TzZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -202,7 +202,7 @@
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="Xkh-sz-Kut" kind="show" id="WBa-z7-Uc2"/>
+                                                    <segue destination="Lmc-tZ-dAv" kind="show" destinationCreationSelector="TrackerSegue:" id="jqo-lZ-gJ6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGe-W7-78v" userLabel="Scenario">
@@ -1054,32 +1054,6 @@
             </objects>
             <point key="canvasLocation" x="4593" y="-234"/>
         </scene>
-        <!--Tracker Cocoa1-->
-        <scene sceneID="Mun-ce-STT">
-            <objects>
-                <viewController id="Xkh-sz-Kut" customClass="TrackerCocoa1" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kzA-0y-71N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bzt-bq-R4n">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="bwZ-re-ScE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="lk9-Og-w1l"/>
-                    <connections>
-                        <outlet property="theContainer" destination="kzA-0y-71N" id="JrA-g0-rv6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g1l-aE-XJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3864" y="84"/>
-        </scene>
         <!--Postflop Quiz Page-->
         <scene sceneID="9wu-Vk-Nvx">
             <objects>
@@ -1232,9 +1206,19 @@
             </objects>
             <point key="canvasLocation" x="3370" y="860"/>
         </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="oSB-Ib-YdP">
+            <objects>
+                <hostingController modalPresentationStyle="fullScreen" id="Lmc-tZ-dAv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fyC-Ey-TUI"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deg-54-VkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4004" y="97"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sMN-pN-4Yc"/>
+        <segue reference="vAd-ba-Frk"/>
         <segue reference="Q9e-HV-DeZ"/>
     </inferredMetricsTieBreakers>
     <resources>
