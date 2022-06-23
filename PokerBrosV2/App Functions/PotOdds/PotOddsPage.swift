@@ -12,6 +12,7 @@ class PotOddsPage: UIViewController {
     @IBOutlet weak var BackButton: UIButton!
     @IBOutlet weak var PotOddsCalc: UIButton!
     @IBOutlet weak var PotOddsIntro: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
