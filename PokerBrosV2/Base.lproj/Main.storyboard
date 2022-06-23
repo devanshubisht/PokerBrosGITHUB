@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZb-Uc-3kg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FpT-Mr-TzZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -170,7 +172,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="equity" imagePlacement="top" title="" imagePadding="-17" cornerStyle="small">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" strokeWidth="5">
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
@@ -180,12 +182,12 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="Quiz" imagePlacement="top" title="" imagePadding="-17" cornerStyle="small">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" strokeWidth="5">
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="fZb-Uc-3kg" kind="show" id="PZp-Mb-zdH"/>
+                                                    <segue destination="52M-g9-4BJ" kind="show" id="idP-tI-4Xn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-4I-1tu" userLabel="Tracker">
@@ -193,7 +195,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="tracker" imagePlacement="top" title=" " imagePadding="-17" cornerStyle="small">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" strokeWidth="5">
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
@@ -207,7 +209,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="scenario" imagePlacement="top" title="" imagePadding="-17" cornerStyle="small">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" strokeWidth="5">
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
@@ -217,18 +219,21 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="pot odds" imagePlacement="top" title="" imagePadding="-17" cornerStyle="small">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" strokeWidth="5">
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="fZb-Uc-3kg" kind="show" id="ugP-W0-hiI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQ6-sn-19C" userLabel="LeaderBoard">
                                                 <rect key="frame" x="211" y="0.0" width="192" height="192"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="leaderboard" imagePlacement="top" title="" imagePadding="-17" cornerStyle="small">
-                                                    <backgroundConfiguration key="background">
+                                                    <backgroundConfiguration key="background" strokeWidth="5">
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
@@ -237,6 +242,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="1064" id="83l-qd-Otf"/>
                                             <constraint firstAttribute="height" constant="1000" id="vly-vh-Yy5"/>
                                         </constraints>
                                     </view>
@@ -252,8 +258,8 @@
                                 <rect key="frame" x="101" y="103" width="124" height="200"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="9Qt-S9-exU"/>
                                     <constraint firstAttribute="width" constant="124" id="j9e-T4-0a7"/>
+                                    <constraint firstAttribute="height" constant="200" id="uZk-90-z4h"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -263,15 +269,14 @@
                             <accessibilityTraits key="traits" image="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="4B4-3W-lKG" firstAttribute="top" secondItem="xav-mg-4oW" secondAttribute="top" constant="59" id="4iL-IV-KsG"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="bottom" secondItem="xav-mg-4oW" secondAttribute="bottom" id="586-Eu-jYg"/>
                             <constraint firstItem="7pX-Hj-1aR" firstAttribute="height" secondItem="U7B-Hv-23u" secondAttribute="height" multiplier="1.18765" id="6Z8-fX-Krx"/>
                             <constraint firstItem="7pX-Hj-1aR" firstAttribute="width" secondItem="U7B-Hv-23u" secondAttribute="width" id="GBt-Q0-CgC"/>
-                            <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="xav-mg-4oW" secondAttribute="top" constant="340" id="PeJ-AP-jfx"/>
+                            <constraint firstItem="4B4-3W-lKG" firstAttribute="top" secondItem="xav-mg-4oW" secondAttribute="top" constant="59" id="LxO-lh-4sa"/>
                             <constraint firstItem="4B4-3W-lKG" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" constant="101" id="UbV-U5-g3h"/>
                             <constraint firstItem="xav-mg-4oW" firstAttribute="trailing" secondItem="4B4-3W-lKG" secondAttribute="trailing" constant="100" id="aPi-Hb-rMa"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="trailing" secondItem="xav-mg-4oW" secondAttribute="trailing" id="kXb-CI-Tvk"/>
-                            <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="4B4-3W-lKG" secondAttribute="bottom" constant="81" id="l6o-az-tW4"/>
+                            <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="4B4-3W-lKG" secondAttribute="bottom" constant="81" id="qFW-ZV-7JX"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" id="sgC-Hi-j96"/>
                         </constraints>
                     </view>
@@ -301,13 +306,14 @@
                                 <rect key="frame" x="67" y="417" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="POST-FLOP ACTION" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="POST-FLOP ACTION" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="21"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="BackgroundC"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="4Se-iV-Jsk" kind="show" id="4rw-ZR-6cy"/>
@@ -317,13 +323,14 @@
                                 <rect key="frame" x="67" y="165" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="BASIC RULES" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="BASIC RULES" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="21"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="BackgroundC"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="jQW-ah-K2I" kind="show" id="01C-76-bk2"/>
@@ -333,13 +340,14 @@
                                 <rect key="frame" x="67" y="291" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="PREFLOP RANGE " cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="PREFLOP RANGE " cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="21"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="BackgroundC"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Ots-ey-BV4" kind="show" id="ZqK-dL-ebt"/>
@@ -349,13 +357,14 @@
                                 <rect key="frame" x="163" y="677" width="88" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="15"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="BackgroundC"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="GBe-rT-5zh" kind="show" id="kgT-aw-YOA"/>
@@ -365,13 +374,14 @@
                                 <rect key="frame" x="67" y="543" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="PLAYER TYPE " cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="PLAYER TYPE " cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="21"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="BackgroundC"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="GAD-c1-AFD" kind="show" id="XQC-WK-OMm"/>
@@ -719,8 +729,8 @@
                                 <rect key="frame" x="145" y="239" width="124" height="123"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Ig6-zW-q0K"/>
                                     <constraint firstAttribute="width" constant="124" id="NDq-4L-xkz"/>
+                                    <constraint firstAttribute="height" constant="123" id="O6t-nP-dYg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -729,15 +739,14 @@
                             <constraint firstItem="YDs-qL-g1g" firstAttribute="centerX" secondItem="LNh-Tt-QuH" secondAttribute="centerX" id="08v-Yc-vsq"/>
                             <constraint firstItem="n22-j8-hyb" firstAttribute="trailing" secondItem="YDs-qL-g1g" secondAttribute="trailing" constant="145" id="320-Wv-KLT"/>
                             <constraint firstItem="n9U-1n-EVt" firstAttribute="top" secondItem="LNh-Tt-QuH" secondAttribute="top" id="EuT-Ec-GyZ"/>
-                            <constraint firstItem="YDs-qL-g1g" firstAttribute="top" secondItem="n22-j8-hyb" secondAttribute="top" constant="195" id="JHK-0J-kwp"/>
                             <constraint firstItem="7hC-xB-U7D" firstAttribute="leading" secondItem="n9U-1n-EVt" secondAttribute="leading" id="KDR-WC-wVK"/>
+                            <constraint firstItem="7hC-xB-U7D" firstAttribute="top" secondItem="YDs-qL-g1g" secondAttribute="bottom" constant="17" id="T7V-la-duT"/>
                             <constraint firstItem="n22-j8-hyb" firstAttribute="bottom" secondItem="9XZ-rx-ffl" secondAttribute="bottom" constant="157" id="Vac-5P-JMt"/>
                             <constraint firstItem="n22-j8-hyb" firstAttribute="trailing" secondItem="9XZ-rx-ffl" secondAttribute="trailing" constant="118" id="YDY-Vx-UOe"/>
+                            <constraint firstItem="YDs-qL-g1g" firstAttribute="top" secondItem="n22-j8-hyb" secondAttribute="top" constant="195" id="b6z-Bw-eHf"/>
                             <constraint firstItem="9XZ-rx-ffl" firstAttribute="top" secondItem="7hC-xB-U7D" secondAttribute="bottom" constant="-14" id="d9f-O2-3XI"/>
-                            <constraint firstItem="7hC-xB-U7D" firstAttribute="top" secondItem="YDs-qL-g1g" secondAttribute="bottom" constant="17" id="jXO-Rs-hNC"/>
                             <constraint firstItem="n9U-1n-EVt" firstAttribute="leading" secondItem="LNh-Tt-QuH" secondAttribute="leading" id="jtR-zW-S65"/>
                             <constraint firstItem="YDs-qL-g1g" firstAttribute="leading" secondItem="n22-j8-hyb" secondAttribute="leading" constant="145" id="mvB-QR-5eb"/>
-                            <constraint firstItem="7hC-xB-U7D" firstAttribute="top" secondItem="n22-j8-hyb" secondAttribute="top" constant="335" id="nAd-Ku-aSE"/>
                             <constraint firstItem="9XZ-rx-ffl" firstAttribute="leading" secondItem="n22-j8-hyb" secondAttribute="leading" constant="119" id="qTi-q5-i3t"/>
                             <constraint firstAttribute="bottom" secondItem="n9U-1n-EVt" secondAttribute="bottom" id="rvO-yZ-wcW"/>
                             <constraint firstItem="n22-j8-hyb" firstAttribute="trailing" secondItem="n9U-1n-EVt" secondAttribute="trailing" id="tpf-mu-zXj"/>
@@ -1128,23 +1137,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Quiz background" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-mZ-1It">
-                                <rect key="frame" x="0.0" y="241" width="417" height="414"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="potoddsBG" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-mZ-1It">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-ax-gev">
-                                <rect key="frame" x="68" y="263" width="280" height="76"/>
+                                <rect key="frame" x="68" y="248" width="280" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="Ace-wq-lCE"/>
                                     <constraint firstAttribute="height" constant="76" id="TEw-pJ-kdK"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="POT ODDS INTRODUCTION" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="INTRODUCTION" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="19"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuR-cL-dFF">
@@ -1154,32 +1164,34 @@
                                     <constraint firstAttribute="height" constant="76" id="WR4-xe-LkL"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="POT ODDS CALCULATOR" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="POT ODDS CALCULATOR" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="LZI-ay-3Q7" kind="show" id="44x-ec-5Vh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHl-1u-yWX">
-                                <rect key="frame" x="164" y="491" width="88" height="36"/>
+                                <rect key="frame" x="164" y="500" width="88" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="6vA-Us-ugK"/>
                                     <constraint firstAttribute="width" constant="88" id="JLL-A8-6Ky"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="small">
-                                    <backgroundConfiguration key="background">
+                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="15"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="GBe-rT-5zh" kind="show" id="Q9e-HV-DeZ"/>
@@ -1189,13 +1201,13 @@
                         <viewLayoutGuide key="safeArea" id="cnC-mJ-fUD"/>
                         <color key="backgroundColor" red="0.11372549019607843" green="0.12156862745098039" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="LHl-1u-yWX" firstAttribute="top" secondItem="AuR-cL-dFF" secondAttribute="bottom" constant="50" id="22X-yC-EQR"/>
                             <constraint firstItem="PY8-mZ-1It" firstAttribute="centerY" secondItem="zey-ov-WfQ" secondAttribute="centerY" id="255-LR-Qgt"/>
                             <constraint firstItem="AuR-cL-dFF" firstAttribute="leading" secondItem="cnC-mJ-fUD" secondAttribute="leading" constant="68" id="8yq-jf-uad"/>
-                            <constraint firstItem="AuR-cL-dFF" firstAttribute="top" secondItem="cDE-ax-gev" secondAttribute="bottom" constant="35" id="9WO-SK-aAg"/>
                             <constraint firstItem="AuR-cL-dFF" firstAttribute="leading" secondItem="cDE-ax-gev" secondAttribute="leading" id="Pgu-5C-7pS"/>
                             <constraint firstItem="AuR-cL-dFF" firstAttribute="centerX" secondItem="LHl-1u-yWX" secondAttribute="centerX" id="a3a-xa-Ezr"/>
-                            <constraint firstItem="LHl-1u-yWX" firstAttribute="top" secondItem="AuR-cL-dFF" secondAttribute="bottom" constant="41" id="bfL-vs-cLH"/>
                             <constraint firstItem="AuR-cL-dFF" firstAttribute="top" secondItem="zey-ov-WfQ" secondAttribute="top" constant="374" id="cEk-9g-aDO"/>
+                            <constraint firstItem="cDE-ax-gev" firstAttribute="top" secondItem="cnC-mJ-fUD" secondAttribute="top" constant="204" id="o6m-QV-s9Y"/>
                             <constraint firstItem="AuR-cL-dFF" firstAttribute="centerX" secondItem="PY8-mZ-1It" secondAttribute="centerX" id="oeh-6C-7PH"/>
                             <constraint firstItem="PY8-mZ-1It" firstAttribute="top" secondItem="cnC-mJ-fUD" secondAttribute="top" constant="197" id="sH7-v5-Hpl"/>
                             <constraint firstItem="PY8-mZ-1It" firstAttribute="leading" secondItem="cnC-mJ-fUD" secondAttribute="leading" id="zOP-gf-ZJm"/>
@@ -1221,16 +1233,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sts-Vk-Po3">
-                                <rect key="frame" x="49" y="204" width="316" height="62.5"/>
+                                <rect key="frame" x="49" y="204" width="316" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pot Size After Raise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-RL-Pzg">
-                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Pot Size :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-RL-Pzg">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6q4-aY-G88">
-                                        <rect key="frame" x="0.0" y="28.5" width="316" height="34"/>
+                                        <rect key="frame" x="0.0" y="30" width="316" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjJ-Pl-zhR">
                                                 <rect key="frame" x="0.0" y="0.0" width="316" height="34"/>
@@ -1246,16 +1258,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-5S-tFc">
-                                <rect key="frame" x="49" y="289" width="316" height="62.5"/>
+                                <rect key="frame" x="49" y="290.5" width="316" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsl-dw-Bb4">
-                                        <rect key="frame" x="0.0" y="0.0" width="112.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to Call :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsl-dw-Bb4">
+                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="78t-0K-Dfo">
-                                        <rect key="frame" x="0.0" y="28.5" width="316" height="34"/>
+                                        <rect key="frame" x="0.0" y="30" width="316" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ViU-te-HUc">
                                                 <rect key="frame" x="0.0" y="0.0" width="316" height="34"/>
@@ -1263,6 +1275,7 @@
                                                     <constraint firstAttribute="width" constant="316" id="LdN-MN-y06"/>
                                                     <constraint firstAttribute="height" constant="34" id="pEW-PA-0kQ"/>
                                                 </constraints>
+                                                <color key="textColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
@@ -1270,28 +1283,57 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-cB-qu7">
-                                <rect key="frame" x="155" y="379" width="106" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pot Odds:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-7a-4ht">
+                                <rect key="frame" x="154" y="508" width="106" height="30"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-cB-qu7">
+                                <rect key="frame" x="116" y="407" width="182" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zYh-fp-Yxy"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9" strokeOutset="0.0">
+                                        <color key="strokeColor" name="Icon"/>
+                                    </backgroundConfiguration>
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Calculate">
+                                        <fragment content="CALCULATE">
                                             <attributes>
-                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <font key="NSFont" size="19" name="AvenirNext-Heavy"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" name="Text"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="CalculateOdds:" destination="LZI-ay-3Q7" eventType="touchUpInside" id="eD8-08-8HG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pot Odds:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-7a-4ht">
-                                <rect key="frame" x="155" y="459" width="106" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnq-Ta-Ter">
+                                <rect key="frame" x="20" y="67" width="114" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="9US-BO-oTp"/>
+                                    <constraint firstAttribute="height" constant="36" id="tyc-HK-3fJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" imagePadding="12" cornerStyle="capsule">
+                                    <imageReference key="image" image="arrowshape.turn.up.left.2.circle.fill" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" strokeWidth="9" strokeOutset="-7">
+                                        <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="31" scale="large" weight="heavy"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fZb-Uc-3kg" kind="show" id="6Ze-bU-ACj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H9m-vz-C9V"/>
                         <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1299,16 +1341,18 @@
                             <constraint firstItem="sts-Vk-Po3" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="49" id="1Jb-5b-u6h"/>
                             <constraint firstItem="eWL-cB-qu7" firstAttribute="centerX" secondItem="kvO-7a-4ht" secondAttribute="centerX" id="PsU-CQ-EZv"/>
                             <constraint firstItem="eWL-cB-qu7" firstAttribute="leading" secondItem="kvO-7a-4ht" secondAttribute="leading" id="QeF-1U-Wdq"/>
+                            <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="FTp-5S-tFc" secondAttribute="bottom" constant="50" id="SL4-bD-K7X"/>
+                            <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="Dcz-W3-9jq" secondAttribute="top" constant="407" id="Tw8-FJ-a5e"/>
                             <constraint firstItem="kvO-7a-4ht" firstAttribute="top" secondItem="eWL-cB-qu7" secondAttribute="bottom" constant="44" id="UGP-wz-Dzy"/>
                             <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="FTp-5S-tFc" secondAttribute="trailing" constant="49" id="W6X-sh-kEA"/>
                             <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="sts-Vk-Po3" secondAttribute="trailing" constant="49" id="YZe-jO-pZY"/>
                             <constraint firstItem="H9m-vz-C9V" firstAttribute="bottom" secondItem="kvO-7a-4ht" secondAttribute="bottom" constant="373" id="a9e-82-BbR"/>
-                            <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="FTp-5S-tFc" secondAttribute="bottom" constant="27.5" id="aUK-Sf-gPb"/>
                             <constraint firstItem="sts-Vk-Po3" firstAttribute="top" secondItem="H9m-vz-C9V" secondAttribute="top" constant="160" id="c97-M4-Xxe"/>
                             <constraint firstItem="kvO-7a-4ht" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="155" id="ggT-WX-MuX"/>
                             <constraint firstItem="FTp-5S-tFc" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="49" id="mZ0-iM-B06"/>
                             <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="kvO-7a-4ht" secondAttribute="trailing" constant="153" id="pI6-61-lg7"/>
                             <constraint firstItem="FTp-5S-tFc" firstAttribute="top" secondItem="sts-Vk-Po3" secondAttribute="bottom" constant="22.5" id="uPf-UI-iyp"/>
+                            <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="FTp-5S-tFc" secondAttribute="bottom" constant="50" id="utT-pO-m6r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9tE-0f-XXB"/>
@@ -1321,17 +1365,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0R-ZU-lxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3395.652173913044" y="894.64285714285711"/>
+            <point key="canvasLocation" x="3337.68115942029" y="859.82142857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sMN-pN-4Yc"/>
+        <segue reference="6Ze-bU-ACj"/>
+        <segue reference="idP-tI-4Xn"/>
         <segue reference="Q9e-HV-DeZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Quiz" width="192" height="192"/>
         <image name="Quiz background" width="192" height="192"/>
         <image name="Welcome Page" width="1125" height="2436"/>
+        <image name="arrowshape.turn.up.left.2.circle.fill" catalog="system" width="128" height="121"/>
         <image name="basic rules" width="414" height="170"/>
         <image name="basics" width="414" height="3000"/>
         <image name="comingsoon" width="1125" height="2436"/>
@@ -1341,12 +1387,22 @@
         <image name="postflop" width="414" height="3000"/>
         <image name="postflopaction" width="414" height="170"/>
         <image name="pot odds" width="192" height="192"/>
+        <image name="potoddsBG" width="1125" height="2436"/>
         <image name="preflop" width="414" height="3000"/>
         <image name="preflopRange" width="414" height="170"/>
         <image name="scenario" width="192" height="192"/>
         <image name="sign in" width="1125" height="2436"/>
         <image name="sign up" width="1125" height="2436"/>
         <image name="tracker" width="192" height="192"/>
+        <namedColor name="BackgroundC">
+            <color red="0.11372549019607843" green="0.12156862745098039" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Icon">
+            <color red="0.95686274509803926" green="0.90980392156862744" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.96470588235294119" green="0.90588235294117647" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
