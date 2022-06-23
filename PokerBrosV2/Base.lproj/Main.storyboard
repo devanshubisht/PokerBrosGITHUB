@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FpT-Mr-TzZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZI-ay-3Q7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -1137,9 +1137,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="potoddsBG" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-mZ-1It">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-ax-gev">
                                 <rect key="frame" x="68" y="248" width="280" height="76"/>
                                 <constraints>
@@ -1197,6 +1194,9 @@
                                     <segue destination="GBe-rT-5zh" kind="show" id="Q9e-HV-DeZ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="potoddsBG" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-mZ-1It">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cnC-mJ-fUD"/>
                         <color key="backgroundColor" red="0.11372549019607843" green="0.12156862745098039" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1258,16 +1258,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FTp-5S-tFc">
-                                <rect key="frame" x="49" y="290.5" width="316" height="64"/>
+                                <rect key="frame" x="49" y="290.5" width="316" height="66.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to Call :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsl-dw-Bb4">
-                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="24.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="78t-0K-Dfo">
-                                        <rect key="frame" x="0.0" y="30" width="316" height="34"/>
+                                        <rect key="frame" x="0.0" y="32.5" width="316" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ViU-te-HUc">
                                                 <rect key="frame" x="0.0" y="0.0" width="316" height="34"/>
@@ -1283,13 +1283,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pot Odds:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-7a-4ht">
-                                <rect key="frame" x="154" y="508" width="106" height="30"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-cB-qu7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-cB-qu7">
                                 <rect key="frame" x="116" y="407" width="182" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="zYh-fp-Yxy"/>
@@ -1313,8 +1307,8 @@
                                     <action selector="CalculateOdds:" destination="LZI-ay-3Q7" eventType="touchUpInside" id="eD8-08-8HG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnq-Ta-Ter">
-                                <rect key="frame" x="20" y="67" width="114" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnq-Ta-Ter">
+                                <rect key="frame" x="20" y="67" width="88" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="9US-BO-oTp"/>
                                     <constraint firstAttribute="height" constant="36" id="tyc-HK-3fJ"/>
@@ -1334,25 +1328,33 @@
                                     <segue destination="fZb-Uc-3kg" kind="show" id="6Ze-bU-ACj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pot Odds:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-7a-4ht">
+                                <rect key="frame" x="139" y="512" width="138" height="67"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H9m-vz-C9V"/>
                         <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="sts-Vk-Po3" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="49" id="1Jb-5b-u6h"/>
-                            <constraint firstItem="eWL-cB-qu7" firstAttribute="centerX" secondItem="kvO-7a-4ht" secondAttribute="centerX" id="PsU-CQ-EZv"/>
-                            <constraint firstItem="eWL-cB-qu7" firstAttribute="leading" secondItem="kvO-7a-4ht" secondAttribute="leading" id="QeF-1U-Wdq"/>
+                            <constraint firstItem="eWL-cB-qu7" firstAttribute="centerX" secondItem="kvO-7a-4ht" secondAttribute="centerX" id="38V-Ez-pH0"/>
+                            <constraint firstItem="kvO-7a-4ht" firstAttribute="top" secondItem="eWL-cB-qu7" secondAttribute="bottom" constant="45" id="4KH-6I-lDA"/>
+                            <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="kvO-7a-4ht" secondAttribute="trailing" constant="139" id="6wf-Du-ftl"/>
+                            <constraint firstItem="kvO-7a-4ht" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="139" id="P1w-Ru-0rQ"/>
+                            <constraint firstItem="eWL-cB-qu7" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="116" id="SKw-gu-Nfv"/>
                             <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="FTp-5S-tFc" secondAttribute="bottom" constant="50" id="SL4-bD-K7X"/>
                             <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="Dcz-W3-9jq" secondAttribute="top" constant="407" id="Tw8-FJ-a5e"/>
-                            <constraint firstItem="kvO-7a-4ht" firstAttribute="top" secondItem="eWL-cB-qu7" secondAttribute="bottom" constant="44" id="UGP-wz-Dzy"/>
                             <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="FTp-5S-tFc" secondAttribute="trailing" constant="49" id="W6X-sh-kEA"/>
                             <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="sts-Vk-Po3" secondAttribute="trailing" constant="49" id="YZe-jO-pZY"/>
-                            <constraint firstItem="H9m-vz-C9V" firstAttribute="bottom" secondItem="kvO-7a-4ht" secondAttribute="bottom" constant="373" id="a9e-82-BbR"/>
+                            <constraint firstItem="H9m-vz-C9V" firstAttribute="bottom" secondItem="kvO-7a-4ht" secondAttribute="bottom" constant="298" id="bcs-vH-aX8"/>
                             <constraint firstItem="sts-Vk-Po3" firstAttribute="top" secondItem="H9m-vz-C9V" secondAttribute="top" constant="160" id="c97-M4-Xxe"/>
-                            <constraint firstItem="kvO-7a-4ht" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="155" id="ggT-WX-MuX"/>
+                            <constraint firstItem="pnq-Ta-Ter" firstAttribute="top" secondItem="H9m-vz-C9V" secondAttribute="top" constant="23" id="fBB-GT-C4n"/>
+                            <constraint firstItem="FTp-5S-tFc" firstAttribute="top" secondItem="Dcz-W3-9jq" secondAttribute="top" constant="290.5" id="lsW-Em-KFh"/>
                             <constraint firstItem="FTp-5S-tFc" firstAttribute="leading" secondItem="H9m-vz-C9V" secondAttribute="leading" constant="49" id="mZ0-iM-B06"/>
-                            <constraint firstItem="H9m-vz-C9V" firstAttribute="trailing" secondItem="kvO-7a-4ht" secondAttribute="trailing" constant="153" id="pI6-61-lg7"/>
+                            <constraint firstItem="pnq-Ta-Ter" firstAttribute="leading" secondItem="Dcz-W3-9jq" secondAttribute="leadingMargin" id="s5N-ea-Dea"/>
                             <constraint firstItem="FTp-5S-tFc" firstAttribute="top" secondItem="sts-Vk-Po3" secondAttribute="bottom" constant="22.5" id="uPf-UI-iyp"/>
-                            <constraint firstItem="eWL-cB-qu7" firstAttribute="top" secondItem="FTp-5S-tFc" secondAttribute="bottom" constant="50" id="utT-pO-m6r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9tE-0f-XXB"/>
