@@ -26,6 +26,8 @@
 		B8A799A2283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A3283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8D39BCA2865C30600C207BA /* NewExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D39BC92865C30600C207BA /* NewExpense.swift */; };
+		B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D39BCC2865CA0100C207BA /* PotOddsPage.swift */; };
+		B8D39BCF2865CA1D00C207BA /* PotOddsCalcPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D39BCE2865CA1D00C207BA /* PotOddsCalcPage.swift */; };
 		C70517812858BC3D0085795D /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517802858BC3D0085795D /* Tracker.swift */; };
 		C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517822858BCA10085795D /* TrackerCocoa.swift */; };
 		C70517852858C4680085795D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517842858C4680085795D /* Extensions.swift */; };
@@ -99,6 +101,8 @@
 		B8A79991283D2A8800F80FFD /* PokerBrosV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerBrosV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8D39BC92865C30600C207BA /* NewExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpense.swift; sourceTree = "<group>"; };
+		B8D39BCC2865CA0100C207BA /* PotOddsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsPage.swift; sourceTree = "<group>"; };
+		B8D39BCE2865CA1D00C207BA /* PotOddsCalcPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsCalcPage.swift; sourceTree = "<group>"; };
 		C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2Tests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2Tests/Pods-PokerBrosV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C70517802858BC3D0085795D /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		C70517822858BCA10085795D /* TrackerCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoa.swift; sourceTree = "<group>"; };
@@ -249,6 +253,15 @@
 			path = PokerBrosV2UITests;
 			sourceTree = "<group>";
 		};
+		B8D39BCB2865C9C700C207BA /* PotOddsv1 */ = {
+			isa = PBXGroup;
+			children = (
+				B8D39BCC2865CA0100C207BA /* PotOddsPage.swift */,
+				B8D39BCE2865CA1D00C207BA /* PotOddsCalcPage.swift */,
+			);
+			path = PotOddsv1;
+			sourceTree = "<group>";
+		};
 		B9B0049E0789D9D8503DE978 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +303,7 @@
 		C78B64EA28440D98001989BA /* App Functions */ = {
 			isa = PBXGroup;
 			children = (
+				B8D39BCB2865C9C700C207BA /* PotOddsv1 */,
 				B8999A3F286390CF0079EE6B /* Model */,
 				B8999A3E286390BB0079EE6B /* ViewModel */,
 				C7D265BA2860EC2E00CEF89A /* Tracker function */,
@@ -564,10 +578,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70517892858CB820085795D /* PreviewData.swift in Sources */,
+				B8D39BCF2865CA1D00C207BA /* PotOddsCalcPage.swift in Sources */,
 				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
 				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
+				B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */,
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
