@@ -1,8 +1,8 @@
 //
 //  Home.swift
-//  PokerBrosV2
+//  ExpenseTracker (iOS)
 //
-//  Created by Ang Yuze on 21/6/22.
+//  Created by Balaji on 20/05/22.
 //
 
 import SwiftUI
@@ -14,14 +14,13 @@ struct Home: View {
             VStack(spacing: 12){
                 HStack(spacing: 15){
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Tracker")
+                        Text("Welcome!")
                             .font(.caption)
                             .fontWeight(.semibold)
                             .foregroundColor(.gray)
                         
-                        Text("Yuze")
+                        Text("iJustine")
                             .font(.title2.bold())
-                            .foregroundColor(.black)
                     }
                     .frame(maxWidth: .infinity,alignment: .leading)
                     
@@ -91,11 +90,10 @@ struct Home: View {
     @ViewBuilder
     func TransactionsView()->some View{
         VStack(spacing: 15){
-            Text("Games")
+            Text("Transactions")
                 .font(.title2.bold())
                 .opacity(0.7)
                 .frame(maxWidth: .infinity,alignment: .leading)
-                .foregroundColor(.gray)
                 .padding(.bottom)
             
             ForEach(expenseViewModel.expenses){expense in

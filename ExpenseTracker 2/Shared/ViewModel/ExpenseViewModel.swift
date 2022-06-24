@@ -1,8 +1,8 @@
 //
 //  ExpenseViewModel.swift
-//  PokerBrosV2
+//  ExpenseTracker (iOS)
 //
-//  Created by Ang Yuze on 21/6/22.
+//  Created by Balaji on 20/05/22.
 //
 
 import SwiftUI

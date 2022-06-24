@@ -25,6 +25,7 @@
 		B8A799A1283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A2283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
 		B8A799A3283D3F9500F80FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */; };
+		B8D39BCA2865C30600C207BA /* NewExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D39BC92865C30600C207BA /* NewExpense.swift */; };
 		C70517812858BC3D0085795D /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517802858BC3D0085795D /* Tracker.swift */; };
 		C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517822858BCA10085795D /* TrackerCocoa.swift */; };
 		C70517852858C4680085795D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517842858C4680085795D /* Extensions.swift */; };
@@ -97,6 +98,7 @@
 		B8A7998F283D2A8800F80FFD /* PokerBrosV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerBrosV2UITests.swift; sourceTree = "<group>"; };
 		B8A79991283D2A8800F80FFD /* PokerBrosV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerBrosV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8A799A0283D3F9500F80FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8D39BC92865C30600C207BA /* NewExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpense.swift; sourceTree = "<group>"; };
 		C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2Tests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2Tests/Pods-PokerBrosV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C70517802858BC3D0085795D /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		C70517822858BCA10085795D /* TrackerCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoa.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				C7D265C5286115EA00CEF89A /* TransactionCardView.swift */,
 				C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */,
 				C7D265C928625C6200CEF89A /* ExpenseCard.swift */,
+				B8D39BC92865C30600C207BA /* NewExpense.swift */,
 				C7D265BD2860EC8A00CEF89A /* ContentView.swift */,
 			);
 			path = "Tracker function";
@@ -569,6 +572,7 @@
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
 				C7D265C02860ED3000CEF89A /* Expense.swift in Sources */,
+				B8D39BCA2865C30600C207BA /* NewExpense.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
 				C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */,

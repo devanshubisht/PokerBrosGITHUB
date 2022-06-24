@@ -24,7 +24,7 @@ class ProfilePage: UIViewController {
     }
     
     @IBSegueAction func TrackerSegue(_ coder: NSCoder) -> UIViewController? {
-        return UIHostingController(coder: coder, rootView: Home())
+        return UIHostingController(coder: coder, rootView: ContentView())
     }
     
     

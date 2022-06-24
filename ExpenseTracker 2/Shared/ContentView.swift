@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  PokerBrosV2
+//  Shared
 //
-//  Created by Ang Yuze on 21/6/22.
+//  Created by Balaji on 20/05/22.
 //
 
 import SwiftUI
@@ -21,4 +21,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
