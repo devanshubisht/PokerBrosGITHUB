@@ -14,17 +14,18 @@ struct NewExpense: View {
     var body: some View {
         VStack{
             VStack(spacing: 15){
-                Text("Add Expenses")
+                Text("ADD GAME")
                     .font(.title2)
-                    .fontWeight(.semibold)
-                    .opacity(0.5)
+                    .fontWeight(.bold)
+                    .opacity(0.8)
+                    .foregroundColor(Color.icon)
                 
                 // MARK: Custom TextField
                 // For Currency Symbol
                 if let symbol = expenseViewModel.convertNumberToPrice(value: 0).first{
                     TextField("0", text: $expenseViewModel.amount)
                         .font(.system(size: 35))
-                        .foregroundColor(Color("Gradient2"))
+                        .foregroundColor(Color("Color2"))
                         .multilineTextAlignment(.center)
                         .keyboardType(.numberPad)
                         .background{
@@ -41,28 +42,11 @@ struct NewExpense: View {
                         .frame(maxWidth: .infinity)
                         .background{
                             Capsule()
-                                .fill(.white)
+                                .fill(Color.icon)
                         }
                         .padding(.horizontal,20)
                         .padding(.top)
                 }
-                
-                // MARK: Custom Labels
-                Label {
-                    TextField("Remark",text: $expenseViewModel.remark)
-                        .padding(.leading,10)
-                } icon: {
-                    Image(systemName: "list.bullet.rectangle.portrait.fill")
-                        .font(.title3)
-                        .foregroundColor(Color("Gray"))
-                }
-                .padding(.vertical,20)
-                .padding(.horizontal,15)
-                .background{
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.white)
-                }
-                .padding(.top,25)
                 
                 Label {
                     // MARK: CheckBoxes
@@ -76,9 +60,62 @@ struct NewExpense: View {
                 .padding(.horizontal,15)
                 .background{
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.white)
+                        .fill(Color.icon)
+                }
+                .padding(.top,25)
+                
+                // MARK: Custom Labels
+                HStack {
+                    Label {
+                        TextField("SB",text: $expenseViewModel.smallBlind)
+                            .padding(.leading,10)
+                    } icon: {
+                        Image(systemName: "list.bullet.rectangle.portrait.fill")
+                            .font(.title3)
+                            .foregroundColor(Color("Gray"))
+                    }
+                    .padding(.vertical,20)
+                    .padding(.horizontal,15)
+                    .background{
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(Color.icon)
+                    }
+                    .padding(.top,5)
+                    
+                    Label {
+                        TextField("BB",text: $expenseViewModel.bigBlind)
+                            .padding(.leading,10)
+                    } icon: {
+                        Image(systemName: "list.bullet.rectangle.portrait.fill")
+                            .font(.title3)
+                            .foregroundColor(Color("Gray"))
+                    }
+                    .padding(.vertical,20)
+                    .padding(.horizontal,15)
+                    .background{
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(Color.icon)
+                    }
+                    .padding(.top,5)
+                }
+                
+                // MARK: Custom Labels
+                Label {
+                    TextField("Location",text: $expenseViewModel.remark)
+                        .padding(.leading,10)
+                } icon: {
+                    Image(systemName: "list.bullet.rectangle.portrait.fill")
+                        .font(.title3)
+                        .foregroundColor(Color("Gray"))
+                }
+                .padding(.vertical,20)
+                .padding(.horizontal,15)
+                .background{
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(Color.icon)
                 }
                 .padding(.top,5)
+                
                 
                 Label {
                     DatePicker.init("", selection: $expenseViewModel.date,in: Date.distantPast...Date(),displayedComponents: [.date])
@@ -95,7 +132,7 @@ struct NewExpense: View {
                 .padding(.horizontal,15)
                 .background{
                     RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(.white)
+                        .fill(Color.icon)
                 }
                 .padding(.top,5)
             }
@@ -112,13 +149,13 @@ struct NewExpense: View {
                         RoundedRectangle(cornerRadius: 12, style: .continuous)
                             .fill(
                                 LinearGradient(colors: [
-                                    Color("Gradient1"),
-                                    Color("Gradient2"),
-                                    Color("Gradient3"),
+                                    Color("Color5"),
+                                    //Color("Color6"),
+                                    //Color("Color7"),
                                 ], startPoint: .topLeading, endPoint: .bottomTrailing)
                             )
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("Color7"))
                     .padding(.bottom,10)
             }
             .disabled(expenseViewModel.remark == "" || expenseViewModel.type == .all || expenseViewModel.amount == "")
@@ -127,7 +164,7 @@ struct NewExpense: View {
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background{
-            Color("BG")
+            Color("BackgroundC")
                 .ignoresSafeArea()
         }
         .overlay(alignment: .topTrailing) {
@@ -137,8 +174,8 @@ struct NewExpense: View {
             } label: {
                 Image(systemName: "xmark")
                     .font(.title2)
-                    .foregroundColor(.black)
-                    .opacity(0.7)
+                    .foregroundColor(.icon)
+                    .opacity(1)
             }
             .padding()
         }

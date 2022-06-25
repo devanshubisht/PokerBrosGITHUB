@@ -51,6 +51,7 @@
 		C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C5286115EA00CEF89A /* TransactionCardView.swift */; };
 		C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */; };
 		C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265C928625C6200CEF89A /* ExpenseCard.swift */; };
+		C7E6C39B28662CAB00023356 /* Blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E6C39A28662CAB00023356 /* Blank.swift */; };
 		C7F997372843528000C504B3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F997362843528000C504B3 /* HomePage.swift */; };
 		C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973928437E1A00C504B3 /* Constants.swift */; };
 		C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F9973F284388F900C504B3 /* ProfilePage.swift */; };
@@ -127,6 +128,7 @@
 		C7D265C5286115EA00CEF89A /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
 		C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredDetailView.swift; sourceTree = "<group>"; };
 		C7D265C928625C6200CEF89A /* ExpenseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCard.swift; sourceTree = "<group>"; };
+		C7E6C39A28662CAB00023356 /* Blank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blank.swift; sourceTree = "<group>"; };
 		C7F997362843528000C504B3 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		C7F9973928437E1A00C504B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C7F9973F284388F900C504B3 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
@@ -304,8 +306,6 @@
 			isa = PBXGroup;
 			children = (
 				B8D39BCB2865C9C700C207BA /* PotOddsv1 */,
-				B8999A3F286390CF0079EE6B /* Model */,
-				B8999A3E286390BB0079EE6B /* ViewModel */,
 				C7D265BA2860EC2E00CEF89A /* Tracker function */,
 				C786853A2855D6BF002A9504 /* Quiz function */,
 			);
@@ -317,10 +317,13 @@
 			children = (
 				C7D265C32861119C00CEF89A /* TrackerCocoaOLD.swift */,
 				C7D265BB2860EC6E00CEF89A /* Home.swift */,
-				C7D265C5286115EA00CEF89A /* TransactionCardView.swift */,
+				C7E6C39A28662CAB00023356 /* Blank.swift */,
 				C7D265C72861D0B000CEF89A /* FilteredDetailView.swift */,
 				C7D265C928625C6200CEF89A /* ExpenseCard.swift */,
+				C7D265C5286115EA00CEF89A /* TransactionCardView.swift */,
 				B8D39BC92865C30600C207BA /* NewExpense.swift */,
+				B8999A3F286390CF0079EE6B /* Model */,
+				B8999A3E286390BB0079EE6B /* ViewModel */,
 				C7D265BD2860EC8A00CEF89A /* ContentView.swift */,
 			);
 			path = "Tracker function";
@@ -613,6 +616,7 @@
 				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
 				C705178D2858CD010085795D /* GameRow.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
+				C7E6C39B28662CAB00023356 /* Blank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

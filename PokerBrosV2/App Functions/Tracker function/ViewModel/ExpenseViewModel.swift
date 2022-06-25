@@ -24,6 +24,8 @@ class ExpenseViewModel: ObservableObject{
     @Published var type: ExpenseType = .all
     @Published var date: Date = Date()
     @Published var remark: String = ""
+    @Published var smallBlind: String = ""
+    @Published var bigBlind: String = ""
     
     init(){
         // MARK: Fetching Current Month Starting Date
@@ -65,12 +67,22 @@ class ExpenseViewModel: ObservableObject{
         return formatter.string(from: .init(value: value)) ?? "$0.00"
     }
     
+    // MARK: Converting Number To Decimal
+    func convertNumberToDecimal(value: Double)->String{
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        
+        return formatter.string(from: .init(value: value)) ?? "0"
+    }
+    
     // MARK: Clearing All Data
     func clearData(){
         date = Date()
         type = .all
         remark = ""
         amount = ""
+        smallBlind = ""
+        bigBlind = ""
     }
     
     // MARK: Save Data
@@ -80,8 +92,10 @@ class ExpenseViewModel: ObservableObject{
         // MARK: This is For UI Demo
         // Replace With Core Data Actions
         let amountInDouble = (amount as NSString).doubleValue
+        let SBInDouble = (smallBlind as NSString).doubleValue
+        let BBInDouble = (bigBlind as NSString).doubleValue
         let colors = ["Yellow","Red","Purple","Green"]
-        let expense = Expense(remark: remark, amount: amountInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
+        let expense = Expense(remark: remark, amount: amountInDouble, smallBlind: SBInDouble, bigBlind: BBInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
         withAnimation{expenses.append(expense)}
         expenses = expenses.sorted(by: { first, scnd in
             return scnd.date < first.date
