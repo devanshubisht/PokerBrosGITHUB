@@ -15,9 +15,9 @@ struct ExpenseCard: View {
             RoundedRectangle(cornerRadius: 20, style: .continuous)
                 .fill(
                     .linearGradient(colors: [
-                        Color("Gradient1"),
-                        Color("Gradient2"),
-                        Color("Gradient3"),
+                        Color("Color5"),
+                        //Color("Color6"),
+                        //Color("Color7"),
                     ], startPoint: .topLeading, endPoint: .bottomTrailing)
                 )
             
@@ -37,14 +37,14 @@ struct ExpenseCard: View {
                 .offset(y: -10)
                 
                 HStack(spacing: 15){
-                    Image(systemName: "arrow.down")
+                    Image(systemName: "arrow.up")
                         .font(.caption.bold())
-                        .foregroundColor(Color("Green"))
+                        .foregroundColor(Color.icon)
                         .frame(width: 30, height: 30)
-                        .background(.white.opacity(0.7),in: Circle())
+                        .background(Color("Color7").opacity(0.7),in: Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Income")
+                        Text("Winnings")
                             .font(.caption)
                             .opacity(0.7)
                         
@@ -56,14 +56,14 @@ struct ExpenseCard: View {
                     }
                     .frame(maxWidth: .infinity,alignment: .leading)
                     
-                    Image(systemName: "arrow.up")
+                    Image(systemName: "arrow.down")
                         .font(.caption.bold())
-                        .foregroundColor(Color("Red"))
+                        .foregroundColor(Color.icon)
                         .frame(width: 30, height: 30)
-                        .background(.white.opacity(0.7),in: Circle())
+                        .background(Color("Color7").opacity(0.7),in: Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Expenses")
+                        Text("Losses")
                             .font(.caption)
                             .opacity(0.7)
                         
@@ -78,7 +78,7 @@ struct ExpenseCard: View {
                 .padding(.trailing)
                 .offset(y: 15)
             }
-            .foregroundColor(.white)
+            .foregroundColor(Color("Color7"))
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
         }
         .frame(height: 220)

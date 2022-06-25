@@ -14,14 +14,19 @@ struct Home: View {
             VStack(spacing: 12){
                 HStack(spacing: 15){
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Tracker")
-                            .font(.caption)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.gray)
-                        
-                        Text("Yuze")
-                            .font(.title2.bold())
-                            .foregroundColor(.black)
+                        Text("TRACKER")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .foregroundColor(.icon)
+                        /*NavigationLink {
+                            ProfilePage()
+                        } label: {
+                            Image(systemName: "arrow.backward.circle.fill")
+                                .foregroundColor(.gray)
+                                .frame(width: 40, height: 40)
+                                .background(Color.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
+                        }*/
                     }
                     .frame(maxWidth: .infinity,alignment: .leading)
                     
@@ -30,14 +35,14 @@ struct Home: View {
                             .environmentObject(expenseViewModel)
                     } label: {
                         Image(systemName: "hexagon.fill")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.black)
                             .overlay(content: {
                                 Circle()
-                                    .stroke(.white,lineWidth: 2)
+                                    .stroke(Color.icon,lineWidth: 2)
                                     .padding(7)
                             })
                             .frame(width: 40, height: 40)
-                            .background(Color.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            .background(Color.icon,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
                             .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
                     }
                 }
@@ -48,7 +53,7 @@ struct Home: View {
             .padding()
         }
         .background{
-            Color("BG")
+            Color("BackgroundC")
                 .ignoresSafeArea()
         }
         .fullScreenCover(isPresented: $expenseViewModel.addNewExpense) {
@@ -70,15 +75,15 @@ struct Home: View {
         } label: {
             Image(systemName: "plus")
                 .font(.system(size: 25, weight: .medium))
-                .foregroundColor(.white)
+                .foregroundColor(Color("Color7"))
                 .frame(width: 55, height: 55)
                 .background{
                     Circle()
                         .fill(
                             .linearGradient(colors: [
-                                Color("Gradient1"),
-                                Color("Gradient2"),
-                                Color("Gradient3"),
+                                Color("Color5"),
+                                //Color("Color6"),
+                                //Color("Color7"),
                             ], startPoint: .topLeading, endPoint: .bottomTrailing)
                         )
                 }
@@ -91,11 +96,11 @@ struct Home: View {
     @ViewBuilder
     func TransactionsView()->some View{
         VStack(spacing: 15){
-            Text("Games")
+            Text("GAMES")
                 .font(.title2.bold())
-                .opacity(0.7)
+                .opacity(1)
                 .frame(maxWidth: .infinity,alignment: .leading)
-                .foregroundColor(.gray)
+                .foregroundColor(.icon)
                 .padding(.bottom)
             
             ForEach(expenseViewModel.expenses){expense in
@@ -113,3 +118,5 @@ struct Home_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

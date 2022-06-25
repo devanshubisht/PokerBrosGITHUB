@@ -20,13 +20,13 @@ struct FilteredDetailView: View {
                         env.dismiss()
                     } label: {
                         Image(systemName: "arrow.backward.circle.fill")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.black)
                             .frame(width: 40, height: 40)
-                            .background(Color.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            .background(Color.icon,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
                             .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
                     }
 
-                    Text("Transactions")
+                    Text("")
                         .font(.title.bold())
                         .opacity(0.7)
                         .frame(maxWidth: .infinity,alignment: .leading)
@@ -35,9 +35,9 @@ struct FilteredDetailView: View {
                         expenseViewModel.showFilterView = true
                     } label: {
                         Image(systemName: "slider.horizontal.3")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.black)
                             .frame(width: 40, height: 40)
-                            .background(Color.white,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            .background(Color.icon,in: RoundedRectangle(cornerRadius: 10, style: .continuous))
                             .shadow(color: .black.opacity(0.1), radius: 5, x: 5, y: 5)
                     }
                 }
@@ -63,7 +63,7 @@ struct FilteredDetailView: View {
                 .frame(maxWidth: .infinity)
                 .background{
                     RoundedRectangle(cornerRadius: 15, style: .continuous)
-                        .fill(.white)
+                        .fill(Color.icon)
                 }
                 .padding(.vertical,20)
                 
@@ -78,7 +78,7 @@ struct FilteredDetailView: View {
         }
         .navigationBarHidden(true)
         .background{
-            Color("BG")
+            Color("BackgroundC")
                 .ignoresSafeArea()
         }
         .overlay {
@@ -143,8 +143,8 @@ struct FilteredDetailView: View {
             ForEach([ExpenseType.income,ExpenseType.expense],id: \.rawValue){tab in
                 Text(tab.rawValue.capitalized)
                     .fontWeight(.semibold)
-                    .foregroundColor(expenseViewModel.tabName == tab ? .white : .black)
-                    .opacity(expenseViewModel.tabName == tab ? 1 : 0.7)
+                    .foregroundColor(expenseViewModel.tabName == tab ? .icon : Color("Color7"))
+                    //.opacity(expenseViewModel.tabName == tab ? 1 : 0.7)
                     .padding(.vertical,12)
                     .frame(maxWidth: .infinity)
                     .background{
@@ -153,9 +153,9 @@ struct FilteredDetailView: View {
                             RoundedRectangle(cornerRadius: 10, style: .continuous)
                                 .fill(
                                     LinearGradient(colors: [
-                                        Color("Gradient1"),
-                                        Color("Gradient2"),
-                                        Color("Gradient3"),
+                                        //Color("Color5"),
+                                        //Color("Color6"),
+                                        Color("Color7"),
                                     ], startPoint: .topLeading, endPoint: .bottomTrailing)
                                 )
                                 .matchedGeometryEffect(id: "TAB", in: animation)
@@ -170,7 +170,7 @@ struct FilteredDetailView: View {
         .padding(5)
         .background{
             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .fill(.white)
+                .fill(Color.icon)
         }
     }
 }

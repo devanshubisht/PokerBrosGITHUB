@@ -16,11 +16,11 @@ struct TransactionCardView: View {
             if let first = expense.remark.first{
                 Text(String(first))
                     .font(.title.bold())
-                    .foregroundColor(.white)
+                    .foregroundColor(Color.icon)
                     .frame(width: 50, height: 50)
                     .background{
                         Circle()
-                            .fill(Color(expense.color))
+                            .fill(Color("Color7"))
                     }
                     .shadow(color: .black.opacity(0.08), radius: 5, x: 5, y: 5)
             }
@@ -33,10 +33,25 @@ struct TransactionCardView: View {
             VStack(alignment: .trailing, spacing: 7) {
                 // MARK: Displaying Price
                 let price = expenseViewModel.convertNumberToPrice(value: expense.type == .expense ? -expense.amount : expense.amount)
+                let sb =
+                expenseViewModel.convertNumberToDecimal(value: expense.smallBlind)
+                let bb =
+                expenseViewModel.convertNumberToDecimal(value: expense.bigBlind)
                 Text(price)
                     .font(.callout)
                     .opacity(0.7)
                     .foregroundColor(expense.type == .expense ? Color("Red") : Color("Green"))
+                HStack(spacing: 0.5) {
+                    Text(sb)
+                        .font(.caption)
+                        .opacity(0.5)
+                    
+                    Text("/").font(.caption).opacity(0.5)
+                    
+                    Text(bb)
+                        .font(.caption)
+                        .opacity(0.5)
+                }
                 Text(expense.date.formatted(date: .numeric, time: .omitted))
                     .font(.caption)
                     .opacity(0.5)
@@ -45,7 +60,7 @@ struct TransactionCardView: View {
         .padding()
         .background{
             RoundedRectangle(cornerRadius: 15, style: .continuous)
-                .fill(.white)
+                .fill(Color.icon)
         }
     }
 }
