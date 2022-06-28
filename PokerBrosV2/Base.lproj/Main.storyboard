@@ -27,7 +27,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="apZ-7z-Eez">
                                         <rect key="frame" x="0.5" y="0.0" width="414" height="84"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oUj-aW-42B">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oUj-aW-42B">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="IFk-oR-Xc4"/>
@@ -132,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome Page" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-mq-HG1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="-12" y="0.0" width="441" height="927"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNH-3q-gxb">
@@ -202,9 +202,6 @@
                                                         <color key="strokeColor" name="Text"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="Lmc-tZ-dAv" kind="show" destinationCreationSelector="TrackerSegue:" id="jqo-lZ-gJ6"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uGe-W7-78v" userLabel="Scenario">
                                                 <rect key="frame" x="211" y="404" width="192" height="192"/>
@@ -263,6 +260,12 @@
                                     <constraint firstAttribute="height" constant="224" id="v62-ph-MiU"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QF-PJ-8Hs">
+                                <rect key="frame" x="77" y="336" width="254" height="38"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xav-mg-4oW"/>
                         <color key="backgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -270,14 +273,18 @@
                             <accessibilityTraits key="traits" image="YES"/>
                         </accessibility>
                         <constraints>
+                            <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="3QF-PJ-8Hs" secondAttribute="bottom" constant="34" id="2zl-zf-TJN"/>
                             <constraint firstItem="4B4-3W-lKG" firstAttribute="top" secondItem="xav-mg-4oW" secondAttribute="top" constant="59" id="4iL-IV-KsG"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="bottom" secondItem="xav-mg-4oW" secondAttribute="bottom" id="586-Eu-jYg"/>
                             <constraint firstItem="7pX-Hj-1aR" firstAttribute="height" secondItem="U7B-Hv-23u" secondAttribute="height" multiplier="1.18765" id="6Z8-fX-Krx"/>
                             <constraint firstItem="7pX-Hj-1aR" firstAttribute="width" secondItem="U7B-Hv-23u" secondAttribute="width" id="GBt-Q0-CgC"/>
+                            <constraint firstItem="xav-mg-4oW" firstAttribute="trailing" secondItem="3QF-PJ-8Hs" secondAttribute="trailing" constant="83" id="StM-V5-UsB"/>
                             <constraint firstItem="4B4-3W-lKG" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" constant="101" id="UbV-U5-g3h"/>
+                            <constraint firstItem="3QF-PJ-8Hs" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" constant="77" id="ZhX-Wt-W4I"/>
                             <constraint firstItem="xav-mg-4oW" firstAttribute="trailing" secondItem="4B4-3W-lKG" secondAttribute="trailing" constant="100" id="aPi-Hb-rMa"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="trailing" secondItem="xav-mg-4oW" secondAttribute="trailing" id="kXb-CI-Tvk"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="top" secondItem="4B4-3W-lKG" secondAttribute="bottom" constant="81" id="l6o-az-tW4"/>
+                            <constraint firstItem="3QF-PJ-8Hs" firstAttribute="top" secondItem="4B4-3W-lKG" secondAttribute="bottom" constant="23" id="omR-MM-LGJ"/>
                             <constraint firstItem="XbC-bs-xCg" firstAttribute="leading" secondItem="xav-mg-4oW" secondAttribute="leading" id="sgC-Hi-j96"/>
                         </constraints>
                     </view>
@@ -285,6 +292,8 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="ProfileImage" destination="4B4-3W-lKG" id="42X-q4-Hho"/>
+                        <outlet property="TrackertButton" destination="5zw-4I-1tu" id="tBC-tj-QpG"/>
+                        <outlet property="Username" destination="3QF-PJ-8Hs" id="QIu-vP-CZT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Php-w2-lWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -650,7 +659,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-bK-5JF">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-1C-fhe">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-1C-fhe">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="ZGC-rg-pg9"/>
@@ -658,7 +667,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srV-Jj-AH0">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srV-Jj-AH0">
                                                         <rect key="frame" x="0.0" y="50" width="414" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="t0x-i2-gg1"/>

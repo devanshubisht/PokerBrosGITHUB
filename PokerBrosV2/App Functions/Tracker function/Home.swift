@@ -18,7 +18,7 @@ struct Home: View {
                             .font(.title2)
                             .fontWeight(.bold)
                             .foregroundColor(.icon)
-                        /*NavigationLink {
+                        /**NavigationLink {
                             ProfilePage()
                         } label: {
                             Image(systemName: "arrow.backward.circle.fill")
@@ -53,7 +53,7 @@ struct Home: View {
             .padding()
         }
         .background{
-            Color("BackgroundC")
+            Color("backgroundC")
                 .ignoresSafeArea()
         }
         .fullScreenCover(isPresented: $expenseViewModel.addNewExpense) {
