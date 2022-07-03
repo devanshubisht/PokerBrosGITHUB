@@ -123,7 +123,12 @@ class SignUpPage: UIViewController {
                             if let metaImageUrl = url?.absoluteString{
                                 
                                 let db = Firestore.firestore()
-                                db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid, "ProfileImageUrl" :metaImageUrl ]) { (error) in
+                                db.collection("users").document(result!.user.uid).setData(
+                                    ["fullname" : firstName,
+                                     "username" : lastName,
+                                     "uid": result!.user.uid,
+                                     "ProfileImageUrl": metaImageUrl]
+                                ) { (error) in
                                     
                                     if error != nil {
                                         // Show error message

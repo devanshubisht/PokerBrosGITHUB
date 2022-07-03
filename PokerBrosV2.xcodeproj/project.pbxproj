@@ -12,6 +12,7 @@
 		B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACA283E5FD900FA89EB /* MainPage.swift */; };
 		B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */; };
 		B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACE283E5FFA00FA89EB /* LogInPage.swift */; };
+		B82EFBC92871C54300A8BED6 /* FriendSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82EFBC82871C54300A8BED6 /* FriendSystem.swift */; };
 		B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996B283D2A8700F80FFD /* AppDelegate.swift */; };
 		B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */; };
 		B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996F283D2A8700F80FFD /* ViewController.swift */; };
@@ -86,6 +87,7 @@
 		B81BBACA283E5FD900FA89EB /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		B81BBACE283E5FFA00FA89EB /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		B82EFBC82871C54300A8BED6 /* FriendSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendSystem.swift; sourceTree = "<group>"; };
 		B8A79968283D2A8700F80FFD /* PokerBrosV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerBrosV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A7996B283D2A8700F80FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			children = (
 				C7F9973928437E1A00C504B3 /* Constants.swift */,
 				C70517842858C4680085795D /* Extensions.swift */,
+				B82EFBC82871C54300A8BED6 /* FriendSystem.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				TargetAttributes = {
 					B8A79967283D2A8700F80FFD = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					B8A79980283D2A8800F80FFD = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -584,6 +588,7 @@
 				B8D39BCF2865CA1D00C207BA /* PotOddsCalcPage.swift in Sources */,
 				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
+				B82EFBC92871C54300A8BED6 /* FriendSystem.swift in Sources */,
 				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */,
@@ -779,6 +784,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -792,6 +798,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GW4SQPFNM;
@@ -810,6 +817,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemisPokerBros.PokerBrosV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -821,6 +830,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GW4SQPFNM;
@@ -839,6 +849,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemisPokerBros.PokerBrosV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -164,7 +164,7 @@ struct NewExpense: View {
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background{
-            Color("BackgroundC")
+            Color("backgroundC")
                 .ignoresSafeArea()
         }
         .overlay(alignment: .topTrailing) {
