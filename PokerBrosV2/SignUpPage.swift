@@ -127,7 +127,10 @@ class SignUpPage: UIViewController {
                                     ["fullname" : firstName,
                                      "username" : lastName,
                                      "uid": result!.user.uid,
-                                     "ProfileImageUrl": metaImageUrl]
+                                     "ProfileImageUrl": metaImageUrl,
+                                     "requests":[],
+                                     "friends": [],
+                                     "email": email]
                                 ) { (error) in
                                     
                                     if error != nil {

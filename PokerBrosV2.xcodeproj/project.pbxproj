@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		89199162B375D569C33936E9 /* Pods_PokerBrosV2_PokerBrosV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C705C450E6048C3AF132519 /* Pods_PokerBrosV2_PokerBrosV2UITests.framework */; };
 		AE16BD0E3C93A1846A609238 /* Pods_PokerBrosV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BEBF7405A2A74E71074F65 /* Pods_PokerBrosV2Tests.framework */; };
+		B81AA7C72873014600B79D2C /* FriendSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AA7C62873014600B79D2C /* FriendSystem.swift */; };
+		B81AA7C92875336300B79D2C /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AA7C82875336300B79D2C /* FriendViewController.swift */; };
+		B81AA7CB287554A900B79D2C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AA7CA287554A900B79D2C /* User.swift */; };
+		B81AA7CD28757A9200B79D2C /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B81AA7CC28757A9200B79D2C /* UserCell.xib */; };
+		B81AA7CF28757AAE00B79D2C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AA7CE28757AAE00B79D2C /* UserCell.swift */; };
 		B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACA283E5FD900FA89EB /* MainPage.swift */; };
 		B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */; };
 		B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACE283E5FFA00FA89EB /* LogInPage.swift */; };
@@ -83,6 +88,11 @@
 		8524267318002F8D3AF4BAA6 /* Pods-PokerBrosV2-PokerBrosV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2-PokerBrosV2UITests.debug.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2-PokerBrosV2UITests/Pods-PokerBrosV2-PokerBrosV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91BEBF7405A2A74E71074F65 /* Pods_PokerBrosV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerBrosV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6E3F80E4F08CCA6FC4DF1D /* Pods-PokerBrosV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2.debug.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2/Pods-PokerBrosV2.debug.xcconfig"; sourceTree = "<group>"; };
+		B81AA7C62873014600B79D2C /* FriendSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendSystem.swift; sourceTree = "<group>"; };
+		B81AA7C82875336300B79D2C /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		B81AA7CA287554A900B79D2C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B81AA7CC28757A9200B79D2C /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		B81AA7CE28757AAE00B79D2C /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		B81BBACA283E5FD900FA89EB /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		B81BBACE283E5FFA00FA89EB /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
@@ -226,8 +236,11 @@
 				B81BBACE283E5FFA00FA89EB /* LogInPage.swift */,
 				C7F997362843528000C504B3 /* HomePage.swift */,
 				C7F9973F284388F900C504B3 /* ProfilePage.swift */,
+				B81AA7C82875336300B79D2C /* FriendViewController.swift */,
 				C78B64EA28440D98001989BA /* App Functions */,
 				B8A79971283D2A8700F80FFD /* Main.storyboard */,
+				B81AA7CE28757AAE00B79D2C /* UserCell.swift */,
+				B81AA7CC28757A9200B79D2C /* UserCell.xib */,
 				B8A79979283D2A8800F80FFD /* LaunchScreen.storyboard */,
 				B8A79977283D2A8800F80FFD /* Assets.xcassets */,
 				C705177F2858BC070085795D /* Tracker function */,
@@ -334,6 +347,8 @@
 			children = (
 				C7F9973928437E1A00C504B3 /* Constants.swift */,
 				C70517842858C4680085795D /* Extensions.swift */,
+				B81AA7C62873014600B79D2C /* FriendSystem.swift */,
+				B81AA7CA287554A900B79D2C /* User.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -451,6 +466,7 @@
 				B8A799A1283D3F9500F80FFD /* GoogleService-Info.plist in Resources */,
 				B8A79978283D2A8800F80FFD /* Assets.xcassets in Resources */,
 				B8A79973283D2A8700F80FFD /* Main.storyboard in Resources */,
+				B81AA7CD28757A9200B79D2C /* UserCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +600,7 @@
 				B8D39BCF2865CA1D00C207BA /* PotOddsCalcPage.swift in Sources */,
 				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
+				B81AA7C72873014600B79D2C /* FriendSystem.swift in Sources */,
 				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */,
@@ -594,6 +611,7 @@
 				B8D39BCA2865C30600C207BA /* NewExpense.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
+				B81AA7C92875336300B79D2C /* FriendViewController.swift in Sources */,
 				C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */,
 				C70517812858BC3D0085795D /* Tracker.swift in Sources */,
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
@@ -606,9 +624,11 @@
 				B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */,
 				C70517852858C4680085795D /* Extensions.swift in Sources */,
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
+				B81AA7CB287554A900B79D2C /* User.swift in Sources */,
 				B8A79976283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld in Sources */,
 				C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */,
 				B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */,
+				B81AA7CF28757AAE00B79D2C /* UserCell.swift in Sources */,
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
 				C78685352855D112002A9504 /* PostFlopPage.swift in Sources */,
 				C7D265BE2860EC8A00CEF89A /* ContentView.swift in Sources */,

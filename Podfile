@@ -12,6 +12,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'FirebaseStorageUI'
+pod 'Firebase/Database'
 
   target 'PokerBrosV2Tests' do
     inherit! :search_paths
