@@ -34,6 +34,7 @@
 		B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D39BCC2865CA0100C207BA /* PotOddsPage.swift */; };
 		B8D39BCF2865CA1D00C207BA /* PotOddsCalcPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D39BCE2865CA1D00C207BA /* PotOddsCalcPage.swift */; };
 		B8E83DF8287D4AF600411614 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E83DF7287D4AF600411614 /* UserListViewController.swift */; };
+		B8E83DFA287D4EE000411614 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E83DF9287D4EE000411614 /* RequestViewController.swift */; };
 		C70517812858BC3D0085795D /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517802858BC3D0085795D /* Tracker.swift */; };
 		C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517822858BCA10085795D /* TrackerCocoa.swift */; };
 		C70517852858C4680085795D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70517842858C4680085795D /* Extensions.swift */; };
@@ -116,6 +117,7 @@
 		B8D39BCC2865CA0100C207BA /* PotOddsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsPage.swift; sourceTree = "<group>"; };
 		B8D39BCE2865CA1D00C207BA /* PotOddsCalcPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsCalcPage.swift; sourceTree = "<group>"; };
 		B8E83DF7287D4AF600411614 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		B8E83DF9287D4EE000411614 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		C26014840F747BA453271D5C /* Pods-PokerBrosV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerBrosV2Tests.release.xcconfig"; path = "Target Support Files/Pods-PokerBrosV2Tests/Pods-PokerBrosV2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C70517802858BC3D0085795D /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		C70517822858BCA10085795D /* TrackerCocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCocoa.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				C7F9973F284388F900C504B3 /* ProfilePage.swift */,
 				B8E83DF7287D4AF600411614 /* UserListViewController.swift */,
 				B81AA7C82875336300B79D2C /* FriendViewController.swift */,
+				B8E83DF9287D4EE000411614 /* RequestViewController.swift */,
 				C78B64EA28440D98001989BA /* App Functions */,
 				B8A79971283D2A8700F80FFD /* Main.storyboard */,
 				B81AA7CE28757AAE00B79D2C /* UserCell.swift */,
@@ -639,6 +642,7 @@
 				C7D265C42861119C00CEF89A /* TrackerCocoaOLD.swift in Sources */,
 				C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */,
 				C705178D2858CD010085795D /* GameRow.swift in Sources */,
+				B8E83DFA287D4EE000411614 /* RequestViewController.swift in Sources */,
 				C7F9973A28437E1A00C504B3 /* Constants.swift in Sources */,
 				C7E6C39B28662CAB00023356 /* Blank.swift in Sources */,
 			);

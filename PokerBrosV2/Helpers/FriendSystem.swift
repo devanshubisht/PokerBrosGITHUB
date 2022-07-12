@@ -54,16 +54,20 @@ class FriendSystem {
         }
     }
 
-/*
     /** Gets the current User object for the specified user id */
     func getCurrentUser(_ completion: @escaping (User) -> Void) {
-        CURRENT_USER_REF.observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
-            let email = snapshot.childSnapshot(forPath: "email").value as! String
-            let id = snapshot.key
+        CURRENT_USER_REF.getDocument { document, error in
+            if error == nil{
+                if let document = document {
+                    let email = document.data()?["email"] as! String
+                    let id =  document.data()?["uid"] as! String
             completion(User(userEmail: email, userID: id))
-        })
+        }
+            }
+        }
     }
-    /** Gets the User object for the specified user id */
+
+    /** Gets the User object for the specified user id
     func getUser(_ userID: String, completion: @escaping (User) -> Void) {
         USER_REF.child(userID).observeSingleEvent(of: DataEventType.value, with: { (snapshot) in
             let email = snapshot.childSnapshot(forPath: "email").value as! String
@@ -71,7 +75,8 @@ class FriendSystem {
             completion(User(userEmail: email, userID: id))
         })
     }
-*/
+     */
+
     
     
     // MARK: - Request System Functions
@@ -105,6 +110,23 @@ class FriendSystem {
     /** Adds a user observer. The completion function will run every time this list changes, allowing you
      to update your UI. */
     func addUserObserver(_ update: @escaping () -> Void) {
+        USER_REF.addSnapshotListener { snapshot, error in
+            if error == nil {
+                if let snapshot = snapshot {
+                    self.userList.removeAll()
+                    for child in snapshot.documents {
+                        let email = child.data()["email"] as! String
+                        if email != Auth.auth().currentUser?.email! {
+                            self.userList.append(User(userEmail: email, userID: child.data()["uid"] as! String))
+                        }
+                    }
+                    update()
+                }
+            }
+        }
+    }
+        
+/*
         USER_REF.getDocuments { snapshot, error in
             if error == nil {
                 if let snapshot = snapshot {
@@ -121,6 +143,7 @@ class FriendSystem {
         }
     }
     /** Removes the user observer. This should be done when leaving the view that uses the observer. */
+ */
 
     
     
@@ -131,7 +154,7 @@ class FriendSystem {
     /** Adds a friend observer. The completion function will run every time this list changes, allowing you
      to update your UI. */
     func addFriendObserver(_ update: @escaping () -> Void) {
-        CURRENT_USER_REF.getDocument { document, error in
+        CURRENT_USER_REF.addSnapshotListener { document, error in
             if error == nil {
                 if let document = document {
                     self.friendList.removeAll()
@@ -151,33 +174,25 @@ class FriendSystem {
     
     // MARK: - All requests
     /** The list of all friend requests the current user has. */
-    /* var requestList = [User]()
+    var requestList = [User]()
     /** Adds a friend request observer. The completion function will run every time this list changes, allowing you
      to update your UI. */
     func addRequestObserver(_ update: @escaping () -> Void) {
-        CURRENT_USER_REQUESTS_REF.observe(DataEventType.value, with: { (snapshot) in
-            self.requestList.removeAll()
-            for child in snapshot.children.allObjects as! [DataSnapshot] {
-                let id = child.key
-                self.getUser(id, completion: { (user) in
-                    self.requestList.append(user)
-                    update()
-                })
-            }
-            // If there are no children, run completion here instead
-            if snapshot.childrenCount == 0 {
-                update()
-            }
-        })
-    }
-    /** Removes the friend request observer. This should be done when leaving the view that uses the observer. */
-    func removeRequestObserver() {
-        CURRENT_USER_REQUESTS_REF.removeAllObservers()
-    }
+        CURRENT_USER_REF.addSnapshotListener { document, error in
+            if error == nil {
+                if let document = document {
+                    self.requestList.removeAll()
+                    let requests = document.data()?["requests"] as! [Any]
+                    for child in requests {
+                                let id = child as! String
+                        self.getUser(id, completion: { (user) in
+                            self.requestList.append(user)
+                            update()
+                        })
+                    }
+                    if requests.isEmpty {
+                        update()
+                    }
+                }}}}
     
-}
-
-
-
-*/
 }
