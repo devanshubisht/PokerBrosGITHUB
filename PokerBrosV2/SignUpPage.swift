@@ -130,8 +130,9 @@ class SignUpPage: UIViewController {
                                      "ProfileImageUrl": metaImageUrl,
                                      "requests":[],
                                      "friends": [],
-                                     "email": email]
-                                ) { (error) in
+                                     "email": email,
+                                     "tracker": []
+                                     ]) { (error) in
                                     
                                     if error != nil {
                                         // Show error message

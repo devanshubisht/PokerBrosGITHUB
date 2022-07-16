@@ -6,6 +6,10 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
+
 
 class ExpenseViewModel: ObservableObject{
     // MARK: Properties
@@ -34,6 +38,8 @@ class ExpenseViewModel: ObservableObject{
         
         startDate = calendar.date(from: components)!
         currentMonthStartDate = calendar.date(from: components)!
+        print(startDate)
+        print(currentMonthStartDate)
     }
     
     // MARK: This is a Sample Data of Month May
@@ -89,6 +95,7 @@ class ExpenseViewModel: ObservableObject{
     func saveData(env: EnvironmentValues){
         // MARK: Do Actions Here
         print("Save")
+        print(date)
         // MARK: This is For UI Demo
         // Replace With Core Data Actions
         let amountInDouble = (amount as NSString).doubleValue
@@ -97,6 +104,53 @@ class ExpenseViewModel: ObservableObject{
         let colors = ["Yellow","Red","Purple","Green"]
         let expense = Expense(remark: remark, amount: amountInDouble, smallBlind: SBInDouble, bigBlind: BBInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
         withAnimation{expenses.append(expense)}
+        
+        let db = Firestore.firestore()
+        
+        if type == .income {
+            
+            let ref = db.collection("tracker").document()
+            let id = ref.documentID
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            let string_date = dateFormatter.string(from: date)
+            print(string_date)
+            
+            ref.setData(
+                ["remark" : remark,
+                 "amount": amountInDouble,
+                 "smallBB":SBInDouble,
+                 "bigBB": BBInDouble,
+                 "date": string_date,
+                 "type": "Winnings",
+                 "colour": "Yellow",
+                 "id": id
+                ])
+            let user_id = Auth.auth().currentUser!.uid
+            db.collection("users").document("\(user_id)").updateData(["tracker" : FieldValue.arrayUnion([id])])
+        }
+        else {
+            let ref = db.collection("tracker").document()
+            let id = ref.documentID
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            let string_date = dateFormatter.string(from: date)
+            
+            ref.setData(
+                ["remark" : remark,
+                 "amount": amountInDouble,
+                 "smallBB":SBInDouble,
+                 "bigBB": BBInDouble,
+                 "date": string_date,
+                 "type": "Losses",
+                 "colour": "Yellow",
+                 "id": id
+                ])
+            let user_id = Auth.auth().currentUser!.uid
+            db.collection("users").document("\(user_id)").updateData(["tracker" : FieldValue.arrayUnion([id])])
+            
+        }
+        
         expenses = expenses.sorted(by: { first, scnd in
             return scnd.date < first.date
         })

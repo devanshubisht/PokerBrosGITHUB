@@ -157,14 +157,14 @@
         <scene sceneID="QwR-Dh-cLl">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="GBe-rT-5zh" customClass="ProfilePage" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="U7B-Hv-23u">
+                    <view key="view" contentMode="scaleToFill" id="U7B-Hv-23u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-bs-xCg">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-bs-xCg">
                                 <rect key="frame" x="0.0" y="408" width="414" height="454"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-Hj-1aR">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-ef-90e" userLabel="Equity">
@@ -1378,9 +1378,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHe-12-yay">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHe-12-yay">
                                 <rect key="frame" x="0.0" y="27" width="102" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Friends"/>
                                 <connections>
@@ -1396,9 +1395,8 @@
                                     <outlet property="delegate" destination="I3m-30-c3E" id="dj8-zI-7nk"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlT-RB-CMP">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlT-RB-CMP">
                                 <rect key="frame" x="309" y="27" width="98" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Requests"/>
                                 <connections>
@@ -1411,8 +1409,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A list of all the friends you have added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knF-B7-DSX">
-                                <rect key="frame" x="77" y="96" width="261" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A list of all the friends you have added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knF-B7-DSX">
+                                <rect key="frame" x="77" y="95.5" width="261" height="20.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1421,7 +1419,13 @@
                         <viewLayoutGuide key="safeArea" id="IBu-z1-K1F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GlT-RB-CMP" firstAttribute="leading" secondItem="9aT-0x-mjl" secondAttribute="trailing" constant="58.5" id="HOE-w3-Yhr"/>
+                            <constraint firstItem="9aT-0x-mjl" firstAttribute="leading" secondItem="KHe-12-yay" secondAttribute="trailing" constant="64" id="NNY-1T-JPt"/>
+                            <constraint firstItem="IBu-z1-K1F" firstAttribute="trailing" secondItem="knF-B7-DSX" secondAttribute="trailing" constant="76" id="PbC-IH-vjs"/>
                             <constraint firstItem="knF-B7-DSX" firstAttribute="top" secondItem="9aT-0x-mjl" secondAttribute="bottom" constant="8" id="UwV-9E-wU5"/>
+                            <constraint firstItem="knF-B7-DSX" firstAttribute="leading" secondItem="IBu-z1-K1F" secondAttribute="leading" constant="77" id="aYx-DZ-Yfl"/>
+                            <constraint firstItem="9aT-0x-mjl" firstAttribute="top" secondItem="IBu-z1-K1F" secondAttribute="top" constant="9" id="fhb-lV-Dyz"/>
+                            <constraint firstItem="knF-B7-DSX" firstAttribute="top" secondItem="9aT-0x-mjl" secondAttribute="bottom" constant="8" symbolic="YES" id="hF5-SS-Pyl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kOP-D0-Fp7"/>
