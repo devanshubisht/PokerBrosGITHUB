@@ -38,8 +38,6 @@ class ExpenseViewModel: ObservableObject{
         
         startDate = calendar.date(from: components)!
         currentMonthStartDate = calendar.date(from: components)!
-        print(startDate)
-        print(currentMonthStartDate)
     }
     
     // MARK: This is a Sample Data of Month May
@@ -95,7 +93,6 @@ class ExpenseViewModel: ObservableObject{
     func saveData(env: EnvironmentValues){
         // MARK: Do Actions Here
         print("Save")
-        print(date)
         // MARK: This is For UI Demo
         // Replace With Core Data Actions
         let amountInDouble = (amount as NSString).doubleValue
@@ -104,6 +101,7 @@ class ExpenseViewModel: ObservableObject{
         let colors = ["Yellow","Red","Purple","Green"]
         let expense = Expense(remark: remark, amount: amountInDouble, smallBlind: SBInDouble, bigBlind: BBInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
         withAnimation{expenses.append(expense)}
+        withAnimation{sample_expenses.append(expense)}
         
         let db = Firestore.firestore()
         

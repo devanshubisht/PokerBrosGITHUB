@@ -26,6 +26,7 @@ class ProfilePage: UIViewController {
         super.viewDidLoad()
         receiveimage()
         receiveusername()
+        fetch_stuff()
         TrackertButton.addTarget(self, action: #selector(didtap), for: .touchUpInside)
     }
     
@@ -63,10 +64,73 @@ class ProfilePage: UIViewController {
             guard let data = document?.data() else {return}
             let username = data["username"]
             self.Username.text = username as! String
-    }
+        } }
+        
+    
+        func fetch_stuff() {
+            sample_expenses.removeAll()
+            let db = Firestore.firestore()
+            let uid1 = Auth.auth().currentUser?.uid
+            let docref = db.collection("users").document(uid1!)
+            
+            docref.getDocument { (document, error) in
+                if let error = error {
+                    print("Failed to fetch current user")
+                    return
+                }
+                guard let data = document?.data() else {return}
+                let email = data["email"] as? String
+                let id = data["tracker"] as? [Any]
+                        if (data["tracker"]) != nil {
+                            let ids = data["tracker"] as! [Any]
+                print(ids)
+                for id in ids {
+                    let TrackerRef = db.collection("tracker").document(id as! String)
+                    TrackerRef.getDocument { doc, error in
+                        if let error = error{
+                            return
+                        }
+                        let trackData = doc?.data()
+                        let rem = trackData?["remark"]
+                        let amo = trackData?["amount"]
+                        let sbb = trackData?["smallBB"]
+                        let bb = trackData?["bigBB"]
+                        let datedb = trackData?["date"]
+                        let typedb = trackData?["type"]
+                        let colordb = trackData?["colour"]
+                        
+                        if typedb as! String == "Winnings"{
+                            let dateFormatter = DateFormatter()
+                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                            let dateform = dateFormatter.date(from: datedb as! String)
+                            let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform!, type: .income, color: colordb as! String)
+                            print(expense)
+                            withAnimation{sample_expenses.append(expense)}
+                        }
+                            
+                        if typedb as! String == "Losses"{
+                            let dateFormatter = DateFormatter()
+                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                            let dateform = dateFormatter.date(from: datedb as! String)
 
+                            
+                            let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform as! Date, type: .expense, color: colordb as! String)
+                            withAnimation{sample_expenses.append(expense)
+                            
+                        }
+                    
+                }
+                            
+                        }
+            
+            }
+                            sample_expenses = sample_expenses.sorted(by: { first, scnd in
+                                return scnd.date < first.date
+                        })
+            }
     
     }
+        }
 }
     
     

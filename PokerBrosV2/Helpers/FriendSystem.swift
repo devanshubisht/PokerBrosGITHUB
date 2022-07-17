@@ -115,9 +115,13 @@ class FriendSystem {
                 if let snapshot = snapshot {
                     self.userList.removeAll()
                     for child in snapshot.documents {
+                        if child.data()["email"] != nil{
+                            
+                        
                         let email = child.data()["email"] as! String
                         if email != Auth.auth().currentUser?.email! {
                             self.userList.append(User(userEmail: email, userID: child.data()["uid"] as! String))
+                        }
                         }
                     }
                     update()
