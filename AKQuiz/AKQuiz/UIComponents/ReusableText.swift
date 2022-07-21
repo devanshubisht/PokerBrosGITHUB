@@ -15,6 +15,6 @@ struct ReusableText: View {
         Text(text)
             .font(.system(size: size, weight: .bold, design: .rounded))
             .foregroundColor(.white)
-            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+            .shadow(color: Color("icon"), radius: 2, x: 0, y: 3)
     }
 }

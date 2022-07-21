@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Quiz {
+struct Quiz1 {
     var currentQuestionIndex: Int
     var quizModel: QuizModel
     var quizCompleted: Bool = false
@@ -19,6 +19,15 @@ struct QuizModel {
     var question: String
     var answer: String
     var optionsList: [QuizOption]
+    var yourfirst: String
+    var yoursecond: String
+    var flop1: String
+    var flop2: String
+    var flop3: String
+    var turn: String
+    var river: String
+    var oppfirst: String
+    var oppsecond: String
 }
 
 struct QuizOption : Identifiable {
@@ -28,5 +37,5 @@ struct QuizOption : Identifiable {
     var color: Color
     var isSelected : Bool = false
     var isMatched : Bool = false
+    var explain : String
 }
-
