@@ -131,7 +131,8 @@ class SignUpPage: UIViewController {
                                      "requests":[],
                                      "friends": [],
                                      "email": email,
-                                     "tracker": []
+                                     "tracker": [],
+                                     "tot_amount": 0
                                      ]) { (error) in
                                     
                                     if error != nil {

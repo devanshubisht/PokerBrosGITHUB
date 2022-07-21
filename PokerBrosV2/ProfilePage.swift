@@ -79,7 +79,7 @@ class ProfilePage: UIViewController {
                     return
                 }
                 guard let data = document?.data() else {return}
-                let email = data["email"] as? String
+                let curr_amount = data["tot_amount"] as? Double
                 let id = data["tracker"] as? [Any]
                         if (data["tracker"]) != nil {
                             let ids = data["tracker"] as! [Any]
@@ -104,6 +104,11 @@ class ProfilePage: UIViewController {
                             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
                             let dateform = dateFormatter.date(from: datedb as! String)
                             let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform!, type: .income, color: colordb as! String)
+                            
+                            let new_amount = (amo as! Double) + (curr_amount as! Double)
+                            
+                            docref.updateData(["tot_amount" : new_amount])
+                            
                             print(expense)
                             withAnimation{sample_expenses.append(expense)}
                         }
@@ -115,6 +120,11 @@ class ProfilePage: UIViewController {
 
                             
                             let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform as! Date, type: .expense, color: colordb as! String)
+                            
+                            let new_amount = (amo as! Double) + (curr_amount as! Double)
+                            
+                            docref.updateData(["tot_amount" : new_amount])
+                            
                             withAnimation{sample_expenses.append(expense)
                             
                         }
@@ -131,6 +141,10 @@ class ProfilePage: UIViewController {
     
     }
         }
+    
+    func fetch_amount() {
+        
+        
 }
     
     

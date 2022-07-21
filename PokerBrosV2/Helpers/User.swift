@@ -6,11 +6,17 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
 
 class User {
     
     var email: String!
     var id: String!
+    var amount: Int!
+    var username: String!
+    
     
     init(userEmail: String, userID: String) {
         self.email = userEmail
