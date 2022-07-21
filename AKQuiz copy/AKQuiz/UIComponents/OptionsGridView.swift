@@ -11,10 +11,10 @@ import SwiftUI
 
 struct OptionsGridView: View {
     var gameManagerVM: GameManagerVM
-    var columns: [GridItem] = Array(repeating: GridItem(.fixed(300), spacing:0), count: 2)
+    var columns: [GridItem] = Array(repeating: GridItem(.fixed(250), spacing: -54), count: 2)
     var body: some View {
         
-        LazyVGrid(columns: columns, spacing: 10) {
+        LazyVGrid(columns: columns, spacing: 15) {
             ForEach(gameManagerVM.model.quizModel.optionsList) { quizOption in
                 OptionCardView(quizOption: quizOption)
                     .onTapGesture {
@@ -24,33 +24,50 @@ struct OptionsGridView: View {
         }
         
     }
+    
+
 }
 
-// size of the options card
+// Tick or cross
 struct OptionCardView : View {
     var quizOption: QuizOption
     var body: some View {
         VStack {
             if (quizOption.isMatched) && (quizOption.isSelected) {
-                OptionStatusImageView(imageName: "checkmark")
+                OptionStatusImageView(imageName: "")
+                    .opacity(0.8)
+                    .overlay {
+                        Text(quizOption.explain)
+                            .font(.system(size: 10, weight: .bold, design: .rounded))
+                            .foregroundColor(Color("tablegrey"))
+                            .frame(width: 150, height: 130, alignment: .center)
+                    }
             } else if (!(quizOption.isMatched) && (quizOption.isSelected)) {
-                OptionStatusImageView(imageName: "xmark")
+                OptionStatusImageView(imageName: "")
+                    .opacity(0.8)
+                    .overlay {
+                        Text(quizOption.explain)
+                            .font(.system(size: 10, weight: .bold, design: .rounded))
+                            .foregroundColor(Color("tablegrey"))
+                            .frame(width: 150, height: 130, alignment: .center)
+                    }
             } else {
                 OptionView(quizOption: quizOption)
             }
-        }.frame(width: 110, height: 110)
-            .background(setBackgroundColor())
-            .cornerRadius(20)
-            .padding(.bottom, 50)
+        }
+        .frame(width: 185, height: 150)
+        .background(Color("icon"))
+        .cornerRadius(30)
     }
     
+    // Color of the box when clicked
     func setBackgroundColor() -> Color {
         if (quizOption.isMatched) && (quizOption.isSelected) {
             return Color.green
         } else if (!(quizOption.isMatched) && (quizOption.isSelected)) {
             return Color.red
         } else {
-            return Color("icon")
+            return Color.white
         }
     }
 }
@@ -59,19 +76,16 @@ struct OptionView: View {
     var quizOption: QuizOption
     var body: some View {
         VStack{
-            //OptionID
             /*Text(quizOption.optionId)
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .frame(width: 50, height: 50)
                 .background(quizOption.color.opacity(0.8))
                 .foregroundColor(.white)
-                .cornerRadius(25) */
-            //Option
+                .cornerRadius(25)*/
+            
             Text(quizOption.option)
-                .frame(width: 60, height: 25)
-                .font(.system(size: 12, weight: .bold, design: .rounded))
-                .opacity(0.5)
-                //.padding()
+                .frame(width: 150, height: 38)
+                .font(.system(size: 20, weight: .bold, design: .rounded))
         }
     }
 }

@@ -37,12 +37,5 @@ struct QuizOption : Identifiable {
     var color: Color
     var isSelected : Bool = false
     var isMatched : Bool = false
+    var explain : String
 }
-
-/*
-struct HandCards : Identifiable {
-    var id: Int
-    var first: String
-    var second: String
-} */
-

@@ -19,7 +19,7 @@ struct QuizCompletedView: View {
             
             ReusableText(text: gameManagerVM.model.quizWinningStatus ?
                          "THAT'S A WRAP" :
-                            "TRAINING OVER",
+                            "GAME OVER",
                          size: 30)
                 .padding()
             
@@ -48,12 +48,6 @@ struct QuizCompletedView: View {
                 .padding()
             
         }
-        .background(Image("bg2")
-            //.resizable()
-            //.aspectRatio(contentMode: .fill)
-            //.frame(width: 70, height: 100)
-            .ignoresSafeArea()
-            
-        )
+        .background(Image("bg2"))
     }
 }

@@ -7,31 +7,32 @@
 
 import SwiftUI
 
-struct ContentView3: View {
+struct ContentView4: View {
     @ObservedObject var gameManagerVM: GameManagerVM
     var body: some View {
         ZStack {
-            Image("tablebg")
+            Image("shortertablebg")
                 .resizable()
                 .aspectRatio(contentMode: ContentMode.fill)
                 .ignoresSafeArea()
-                .overlay(
-                    VStack {
-                        // opponent cards
+                .overlay {
+                    ZStack {
+                        // Opponent cards
                         HStack {
                             Image(gameManagerVM.model.quizModel.oppfirst)
                                 .resizable()
                                 .aspectRatio(contentMode: ContentMode.fill)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 60, height: 30)
                                 .scaledToFit()
                             
                             Image(gameManagerVM.model.quizModel.oppsecond)
                                 .resizable()
                                 .aspectRatio(contentMode: ContentMode.fill)
-                                .frame(width: 80, height: 50)
+                                .frame(width: 60, height: 30)
                                 .scaledToFit()
                         }
-                        .padding(.bottom, 280)
+                        .padding(.bottom, 770)
+                        .padding(.leading, 200)
                         
                         // board cards
                         HStack {
@@ -66,9 +67,26 @@ struct ContentView3: View {
                                 .scaledToFit()
                             
                         }
-                        .padding(.bottom, 350)
+                        .padding(.bottom, 300)
+                        
+                        // users cards
+                        HStack {
+                            Image(gameManagerVM.model.quizModel.yourfirst)
+                                .resizable()
+                                .aspectRatio(contentMode: ContentMode.fill)
+                                .frame(width: 60, height: 30)
+                                .scaledToFit()
+                            
+                            Image(gameManagerVM.model.quizModel.yoursecond)
+                                .resizable()
+                                .aspectRatio(contentMode: ContentMode.fill)
+                                .frame(width: 60, height: 30)
+                                .scaledToFit()
+                        }
+                        .padding(.top, 150)
+                        .padding(.trailing, 200)
                     }
-                )
+                }
             
             /*LinearGradient(colors: [.purple.opacity(0.4), .blue.opacity(0.4)], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()*/
@@ -76,40 +94,24 @@ struct ContentView3: View {
                 QuizCompletedView(gameManagerVM: gameManagerVM)
             } else {
                 VStack {
-                    ReusableText(text: "", size: 20)
-                        .padding(.top, 50)
-
+                    /*ReusableText(text: "Animal Knowledge Quiz!", size: 30)
+                        .padding()*/
+                    
+                    // Narrative text
                     ReusableText(text: gameManagerVM.model.quizModel.question, size: 12)
-                        .lineLimit(3)
-                        .frame(width: 310, height: 100, alignment: .center)
+                        .lineLimit(5)
+                        .frame(width: 310, height: 60)
                         .multilineTextAlignment(.center)
-                        .padding(.top, 530)
+                        .padding(.top, 400)
                     
                     Spacer()
-                
+                    
+                    // Circle timer
                     ZStack {
-                        // users cards
-                        HStack {
-                            Image(gameManagerVM.model.quizModel.yourfirst)
-                                .resizable()
-                                .aspectRatio(contentMode: ContentMode.fill)
-                                .frame(width: 80, height: 50)
-                                .scaledToFit()
-                            
-                            Image(gameManagerVM.model.quizModel.yoursecond)
-                                .resizable()
-                                .aspectRatio(contentMode: ContentMode.fill)
-                                .frame(width: 80, height: 50)
-                                .scaledToFit()
-                        }
-                        
                         Circle()
-                            .stroke(lineWidth: 10)
+                            .stroke(lineWidth: 3)
                             .foregroundColor(.gray)
                             .opacity(0.3)
-                            .frame(width: 50, height: 50)
-                            .padding(.leading, 350)
-                            .padding(.top, 77)
                         
                         
                         Circle()
@@ -117,36 +119,31 @@ struct ContentView3: View {
                             .stroke(LinearGradient(colors: [.orange, .red],
                                                    startPoint: .topLeading,
                                                    endPoint: .bottomTrailing),
-                                    style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+                                    style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
                             .rotationEffect(Angle(degrees: 270))
                             .animation(Animation.linear(duration: Double(gameManagerVM.maxProgress)), value: gameManagerVM.progress)
-                            .frame(width: 50, height: 50)
-                            .padding(.leading, 350)
-                            .padding(.top, 77)
                         
-                        ReusableText(text: String(gameManagerVM.progress), size: 15).opacity(0.5)
-                            .frame(width: 50, height: 50)
-                            .padding(.leading, 350)
-                            .padding(.top, 77)
+                        ReusableText(text: String(gameManagerVM.progress), size: 15)
                     }
-                   
+                    .frame(width: 40, height: 40)
+                    .padding(.top, 100)
+                    .padding(.leading, 365)
                     
                     
-                    Spacer()
+                    
+                    //Spacer()
                     
                     OptionsGridView(gameManagerVM: gameManagerVM)
+                        .padding(.bottom, 35)
                 }
             }
         }
-        /*.background(Image("tablebg"))
-        .aspectRatio(contentMode: ContentMode.fill)
-        .ignoresSafeArea() */
     }
 }
 
-struct ContentView3_Previews: PreviewProvider {
+struct ContentView4_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView3(gameManagerVM: GameManagerVM())
+        ContentView4(gameManagerVM: GameManagerVM())
     }
 }
 
