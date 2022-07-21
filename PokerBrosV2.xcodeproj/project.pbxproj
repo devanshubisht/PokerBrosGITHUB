@@ -43,6 +43,13 @@
 		C705178D2858CD010085795D /* GameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705178C2858CD010085795D /* GameRow.swift */; };
 		C705178F2859021D0085795D /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705178E2859021D0085795D /* GameListViewModel.swift */; };
 		C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */; };
+		C74156282884099500A4D5AE /* GameManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74156272884099500A4D5AE /* GameManagerVM.swift */; };
+		C741562A288409B700A4D5AE /* ReusableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415629288409B700A4D5AE /* ReusableText.swift */; };
+		C741562C288409D600A4D5AE /* OptionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741562B288409D600A4D5AE /* OptionsGridView.swift */; };
+		C741562E288409F400A4D5AE /* QuizCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741562D288409F400A4D5AE /* QuizCompletedView.swift */; };
+		C741563028840A2300A4D5AE /* AKQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741562F28840A2300A4D5AE /* AKQuizApp.swift */; };
+		C741563228840A4100A4D5AE /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741563128840A4100A4D5AE /* ContentView3.swift */; };
+		C741563428840B0100A4D5AE /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741563328840B0100A4D5AE /* QuizModel.swift */; };
 		C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E628446D69000931E7 /* BasicRulesPage.swift */; };
 		C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */; };
 		C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74666EA2844F83D000931E7 /* PreflopRangePage.swift */; };
@@ -127,6 +134,13 @@
 		C705178C2858CD010085795D /* GameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRow.swift; sourceTree = "<group>"; };
 		C705178E2859021D0085795D /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
 		C70A6FD5285367FF00758786 /* PreflopRangeQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangeQuizPage.swift; sourceTree = "<group>"; };
+		C74156272884099500A4D5AE /* GameManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManagerVM.swift; sourceTree = "<group>"; };
+		C7415629288409B700A4D5AE /* ReusableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableText.swift; sourceTree = "<group>"; };
+		C741562B288409D600A4D5AE /* OptionsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsGridView.swift; sourceTree = "<group>"; };
+		C741562D288409F400A4D5AE /* QuizCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCompletedView.swift; sourceTree = "<group>"; };
+		C741562F28840A2300A4D5AE /* AKQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKQuizApp.swift; sourceTree = "<group>"; };
+		C741563128840A4100A4D5AE /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
+		C741563328840B0100A4D5AE /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		C74666E628446D69000931E7 /* BasicRulesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesPage.swift; sourceTree = "<group>"; };
 		C74666E82844BF14000931E7 /* BasicRulesQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRulesQuizPage.swift; sourceTree = "<group>"; };
 		C74666EA2844F83D000931E7 /* PreflopRangePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreflopRangePage.swift; sourceTree = "<group>"; };
@@ -307,6 +321,20 @@
 			path = "Tracker function";
 			sourceTree = "<group>";
 		};
+		C74156262884092F00A4D5AE /* Scenario */ = {
+			isa = PBXGroup;
+			children = (
+				C74156272884099500A4D5AE /* GameManagerVM.swift */,
+				C7415629288409B700A4D5AE /* ReusableText.swift */,
+				C741562B288409D600A4D5AE /* OptionsGridView.swift */,
+				C741562D288409F400A4D5AE /* QuizCompletedView.swift */,
+				C741563328840B0100A4D5AE /* QuizModel.swift */,
+				C741562F28840A2300A4D5AE /* AKQuizApp.swift */,
+				C741563128840A4100A4D5AE /* ContentView3.swift */,
+			);
+			path = Scenario;
+			sourceTree = "<group>";
+		};
 		C786853A2855D6BF002A9504 /* Quiz function */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +352,7 @@
 		C78B64EA28440D98001989BA /* App Functions */ = {
 			isa = PBXGroup;
 			children = (
+				C74156262884092F00A4D5AE /* Scenario */,
 				B8D39BCB2865C9C700C207BA /* PotOddsv1 */,
 				C7D265BA2860EC2E00CEF89A /* Tracker function */,
 				C786853A2855D6BF002A9504 /* Quiz function */,
@@ -602,12 +631,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C741562A288409B700A4D5AE /* ReusableText.swift in Sources */,
 				C70517892858CB820085795D /* PreviewData.swift in Sources */,
 				B8D39BCF2865CA1D00C207BA /* PotOddsCalcPage.swift in Sources */,
 				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
 				B81AA7C72873014600B79D2C /* FriendSystem.swift in Sources */,
 				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
+				C741562C288409D600A4D5AE /* OptionsGridView.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */,
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
@@ -616,20 +647,25 @@
 				C7D265C02860ED3000CEF89A /* Expense.swift in Sources */,
 				B8D39BCA2865C30600C207BA /* NewExpense.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
+				C741563028840A2300A4D5AE /* AKQuizApp.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
 				B81AA7C92875336300B79D2C /* FriendViewController.swift in Sources */,
 				C7D265C6286115EA00CEF89A /* TransactionCardView.swift in Sources */,
 				C70517812858BC3D0085795D /* Tracker.swift in Sources */,
+				C74156282884099500A4D5AE /* GameManagerVM.swift in Sources */,
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
+				C741563228840A4100A4D5AE /* ContentView3.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
 				C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */,
 				C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
 				C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */,
+				C741562E288409F400A4D5AE /* QuizCompletedView.swift in Sources */,
 				C705178F2859021D0085795D /* GameListViewModel.swift in Sources */,
 				B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */,
 				C70517852858C4680085795D /* Extensions.swift in Sources */,
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
+				C741563428840B0100A4D5AE /* QuizModel.swift in Sources */,
 				B81AA7CB287554A900B79D2C /* User.swift in Sources */,
 				B8A79976283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld in Sources */,
 				C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */,
@@ -822,7 +858,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MBFH28UH6J;
+				DEVELOPMENT_TEAM = 5GW4SQPFNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerBrosV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -851,7 +887,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MBFH28UH6J;
+				DEVELOPMENT_TEAM = 5GW4SQPFNM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PokerBrosV2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

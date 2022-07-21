@@ -13,13 +13,13 @@ struct QuizCompletedView: View {
     var body: some View {
         VStack {
             Image(systemName: "gamecontroller.fill")
-                .foregroundColor(Color.yellow)
+                .foregroundColor(Color("icon"))
                 .font(.system(size: 60))
                 .padding()
             
             ReusableText(text: gameManagerVM.model.quizWinningStatus ?
                          "THAT'S A WRAP" :
-                            "GAME OVER",
+                            "TRAINING OVER",
                          size: 30)
                 .padding()
             
@@ -43,10 +43,17 @@ struct QuizCompletedView: View {
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                 }
             }.frame(width: 300, height: 60, alignment: .center)
-                .background(.purple.opacity(0.7))
+                .background(Color("icon").opacity(0.7))
                 .cornerRadius(30)
                 .padding()
             
         }
+        .background(Image("bg2")
+            //.resizable()
+            //.aspectRatio(contentMode: .fill)
+            //.frame(width: 70, height: 100)
+            .ignoresSafeArea()
+            
+        )
     }
 }

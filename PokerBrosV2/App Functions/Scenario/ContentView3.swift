@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
-//  AKQuiz
+//  ContentView3.swift
+//  PokerBrosV2
 //
-//  Created by richa.e.srivastava on 14/11/2021.
+//  Created by Ang Yuze on 17/7/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView3: View {
     @ObservedObject var gameManagerVM: GameManagerVM
     var body: some View {
         ZStack {
@@ -61,9 +61,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView3_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(gameManagerVM: GameManagerVM())
+        ContentView3(gameManagerVM: GameManagerVM())
     }
 }
 

@@ -11,10 +11,10 @@ import SwiftUI
 
 struct OptionsGridView: View {
     var gameManagerVM: GameManagerVM
-    var columns: [GridItem] = Array(repeating: GridItem(.fixed(170), spacing: 0), count: 2)
+    var columns: [GridItem] = Array(repeating: GridItem(.fixed(300), spacing:0), count: 2)
     var body: some View {
         
-        LazyVGrid(columns: columns, spacing: 20) {
+        LazyVGrid(columns: columns, spacing: 10) {
             ForEach(gameManagerVM.model.quizModel.optionsList) { quizOption in
                 OptionCardView(quizOption: quizOption)
                     .onTapGesture {
@@ -24,10 +24,9 @@ struct OptionsGridView: View {
         }
         
     }
-    
-
 }
 
+// size of the options card
 struct OptionCardView : View {
     var quizOption: QuizOption
     var body: some View {
@@ -39,9 +38,10 @@ struct OptionCardView : View {
             } else {
                 OptionView(quizOption: quizOption)
             }
-        }.frame(width: 150, height: 150)
+        }.frame(width: 110, height: 110)
             .background(setBackgroundColor())
-            .cornerRadius(40)
+            .cornerRadius(20)
+            .padding(.bottom, 50)
     }
     
     func setBackgroundColor() -> Color {
@@ -50,7 +50,7 @@ struct OptionCardView : View {
         } else if (!(quizOption.isMatched) && (quizOption.isSelected)) {
             return Color.red
         } else {
-            return Color.white
+            return Color("icon")
         }
     }
 }
@@ -59,16 +59,19 @@ struct OptionView: View {
     var quizOption: QuizOption
     var body: some View {
         VStack{
-            Text(quizOption.optionId)
+            //OptionID
+            /*Text(quizOption.optionId)
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .frame(width: 50, height: 50)
                 .background(quizOption.color.opacity(0.8))
                 .foregroundColor(.white)
-                .cornerRadius(25)
-            
+                .cornerRadius(25) */
+            //Option
             Text(quizOption.option)
-                .frame(width: 150, height: 38)
-                .font(.system(size: 20, weight: .bold, design: .rounded))
+                .frame(width: 60, height: 25)
+                .font(.system(size: 12, weight: .bold, design: .rounded))
+                .opacity(0.5)
+                //.padding()
         }
     }
 }

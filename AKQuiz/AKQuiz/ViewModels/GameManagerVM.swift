@@ -12,15 +12,15 @@ class GameManagerVM : ObservableObject {
 
     static var currentIndex = 0
     
-    static func createGameModel(i:Int) -> Quiz {
-        return Quiz(currentQuestionIndex: i, quizModel: quizData[i])
+    static func createGameModel(i:Int) -> Quiz1 {
+        return Quiz1(currentQuestionIndex: i, quizModel: quizData[i])
     }
     
     @Published var model = GameManagerVM.createGameModel(i: GameManagerVM.currentIndex)
     
     
     var timer = Timer()
-    var maxProgress = 15
+    var maxProgress = 3000000
     @Published var progress = 0
     
     init() {
@@ -39,7 +39,7 @@ class GameManagerVM : ObservableObject {
                 model.quizModel.optionsList[index].isSelected = true
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    if (GameManagerVM.currentIndex < 2) {
+                    if (GameManagerVM.currentIndex < 4) {
                         GameManagerVM.currentIndex = GameManagerVM.currentIndex + 1
                         self.model = GameManagerVM.createGameModel(i: GameManagerVM.currentIndex)
                     } else {
@@ -90,26 +90,85 @@ extension GameManagerVM
 {
     static var quizData: [QuizModel] {
         [
-            QuizModel(question: "Which is the fastest animal in the world?",
-                      answer: "B",
-                      optionsList: [QuizOption(id: 11, optionId: "A", option: "Turtle", color: Color.yellow),
-                                    QuizOption(id: 12,optionId: "B", option: "Cheetah", color: Color.red),
-                                    QuizOption(id: 13,optionId: "C", option: "Rabbit", color: Color.green),
-                                    QuizOption(id: 14,optionId: "D", option: "Leoprd", color: Color.purple)]),
-            
-            QuizModel(question: "Which of these animals swims in upright position?",
+            QuizModel(question: "This is the preflop. You are the Big Blind. Opponent is a very tight preflop player. He raises 4x BB. Make your move",
                       answer: "C",
-                      optionsList: [QuizOption(id: 21,optionId: "A", option: "Sea Lion", color: Color.yellow),
-                                    QuizOption(id: 22,optionId: "B", option: "Sea Urchin", color: Color.red),
-                                    QuizOption(id: 23,optionId: "C", option: "Seahorse", color: Color.green),
-                                    QuizOption(id: 24,optionId: "D", option: "Sea slug", color: Color.purple)]),
+                      optionsList: [QuizOption(id: 11,optionId: "A", option: "Fold", color: Color.yellow),
+                                    QuizOption(id: 12,optionId: "B", option: "Check", color: Color.red),
+                                    QuizOption(id: 13,optionId: "C", option: "Call", color: Color.green),
+                                    QuizOption(id: 14,optionId: "D", option: "Raise", color: Color.purple)],
+                      yourfirst: "as",
+                      yoursecond: "ah",
+                      flop1: "cardback2",
+                      flop2: "cardback2",
+                      flop3: "cardback2",
+                      turn: "cardback2",
+                      river: "cardback2",
+                     oppfirst: "cardback2",
+                     oppsecond: "cardback2"),
             
-            QuizModel(question: "Which is the world largest living fish?",
+            QuizModel(question: "Opponent now checks. What are you gonna do?",
+                      answer: "D",
+                      optionsList: [QuizOption(id: 21,optionId: "A", option: "Fold", color: Color.yellow),
+                                    QuizOption(id: 22,optionId: "D", option: "Check", color: Color.red),
+                                    QuizOption(id: 23,optionId: "C", option: "Call", color: Color.green),
+                                    QuizOption(id: 24,optionId: "D", option: "Raise", color: Color.purple)],
+                      yourfirst: "as",
+                      yoursecond: "ah",
+                      flop1: "4h",
+                      flop2: "7c",
+                      flop3: "9s",
+                      turn: "cardback2",
+                      river: "cardback2",
+                     oppfirst: "cardback2",
+                     oppsecond: "cardback2"),
+            
+            QuizModel(question: "You turn the world. Together with a middle pair, you have draws to the straight, as well as to the flush! Opponent checks again. How are you going to exploit this monster draw?",
                       answer: "B",
-                      optionsList: [QuizOption(id: 31,optionId: "A", option: "Manta Ray", color: Color.yellow),
-                                    QuizOption(id: 32,optionId: "B", option: "Whale Shark", color: Color.red),
-                                    QuizOption(id: 33,optionId: "C", option: "Marlin", color: Color.green),
-                                    QuizOption(id: 34,optionId: "D", option: "Sailfish", color: Color.purple)])
+                      optionsList: [QuizOption(id: 31,optionId: "A", option: "Fold", color: Color.yellow),
+                                    QuizOption(id: 32,optionId: "B", option: "Check", color: Color.red),
+                                    QuizOption(id: 33,optionId: "C", option: "Call", color: Color.green),
+                                    QuizOption(id: 34,optionId: "B", option: "Raise", color: Color.purple)],
+                      yourfirst: "as",
+                      yoursecond: "ah",
+                      flop1: "4h",
+                      flop2: "7c",
+                      flop3: "9s",
+                      turn: "6h",
+                      river: "cardback2",
+                     oppfirst: "cardback2",
+                     oppsecond: "cardback2"),
+            
+            QuizModel(question: "The Queen of Diamonds bricks all your draws. Your hand has now become dog shit",
+                      answer: "B",
+                      optionsList: [QuizOption(id: 41,optionId: "A", option: "Fold", color: Color.yellow),
+                                    QuizOption(id: 42,optionId: "B", option: "Check", color: Color.red),
+                                    QuizOption(id: 43,optionId: "C", option: "Call", color: Color.green),
+                                    QuizOption(id: 44,optionId: "D", option: "Raise", color: Color.purple)],
+                      yourfirst: "as",
+                      yoursecond: "ah",
+                      flop1: "4h",
+                      flop2: "7c",
+                      flop3: "9s",
+                      turn: "6h",
+                      river: "qd",
+                     oppfirst: "cardback2",
+                     oppsecond: "cardback2"),
+            
+            QuizModel(question: "Opponent has AQ of spades. You lost.",
+                      answer: "B",
+                      optionsList: [QuizOption(id: 51,optionId: "A", option: "Fold", color: Color.yellow),
+                                    QuizOption(id: 52,optionId: "B", option: "Check", color: Color.red),
+                                    QuizOption(id: 53,optionId: "C", option: "Call", color: Color.green),
+                                    QuizOption(id: 54,optionId: "D", option: "Raise", color: Color.purple)],
+                      yourfirst: "as",
+                      yoursecond: "ah",
+                      flop1: "4h",
+                      flop2: "7c",
+                      flop3: "9s",
+                      turn: "6h",
+                      river: "qd",
+                     oppfirst: "as",
+                     oppsecond: "qs"),
         ]
     }
 }

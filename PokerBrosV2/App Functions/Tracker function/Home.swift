@@ -52,7 +52,7 @@ struct Home: View {
             }
             .padding()
         }
-        .background{
+        .background {
             Color("backgroundC")
                 .ignoresSafeArea()
         }
