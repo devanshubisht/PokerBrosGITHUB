@@ -48,7 +48,9 @@ class FriendSystem {
                 if let document = document {
                     let email = document.data()?["email"] as! String
                     let id =  document.data()?["uid"] as! String
-            completion(User(userEmail: email, userID: id))
+                    let amount = document.data()?["tot_amount"] as! Double
+                    let username = document.data()?["username"] as! String
+            completion(User(userEmail: email, userID: id, useramount: amount, userusername: username))
         }
             }
         }
@@ -61,7 +63,9 @@ class FriendSystem {
                 if let document = document {
                     let email = document.data()?["email"] as! String
                     let id =  document.data()?["uid"] as! String
-            completion(User(userEmail: email, userID: id))
+                    let amount = document.data()?["tot_amount"] as! Double
+                    let username = document.data()?["username"] as! String
+            completion(User(userEmail: email, userID: id, useramount: amount, userusername: username))
         }
             }
         }
@@ -120,7 +124,7 @@ class FriendSystem {
                         
                         let email = child.data()["email"] as! String
                         if email != Auth.auth().currentUser?.email! {
-                            self.userList.append(User(userEmail: email, userID: child.data()["uid"] as! String))
+                            self.userList.append(User(userEmail: email, userID: child.data()["uid"] as! String, useramount: child.data()["tot_amount"] as! Double, userusername: child.data()["username"] as! String))
                         }
                         }
                     }

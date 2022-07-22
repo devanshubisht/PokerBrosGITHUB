@@ -79,7 +79,7 @@ class ProfilePage: UIViewController {
                     return
                 }
                 guard let data = document?.data() else {return}
-                let curr_amount = data["tot_amount"] as? Double
+                var curr_amount = Double(0)
                 let id = data["tracker"] as? [Any]
                         if (data["tracker"]) != nil {
                             let ids = data["tracker"] as! [Any]
@@ -106,6 +106,7 @@ class ProfilePage: UIViewController {
                             let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform!, type: .income, color: colordb as! String)
                             
                             let new_amount = (amo as! Double) + (curr_amount as! Double)
+                            curr_amount = new_amount as! Double
                             
                             docref.updateData(["tot_amount" : new_amount])
                             
@@ -121,7 +122,8 @@ class ProfilePage: UIViewController {
                             
                             let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform as! Date, type: .expense, color: colordb as! String)
                             
-                            let new_amount = (amo as! Double) + (curr_amount as! Double)
+                            let new_amount = (curr_amount as! Double) - (amo as! Double)
+                            curr_amount = new_amount as! Double
                             
                             docref.updateData(["tot_amount" : new_amount])
                             
@@ -141,10 +143,6 @@ class ProfilePage: UIViewController {
     
     }
         }
-    
-    func fetch_amount() {
-        
-        
 }
     
     

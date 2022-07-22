@@ -14,13 +14,16 @@ class User {
     
     var email: String!
     var id: String!
-    var amount: Int!
+    var amount: Double!
     var username: String!
     
     
-    init(userEmail: String, userID: String) {
+    init(userEmail: String, userID: String, useramount: Double, userusername: String) {
         self.email = userEmail
         self.id = userID
+        self.amount = useramount
+        self.username = userusername
+        
     }
     
 }
