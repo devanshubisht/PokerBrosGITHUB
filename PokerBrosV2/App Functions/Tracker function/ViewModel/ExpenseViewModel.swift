@@ -95,17 +95,18 @@ class ExpenseViewModel: ObservableObject{
         print("Save")
         // MARK: This is For UI Demo
         // Replace With Core Data Actions
-        let amountInDouble = (amount as NSString).doubleValue
-        let SBInDouble = (smallBlind as NSString).doubleValue
-        let BBInDouble = (bigBlind as NSString).doubleValue
-        let colors = ["Yellow","Red","Purple","Green"]
-        let expense = Expense(remark: remark, amount: amountInDouble, smallBlind: SBInDouble, bigBlind: BBInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
-        withAnimation{expenses.append(expense)}
-        withAnimation{sample_expenses.append(expense)}
         
         let db = Firestore.firestore()
         
         if type == .income {
+            
+            let amountInDouble = abs((amount as NSString).doubleValue)
+            let SBInDouble = abs((smallBlind as NSString).doubleValue)
+            let BBInDouble = abs((bigBlind as NSString).doubleValue)
+            let colors = ["Yellow","Red","Purple","Green"]
+            let expense = Expense(remark: remark, amount: amountInDouble, smallBlind: SBInDouble, bigBlind: BBInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
+            withAnimation{expenses.append(expense)}
+            withAnimation{sample_expenses.append(expense)}
             
             let ref = db.collection("tracker").document()
             let id = ref.documentID
@@ -116,7 +117,7 @@ class ExpenseViewModel: ObservableObject{
             
             ref.setData(
                 ["remark" : remark,
-                 "amount": amountInDouble,
+                 "amount": abs(amountInDouble),
                  "smallBB":SBInDouble,
                  "bigBB": BBInDouble,
                  "date": string_date,
@@ -128,6 +129,15 @@ class ExpenseViewModel: ObservableObject{
             db.collection("users").document("\(user_id)").updateData(["tracker" : FieldValue.arrayUnion([id])])
         }
         else {
+            let amountInDouble = (amount as NSString).doubleValue
+            let amount_negative = abs(amountInDouble)
+            let SBInDouble = abs((smallBlind as NSString).doubleValue)
+            let BBInDouble = abs((bigBlind as NSString).doubleValue)
+            let colors = ["Yellow","Red","Purple","Green"]
+            let expense = Expense(remark: remark, amount: amount_negative, smallBlind: SBInDouble, bigBlind: BBInDouble, date: date, type: type, color: colors.randomElement() ?? "Yellow")
+            withAnimation{expenses.append(expense)}
+            withAnimation{sample_expenses.append(expense)}
+            
             let ref = db.collection("tracker").document()
             let id = ref.documentID
             let dateFormatter = DateFormatter()
@@ -136,7 +146,7 @@ class ExpenseViewModel: ObservableObject{
             
             ref.setData(
                 ["remark" : remark,
-                 "amount": amountInDouble,
+                 "amount": amount_negative,
                  "smallBB":SBInDouble,
                  "bigBB": BBInDouble,
                  "date": string_date,
