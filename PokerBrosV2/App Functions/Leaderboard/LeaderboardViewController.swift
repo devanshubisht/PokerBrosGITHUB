@@ -34,6 +34,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
                     FriendSystem.system.friendList.append(User(userEmail: email, userID: id, useramount: amount, userusername: username))
                     
                     FriendSystem.system.friendList = FriendSystem.system.friendList.sorted(by: { first, second in first.amount > second.amount})
+                    print(FriendSystem.system.friendList)
                     
                     self.tableView.reloadData()
                         

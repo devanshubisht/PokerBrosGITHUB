@@ -37,7 +37,7 @@ class ProfilePage: UIViewController {
     
 //    @IBSegueAction func TrackerSegue(_ coder: NSCoder) -> UIViewController? {
 //        return  UIHostingController(coder: coder, rootView: ContentView())}
-    
+
     
     func receiveimage () {
         
@@ -63,7 +63,7 @@ class ProfilePage: UIViewController {
             }
             guard let data = document?.data() else {return}
             let username = data["username"]
-            self.Username.text = username as! String
+            self.Username.text = username as? String
         } }
         
     
@@ -80,8 +80,7 @@ class ProfilePage: UIViewController {
                 }
                 guard let data = document?.data() else {return}
                 var curr_amount = Double(0)
-                let id = data["tracker"] as? [Any]
-                        if (data["tracker"]) != nil {
+                if (data["tracker"]) != nil {
                             let ids = data["tracker"] as! [Any]
                 print(ids)
                 for id in ids {
@@ -105,8 +104,8 @@ class ProfilePage: UIViewController {
                             let dateform = dateFormatter.date(from: datedb as! String)
                             let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform!, type: .income, color: colordb as! String)
                             
-                            let new_amount = (amo as! Double) + (curr_amount as! Double)
-                            curr_amount = new_amount as! Double
+                            let new_amount = (amo as! Double) + (curr_amount )
+                            curr_amount = new_amount
                             
                             docref.updateData(["tot_amount" : new_amount])
                             
@@ -122,8 +121,8 @@ class ProfilePage: UIViewController {
                             
                             let expense = Expense(remark: rem as! String, amount: amo as! Double, smallBlind: sbb as! Double, bigBlind: bb as! Double , date: dateform as! Date, type: .expense, color: colordb as! String)
                             
-                            let new_amount = (curr_amount as! Double) - (amo as! Double)
-                            curr_amount = new_amount as! Double
+                            let new_amount = (curr_amount ) - (amo as! Double)
+                            curr_amount = new_amount 
                             
                             docref.updateData(["tot_amount" : new_amount])
                             

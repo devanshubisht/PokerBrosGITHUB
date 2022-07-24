@@ -119,9 +119,10 @@ class FriendSystem {
                 if let snapshot = snapshot {
                     self.userList.removeAll()
                     for child in snapshot.documents {
-                        if child.data()["email"] != nil{
-                            
-                        
+                        let user_id = Auth.auth().currentUser!.uid as! String
+                        let users_friends = child.data()["friends"] as! [String]
+                        print(users_friends)
+                        if child.data()["email"] != nil && child.data()["tot_amount"] != nil && users_friends.contains(user_id) == false {
                         let email = child.data()["email"] as! String
                         if email != Auth.auth().currentUser?.email! {
                             self.userList.append(User(userEmail: email, userID: child.data()["uid"] as! String, useramount: child.data()["tot_amount"] as! Double, userusername: child.data()["username"] as! String))

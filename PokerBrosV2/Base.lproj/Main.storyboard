@@ -1441,6 +1441,7 @@
                                 <rect key="frame" x="0.0" y="171" width="414" height="637"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="backgroundC"/>
                                 <connections>
                                     <outlet property="dataSource" destination="I3m-30-c3E" id="Xup-N0-imD"/>
                                     <outlet property="delegate" destination="I3m-30-c3E" id="dj8-zI-7nk"/>
@@ -1534,7 +1535,8 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1tJ-a5-giv">
                                 <rect key="frame" x="0.0" y="120" width="414" height="688"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="backgroundC"/>
                                 <connections>
                                     <outlet property="dataSource" destination="rSu-Ht-01a" id="okL-SP-uN9"/>
                                     <outlet property="delegate" destination="rSu-Ht-01a" id="3U5-g4-den"/>
@@ -1609,7 +1611,8 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q24-yi-qbm">
                                 <rect key="frame" x="0.0" y="120" width="414" height="688"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="backgroundC"/>
                                 <connections>
                                     <outlet property="dataSource" destination="wRk-OU-RwH" id="ywY-cs-Bjk"/>
                                     <outlet property="delegate" destination="wRk-OU-RwH" id="aI9-5t-jhM"/>
@@ -1697,7 +1700,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Uhu-Of-UJJ"/>
+        <segue reference="iEU-UB-e12"/>
         <segue reference="D6H-z4-6MI"/>
         <segue reference="vAd-ba-Frk"/>
         <segue reference="zbE-nn-Lho"/>
@@ -1727,6 +1730,9 @@
         </namedColor>
         <namedColor name="Text">
             <color red="0.96470588235294119" green="0.90588235294117647" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundC">
+            <color red="0.11372549019607843" green="0.12156862745098039" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
