@@ -61,7 +61,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         cell.textLabel?.text = FriendSystem.system.friendList[indexPath.row].username
         
         if let amo = FriendSystem.system.friendList[indexPath.row].amount {
-            cell.detailTextLabel?.text = "\(amo)"
+            cell.detailTextLabel?.text = "$\(amo)"
         }
         
         
