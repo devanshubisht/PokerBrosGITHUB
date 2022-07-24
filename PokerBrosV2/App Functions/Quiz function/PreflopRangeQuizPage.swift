@@ -50,7 +50,7 @@ class PreflopRangeQuizPage: UIViewController, UITableViewDelegate, UITableViewDa
         gameModels.append(Question1(text: "When a very tight player open raises pre flop, should you be careful navigating through post flop?",
             answers: [
                       Answer1(text: "For sure", correct: true),
-                      Answer1(text: "Nah hes a pu**y", correct: false)
+                      Answer1(text: "Nope he is a coward", correct: false)
         ]))
         
         gameModels.append(Question1(text: "Would you want to 3-bet a tight player that open raises with 7 10 offsuit?",

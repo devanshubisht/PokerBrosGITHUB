@@ -17,11 +17,41 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        FriendSystem.system.friendList.removeAll()
         FriendSystem.system.addFriendObserver{
+            fecth_user()
             self.tableView.reloadData()
         }
+    }
         
+        func numberOfSections(in tableView: UITableView) -> Int {
+                    return 1
+        }
         
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return FriendSystem.system.friendList.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            
+            cell.textLabel?.text = FriendSystem.system.friendList[indexPath.row].username
+            
+            if let amo = FriendSystem.system.friendList[indexPath.row].amount {
+                cell.detailTextLabel?.text = "$\(amo)"
+            }
+            
+            
+            
+            return cell
+
+        }
+
+        
+
+        // Do any additional setup after loading the view.
+    }
+    func fecth_user() {
         let id = Auth.auth().currentUser!.uid as String?
         print("initial")
         print(FriendSystem.system.friendList)
@@ -34,43 +64,16 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
                     let amount = document.data()?["tot_amount"] as! Double
                     let username = document.data()?["username"] as! String
                     FriendSystem.system.friendList.append(User(userEmail: email, userID: id, useramount: amount, userusername: username))
-                    
-                    FriendSystem.system.friendList = FriendSystem.system.friendList.sorted(by: { first, second in first.amount < second.amount})
+        
+                    FriendSystem.system.friendList.sort{ $0.amount > $1.amount}
                     
                     print("later")
                     print(FriendSystem.system.friendList)
-                    
-                    self.tableView.reloadData()
-                        
-                    }
-
-        // Do any additional setup after loading the view.
-                }}}
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-                return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FriendSystem.system.friendList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = FriendSystem.system.friendList[indexPath.row].username
-        
-        if let amo = FriendSystem.system.friendList[indexPath.row].amount {
-            cell.detailTextLabel?.text = "$\(amo)"
-        }
-        
-        
-        
-        return cell
-
     }
     
 
-}
+
+            }}}
 
 
