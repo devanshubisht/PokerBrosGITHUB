@@ -39,7 +39,7 @@ struct OptionCardView : View {
                     .overlay {
                         Text(quizOption.explain)
                             .font(.system(size: 10, weight: .bold, design: .rounded))
-                            .foregroundColor(Color("tablegrey"))
+                            .foregroundColor(Color.white)
                             .frame(width: 150, height: 130, alignment: .center)
                     }
             } else if (!(quizOption.isMatched) && (quizOption.isSelected)) {
@@ -48,7 +48,7 @@ struct OptionCardView : View {
                     .overlay {
                         Text(quizOption.explain)
                             .font(.system(size: 10, weight: .bold, design: .rounded))
-                            .foregroundColor(Color("tablegrey"))
+                            .foregroundColor(Color.white)
                             .frame(width: 150, height: 130, alignment: .center)
                     }
             } else {
@@ -56,7 +56,7 @@ struct OptionCardView : View {
             }
         }
         .frame(width: 185, height: 150)
-        .background(Color("icon"))
+        .background(Color("greygrey"))
         .cornerRadius(30)
     }
     

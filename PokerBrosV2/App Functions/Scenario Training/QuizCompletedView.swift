@@ -13,7 +13,7 @@ struct QuizCompletedView: View {
     var body: some View {
         VStack {
             Image(systemName: "gamecontroller.fill")
-                .foregroundColor(Color("icon"))
+                .foregroundColor(Color("Icon"))
                 .font(.system(size: 60))
                 .padding()
             
@@ -43,7 +43,7 @@ struct QuizCompletedView: View {
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                 }
             }.frame(width: 300, height: 60, alignment: .center)
-                .background(Color("icon").opacity(0.7))
+                .background(Color("Icon").opacity(0.7))
                 .cornerRadius(30)
                 .padding()
             
