@@ -262,6 +262,7 @@
                                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                                 </buttonConfiguration>
                                                 <connections>
+                                                    <action selector="LeaderboardTapped:" destination="GBe-rT-5zh" eventType="touchUpInside" id="QHo-fG-aZR"/>
                                                     <segue destination="YWA-Ew-dJI" kind="show" id="Caj-98-F5C"/>
                                                 </connections>
                                             </button>
@@ -337,6 +338,7 @@
                     <navigationItem key="navigationItem" id="oSM-gh-FvS"/>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
+                        <outlet property="LeaderboardButton" destination="RQ6-sn-19C" id="7TS-dt-SdQ"/>
                         <outlet property="ProfileImage" destination="4B4-3W-lKG" id="42X-q4-Hho"/>
                         <outlet property="TrackertButton" destination="5zw-4I-1tu" id="tBC-tj-QpG"/>
                         <outlet property="Username" destination="3QF-PJ-8Hs" id="QIu-vP-CZT"/>
@@ -1701,7 +1703,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="iEU-UB-e12"/>
-        <segue reference="D6H-z4-6MI"/>
+        <segue reference="yeL-e1-qaU"/>
         <segue reference="vAd-ba-Frk"/>
         <segue reference="zbE-nn-Lho"/>
     </inferredMetricsTieBreakers>

@@ -127,6 +127,7 @@ class ExpenseViewModel: ObservableObject{
                 ])
             let user_id = Auth.auth().currentUser!.uid
             db.collection("users").document("\(user_id)").updateData(["tracker" : FieldValue.arrayUnion([id])])
+            
         }
         else {
             let amountInDouble = (amount as NSString).doubleValue

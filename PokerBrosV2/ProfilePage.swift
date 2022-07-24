@@ -20,6 +20,7 @@ class ProfilePage: UIViewController {
     
     @IBOutlet weak var ProfileImage: UIImageView!
     
+    @IBOutlet weak var LeaderboardButton: UIButton!
     @IBOutlet weak var Username: UILabel!
     
     override func viewDidLoad() {

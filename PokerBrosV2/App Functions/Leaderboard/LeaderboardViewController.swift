@@ -23,6 +23,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         
         
         let id = Auth.auth().currentUser!.uid as String?
+        print("initial")
+        print(FriendSystem.system.friendList)
         
         Firestore.firestore().collection("users").document(id!).getDocument { document, error in
             if error == nil {
@@ -33,7 +35,9 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
                     let username = document.data()?["username"] as! String
                     FriendSystem.system.friendList.append(User(userEmail: email, userID: id, useramount: amount, userusername: username))
                     
-                    FriendSystem.system.friendList = FriendSystem.system.friendList.sorted(by: { first, second in first.amount > second.amount})
+                    FriendSystem.system.friendList = FriendSystem.system.friendList.sorted(by: { first, second in first.amount < second.amount})
+                    
+                    print("later")
                     print(FriendSystem.system.friendList)
                     
                     self.tableView.reloadData()
