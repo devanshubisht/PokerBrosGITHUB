@@ -18,6 +18,7 @@
 		B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */; };
 		B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACE283E5FFA00FA89EB /* LogInPage.swift */; };
 		B863A9452889AEF400D6F523 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B863A9442889AEF400D6F523 /* LeaderboardViewController.swift */; };
+		B8699459288D8C1100A8B97D /* ScenarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8699458288D8C1100A8B97D /* ScenarioViewController.swift */; };
 		B8A7996C283D2A8700F80FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996B283D2A8700F80FFD /* AppDelegate.swift */; };
 		B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */; };
 		B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A7996F283D2A8700F80FFD /* ViewController.swift */; };
@@ -55,7 +56,6 @@
 		C798FCA6288D84C900C51449 /* OptionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA5288D84C800C51449 /* OptionsGridView.swift */; };
 		C798FCA8288D850800C51449 /* QuizCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA7288D850800C51449 /* QuizCompletedView.swift */; };
 		C798FCAA288D852200C51449 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA9288D852200C51449 /* QuizModel.swift */; };
-		C798FCAC288D853B00C51449 /* AKQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCAB288D853B00C51449 /* AKQuizApp.swift */; };
 		C798FCAE288D855C00C51449 /* ContentView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCAD288D855C00C51449 /* ContentView4.swift */; };
 		C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265B82860E5A500CEF89A /* TrackerApp.swift */; };
 		C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BB2860EC6E00CEF89A /* Home.swift */; };
@@ -107,6 +107,7 @@
 		B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		B81BBACE283E5FFA00FA89EB /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
 		B863A9442889AEF400D6F523 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		B8699458288D8C1100A8B97D /* ScenarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioViewController.swift; sourceTree = "<group>"; };
 		B8A79968283D2A8700F80FFD /* PokerBrosV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerBrosV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A7996B283D2A8700F80FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A7996D283D2A8700F80FFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		C798FCA5288D84C800C51449 /* OptionsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsGridView.swift; sourceTree = "<group>"; };
 		C798FCA7288D850800C51449 /* QuizCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCompletedView.swift; sourceTree = "<group>"; };
 		C798FCA9288D852200C51449 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
-		C798FCAB288D853B00C51449 /* AKQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKQuizApp.swift; sourceTree = "<group>"; };
 		C798FCAD288D855C00C51449 /* ContentView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView4.swift; sourceTree = "<group>"; };
 		C7D265B82860E5A500CEF89A /* TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerApp.swift; sourceTree = "<group>"; };
 		C7D265BB2860EC6E00CEF89A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -365,8 +365,8 @@
 				C798FCA5288D84C800C51449 /* OptionsGridView.swift */,
 				C798FCA7288D850800C51449 /* QuizCompletedView.swift */,
 				C798FCA9288D852200C51449 /* QuizModel.swift */,
-				C798FCAB288D853B00C51449 /* AKQuizApp.swift */,
 				C798FCAD288D855C00C51449 /* ContentView4.swift */,
+				B8699458288D8C1100A8B97D /* ScenarioViewController.swift */,
 			);
 			name = "Scenario Training";
 			path = "Leaderboard/Scenario Training";
@@ -652,6 +652,7 @@
 				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */,
+				B8699459288D8C1100A8B97D /* ScenarioViewController.swift in Sources */,
 				B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */,
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
@@ -667,7 +668,6 @@
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
 				C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */,
-				C798FCAC288D853B00C51449 /* AKQuizApp.swift in Sources */,
 				C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
 				C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */,

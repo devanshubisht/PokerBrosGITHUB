@@ -236,6 +236,9 @@
                                                         <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="0aI-7A-Pqt" kind="show" id="lVU-f2-ssk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1HJ-8h-MTD" userLabel="PotOdds">
                                                 <rect key="frame" x="211" y="202" width="192" height="192"/>
@@ -338,7 +341,6 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="ProfileImage" destination="4B4-3W-lKG" id="42X-q4-Hho"/>
-                        <outlet property="ScenarioButton" destination="uGe-W7-78v" id="3PC-7q-eXf"/>
                         <outlet property="TrackertButton" destination="5zw-4I-1tu" id="tBC-tj-QpG"/>
                         <outlet property="Username" destination="3QF-PJ-8Hs" id="QIu-vP-CZT"/>
                     </connections>
@@ -1193,7 +1195,7 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deg-54-VkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3926" y="-82"/>
+            <point key="canvasLocation" x="3897" y="84"/>
         </scene>
         <!--Pot Odds Calc Page-->
         <scene sceneID="T2M-ik-pEA">
@@ -1420,7 +1422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKh-Po-2Sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="846"/>
+            <point key="canvasLocation" x="2484" y="912"/>
         </scene>
         <!--FriendViewController-->
         <scene sceneID="J0f-Zx-K2D">
@@ -1699,10 +1701,93 @@
         <!--Hosting Controller-->
         <scene sceneID="bLT-aH-GiZ">
             <objects>
-                <hostingController id="XjP-hz-C2u" sceneMemberID="viewController"/>
+                <hostingController storyboardIdentifier="ScenatioHostingView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XjP-hz-C2u" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sup-K6-mP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5404" y="351"/>
+            <point key="canvasLocation" x="6488" y="577"/>
+        </scene>
+        <!--Scenario View Controller-->
+        <scene sceneID="e7G-04-z1o">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="0aI-7A-Pqt" customClass="ScenarioViewController" customModule="PokerBrosV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwn-HS-ZAu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASM-8k-S9f" userLabel="Scenario Intro">
+                                <rect key="frame" x="68" y="248" width="280" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="oFs-YD-VZ8"/>
+                                    <constraint firstAttribute="height" constant="76" id="qkp-4h-rRY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="INTRODUCTION" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="19"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUa-Zo-yHw" userLabel="Scenario Training">
+                                <rect key="frame" x="68" y="374" width="280" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="S96-yq-m2x"/>
+                                    <constraint firstAttribute="height" constant="76" id="pje-dc-khO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="SCENARIO TRAINING" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slB-M5-ZSZ">
+                                <rect key="frame" x="164" y="500" width="88" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="8VW-tF-deT"/>
+                                    <constraint firstAttribute="height" constant="36" id="Xfi-x3-MMh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="BACK" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="9">
+                                        <color key="strokeColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="15"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.95686274770000002" green="0.9098039269" blue="0.64705884459999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.11372549830000001" green="0.1215686351" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="GBe-rT-5zh" kind="show" id="fGI-gr-bZs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5XB-Hu-b7n"/>
+                        <color key="backgroundColor" red="0.1137254902" green="0.1215686275" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="jUa-Zo-yHw" firstAttribute="centerX" secondItem="slB-M5-ZSZ" secondAttribute="centerX" id="1ub-Kz-oAd"/>
+                            <constraint firstItem="jUa-Zo-yHw" firstAttribute="top" secondItem="pwn-HS-ZAu" secondAttribute="top" constant="374" id="MTL-X0-Lzv"/>
+                            <constraint firstItem="jUa-Zo-yHw" firstAttribute="leading" secondItem="5XB-Hu-b7n" secondAttribute="leading" constant="68" id="eXC-Ie-hJn"/>
+                            <constraint firstItem="ASM-8k-S9f" firstAttribute="top" secondItem="5XB-Hu-b7n" secondAttribute="top" constant="204" id="p9H-Vw-PP9"/>
+                            <constraint firstItem="slB-M5-ZSZ" firstAttribute="top" secondItem="jUa-Zo-yHw" secondAttribute="bottom" constant="50" id="yNq-Si-QC7"/>
+                            <constraint firstItem="jUa-Zo-yHw" firstAttribute="leading" secondItem="ASM-8k-S9f" secondAttribute="leading" id="zV1-pj-X2J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EU2-mF-yDI"/>
+                    <connections>
+                        <outlet property="ScenarioButton" destination="jUa-Zo-yHw" id="qto-Zv-iVG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6TD-IR-rP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5635" y="577"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

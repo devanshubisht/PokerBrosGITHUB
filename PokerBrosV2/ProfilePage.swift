@@ -30,7 +30,6 @@ class ProfilePage: UIViewController {
         receiveusername()
         fetch_stuff()
         TrackertButton.addTarget(self, action: #selector(didtap), for: .touchUpInside)
-        ScenarioButton.addTarget(self, action: #selector(scentap), for: .touchUpInside)
     }
     
     @objc func didtap(){
@@ -38,10 +37,6 @@ class ProfilePage: UIViewController {
         present(vc, animated: true)
     }
     
-    @objc func scentap(){
-        let vc = UIHostingController(rootView: ContentView4(gameManagerVM: GameManagerVM()))
-        present(vc, animated: true)
-    }
     
 //    @IBSegueAction func TrackerSegue(_ coder: NSCoder) -> UIViewController? {
 //        return  UIHostingController(coder: coder, rootView: ContentView())}
