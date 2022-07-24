@@ -338,6 +338,7 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="ProfileImage" destination="4B4-3W-lKG" id="42X-q4-Hho"/>
+                        <outlet property="ScenarioButton" destination="uGe-W7-78v" id="3PC-7q-eXf"/>
                         <outlet property="TrackertButton" destination="5zw-4I-1tu" id="tBC-tj-QpG"/>
                         <outlet property="Username" destination="3QF-PJ-8Hs" id="QIu-vP-CZT"/>
                     </connections>
@@ -1192,7 +1193,7 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deg-54-VkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4004" y="97"/>
+            <point key="canvasLocation" x="3926" y="-82"/>
         </scene>
         <!--Pot Odds Calc Page-->
         <scene sceneID="T2M-ik-pEA">
@@ -1694,6 +1695,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUZ-Fd-DAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4592.753623188406" y="845.75892857142856"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="bLT-aH-GiZ">
+            <objects>
+                <hostingController id="XjP-hz-C2u" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sup-K6-mP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5404" y="351"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

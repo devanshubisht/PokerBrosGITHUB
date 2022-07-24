@@ -50,6 +50,13 @@
 		C78685352855D112002A9504 /* PostFlopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78685342855D112002A9504 /* PostFlopPage.swift */; };
 		C78685392855D162002A9504 /* PostflopQuizPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78685382855D162002A9504 /* PostflopQuizPage.swift */; };
 		C78B64EC28440DB6001989BA /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78B64EB28440DB6001989BA /* Quiz.swift */; };
+		C798FCA2288D848800C51449 /* GameManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA1288D848800C51449 /* GameManagerVM.swift */; };
+		C798FCA4288D84AC00C51449 /* ReusableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA3288D84AC00C51449 /* ReusableText.swift */; };
+		C798FCA6288D84C900C51449 /* OptionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA5288D84C800C51449 /* OptionsGridView.swift */; };
+		C798FCA8288D850800C51449 /* QuizCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA7288D850800C51449 /* QuizCompletedView.swift */; };
+		C798FCAA288D852200C51449 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCA9288D852200C51449 /* QuizModel.swift */; };
+		C798FCAC288D853B00C51449 /* AKQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCAB288D853B00C51449 /* AKQuizApp.swift */; };
+		C798FCAE288D855C00C51449 /* ContentView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798FCAD288D855C00C51449 /* ContentView4.swift */; };
 		C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265B82860E5A500CEF89A /* TrackerApp.swift */; };
 		C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BB2860EC6E00CEF89A /* Home.swift */; };
 		C7D265BE2860EC8A00CEF89A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D265BD2860EC8A00CEF89A /* ContentView.swift */; };
@@ -135,6 +142,13 @@
 		C78685342855D112002A9504 /* PostFlopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFlopPage.swift; sourceTree = "<group>"; };
 		C78685382855D162002A9504 /* PostflopQuizPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostflopQuizPage.swift; sourceTree = "<group>"; };
 		C78B64EB28440DB6001989BA /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		C798FCA1288D848800C51449 /* GameManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManagerVM.swift; sourceTree = "<group>"; };
+		C798FCA3288D84AC00C51449 /* ReusableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableText.swift; sourceTree = "<group>"; };
+		C798FCA5288D84C800C51449 /* OptionsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsGridView.swift; sourceTree = "<group>"; };
+		C798FCA7288D850800C51449 /* QuizCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCompletedView.swift; sourceTree = "<group>"; };
+		C798FCA9288D852200C51449 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		C798FCAB288D853B00C51449 /* AKQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKQuizApp.swift; sourceTree = "<group>"; };
+		C798FCAD288D855C00C51449 /* ContentView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView4.swift; sourceTree = "<group>"; };
 		C7D265B82860E5A500CEF89A /* TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerApp.swift; sourceTree = "<group>"; };
 		C7D265BB2860EC6E00CEF89A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C7D265BD2860EC8A00CEF89A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -334,12 +348,28 @@
 		C78B64EA28440D98001989BA /* App Functions */ = {
 			isa = PBXGroup;
 			children = (
+				C798FCA0288D847000C51449 /* Scenario Training */,
 				B863A9432889AED600D6F523 /* Leaderboard */,
 				B8D39BCB2865C9C700C207BA /* PotOddsv1 */,
 				C7D265BA2860EC2E00CEF89A /* Tracker function */,
 				C786853A2855D6BF002A9504 /* Quiz function */,
 			);
 			path = "App Functions";
+			sourceTree = "<group>";
+		};
+		C798FCA0288D847000C51449 /* Scenario Training */ = {
+			isa = PBXGroup;
+			children = (
+				C798FCA1288D848800C51449 /* GameManagerVM.swift */,
+				C798FCA3288D84AC00C51449 /* ReusableText.swift */,
+				C798FCA5288D84C800C51449 /* OptionsGridView.swift */,
+				C798FCA7288D850800C51449 /* QuizCompletedView.swift */,
+				C798FCA9288D852200C51449 /* QuizModel.swift */,
+				C798FCAB288D853B00C51449 /* AKQuizApp.swift */,
+				C798FCAD288D855C00C51449 /* ContentView4.swift */,
+			);
+			name = "Scenario Training";
+			path = "Leaderboard/Scenario Training";
 			sourceTree = "<group>";
 		};
 		C7D265BA2860EC2E00CEF89A /* Tracker function */ = {
@@ -618,6 +648,7 @@
 				C70517832858BCA10085795D /* TrackerCocoa.swift in Sources */,
 				C74666E728446D69000931E7 /* BasicRulesPage.swift in Sources */,
 				B81AA7C72873014600B79D2C /* FriendSystem.swift in Sources */,
+				C798FCAA288D852200C51449 /* QuizModel.swift in Sources */,
 				C7D265BC2860EC6E00CEF89A /* Home.swift in Sources */,
 				C74666EB2844F83D000931E7 /* PreflopRangePage.swift in Sources */,
 				B8D39BCD2865CA0100C207BA /* PotOddsPage.swift in Sources */,
@@ -625,6 +656,8 @@
 				C7F997372843528000C504B3 /* HomePage.swift in Sources */,
 				C70517872858CA2F0085795D /* GameModel.swift in Sources */,
 				C7D265C02860ED3000CEF89A /* Expense.swift in Sources */,
+				C798FCA2288D848800C51449 /* GameManagerVM.swift in Sources */,
+				C798FCA4288D84AC00C51449 /* ReusableText.swift in Sources */,
 				B8D39BCA2865C30600C207BA /* NewExpense.swift in Sources */,
 				C70A6FD6285367FF00758786 /* PreflopRangeQuizPage.swift in Sources */,
 				C78B64EC28440DB6001989BA /* Quiz.swift in Sources */,
@@ -634,6 +667,7 @@
 				C7F99740284388F900C504B3 /* ProfilePage.swift in Sources */,
 				B8A79970283D2A8700F80FFD /* ViewController.swift in Sources */,
 				C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */,
+				C798FCAC288D853B00C51449 /* AKQuizApp.swift in Sources */,
 				C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
 				C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */,
@@ -643,9 +677,12 @@
 				B8A7996E283D2A8700F80FFD /* SceneDelegate.swift in Sources */,
 				B81AA7CB287554A900B79D2C /* User.swift in Sources */,
 				B8A79976283D2A8700F80FFD /* PokerBrosV2.xcdatamodeld in Sources */,
+				C798FCA6288D84C900C51449 /* OptionsGridView.swift in Sources */,
 				B863A9452889AEF400D6F523 /* LeaderboardViewController.swift in Sources */,
 				C7D265B92860E5A500CEF89A /* TrackerApp.swift in Sources */,
+				C798FCA8288D850800C51449 /* QuizCompletedView.swift in Sources */,
 				B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */,
+				C798FCAE288D855C00C51449 /* ContentView4.swift in Sources */,
 				B81AA7CF28757AAE00B79D2C /* UserCell.swift in Sources */,
 				B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */,
 				C78685352855D112002A9504 /* PostFlopPage.swift in Sources */,

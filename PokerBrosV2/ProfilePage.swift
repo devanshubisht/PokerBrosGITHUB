@@ -22,16 +22,24 @@ class ProfilePage: UIViewController {
     
     @IBOutlet weak var Username: UILabel!
     
+    @IBOutlet weak var ScenarioButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         receiveimage()
         receiveusername()
         fetch_stuff()
         TrackertButton.addTarget(self, action: #selector(didtap), for: .touchUpInside)
+        ScenarioButton.addTarget(self, action: #selector(scentap), for: .touchUpInside)
     }
     
     @objc func didtap(){
         let vc = UIHostingController(rootView: ContentView())
+        present(vc, animated: true)
+    }
+    
+    @objc func scentap(){
+        let vc = UIHostingController(rootView: ContentView4(gameManagerVM: GameManagerVM()))
         present(vc, animated: true)
     }
     
