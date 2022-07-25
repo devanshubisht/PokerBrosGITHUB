@@ -15,28 +15,27 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var tableView: UITableView!
     
+    var friend_list = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        FriendSystem.system.friendList.removeAll()
-        FriendSystem.system.addFriendObserver{
-            self.fecth_user()
+        self.fecth_user()
         }
-    }
         
         func numberOfSections(in tableView: UITableView) -> Int {
                     return 1
         }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return FriendSystem.system.friendList.count
+            return friend_list.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             
-            cell.textLabel?.text = FriendSystem.system.friendList[indexPath.row].username
+            cell.textLabel?.text = friend_list[indexPath.row].username
             
-            if let amo = FriendSystem.system.friendList[indexPath.row].amount {
+            if let amo = friend_list[indexPath.row].amount {
                 cell.detailTextLabel?.text = "$\(amo)"
             }
             return cell
@@ -45,32 +44,40 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
     func fecth_user() {
         let id = Auth.auth().currentUser!.uid as String?
-        print("initial")
-        print(FriendSystem.system.friendList)
         
-        Firestore.firestore().collection("users").document(id!).getDocument { document, error in
-            if error == nil {
-                if let document = document {
-                    let email = document.data()?["email"] as! String
-                    let id =  document.data()?["uid"] as! String
-                    let amount = document.data()?["tot_amount"] as! Double
-                    let username = document.data()?["username"] as! String
-                    let new_user = User(userEmail: email, userID: id, useramount: amount, userusername: username)
-                    FriendSystem.system.friendList.append(new_user)
-                    FriendSystem.system.friendList.sort{ $0.amount > $1.amount}
-                    print("later")
-                    DispatchQueue.main.async {
-                                        self.tableView.reloadData()
-                                    }
+        Firestore.firestore().collection("users").document(id!).getDocument{ document, error in
+                if error == nil {
+                    if let document = document {
+                        self.friend_list.removeAll()
+                        let friends = document.data()?["friends"] as! [Any]
+                        let email = document.data()?["email"] as! String
+                        let id =  document.data()?["uid"] as! String
+                        let amount = document.data()?["tot_amount"] as! Double
+                        let username = document.data()?["username"] as! String
+                        let new_user = User(userEmail: email, userID: id, useramount: amount, userusername: username)
+                        self.friend_list.append(new_user)
+                        print("later")
+                        print(self.friend_list)
+                        DispatchQueue.main.async {
+                                            self.tableView.reloadData()
+                                        }
+                        
+                        for child in friends {
+                                    let id_friend = child as! String
+                            FriendSystem.system.getUser(id_friend, completion: { (user) in
+                                self.friend_list.append(user)
+                                print(self.friend_list)
+
+                                DispatchQueue.main.async {
+                                    self.friend_list.sort{ $0.amount > $1.amount}
+                                                    self.tableView.reloadData()
+                                                }
+                            })
+                        }
 
 
-                }
-                
-            }
-            
-        }
-    }
-    
-}
+                    }}}
+
+    }}
 
 
