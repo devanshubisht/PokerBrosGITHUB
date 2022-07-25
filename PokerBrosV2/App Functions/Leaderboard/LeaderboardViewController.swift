@@ -19,8 +19,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         FriendSystem.system.friendList.removeAll()
         FriendSystem.system.addFriendObserver{
-            fecth_user()
-            self.tableView.reloadData()
+            self.fecth_user()
         }
     }
         
@@ -40,17 +39,10 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
             if let amo = FriendSystem.system.friendList[indexPath.row].amount {
                 cell.detailTextLabel?.text = "$\(amo)"
             }
-            
-            
-            
             return cell
-
         }
 
-        
-
         // Do any additional setup after loading the view.
-    }
     func fecth_user() {
         let id = Auth.auth().currentUser!.uid as String?
         print("initial")
@@ -63,17 +55,22 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
                     let id =  document.data()?["uid"] as! String
                     let amount = document.data()?["tot_amount"] as! Double
                     let username = document.data()?["username"] as! String
-                    FriendSystem.system.friendList.append(User(userEmail: email, userID: id, useramount: amount, userusername: username))
-        
+                    let new_user = User(userEmail: email, userID: id, useramount: amount, userusername: username)
+                    FriendSystem.system.friendList.append(new_user)
                     FriendSystem.system.friendList.sort{ $0.amount > $1.amount}
-                    
                     print("later")
-                    print(FriendSystem.system.friendList)
-        
+                    DispatchQueue.main.async {
+                                        self.tableView.reloadData()
+                                    }
+
+
+                }
+                
+            }
+            
+        }
     }
     
-
-
-            }}}
+}
 
 

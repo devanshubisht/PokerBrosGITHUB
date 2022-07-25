@@ -19,6 +19,7 @@ class FriendViewController: UIViewController, UITableViewDataSource, UITableView
 
         // Do any additional setup after loading the view.
         }
+        self.tableView.reloadData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

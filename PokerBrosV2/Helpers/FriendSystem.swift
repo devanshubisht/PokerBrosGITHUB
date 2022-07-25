@@ -120,15 +120,15 @@ class FriendSystem {
                     self.userList.removeAll()
                     for child in snapshot.documents {
                         let user_id = Auth.auth().currentUser!.uid as! String
+                        if child.data()["friends"] != nil {
                         let users_friends = child.data()["friends"] as! [String]
-                        print(users_friends)
                         if child.data()["email"] != nil && child.data()["tot_amount"] != nil && users_friends.contains(user_id) == false {
                         let email = child.data()["email"] as! String
                         if email != Auth.auth().currentUser?.email! {
                             self.userList.append(User(userEmail: email, userID: child.data()["uid"] as! String, useramount: child.data()["tot_amount"] as! Double, userusername: child.data()["username"] as! String))
                         }
                         }
-                    }
+                        }}
                     update()
                 }
             }
@@ -162,6 +162,7 @@ class FriendSystem {
     var friendList = [User]()
     /** Adds a friend observer. The completion function will run every time this list changes, allowing you
      to update your UI. */
+    
     func addFriendObserver(_ update: @escaping () -> Void) {
         CURRENT_USER_REF.addSnapshotListener { document, error in
             if error == nil {
@@ -179,6 +180,25 @@ class FriendSystem {
                         update()
                     }
                 }}}}
+/*
+    func addFriendObserver(_ update: @escaping () -> Void) {
+        CURRENT_USER_REF.addSnapshotListener { document, error in
+            if error == nil {
+                if let document = document {
+                    self.friendList.removeAll()
+                    let friends = document.data()?["friends"] as! [Any]
+                    for child in friends {
+                                let id = child as! String
+                        self.getUser(id, completion: { (user) in
+                            self.friendList.append(user)
+                            update()
+                        })
+                    }
+                    if friends.isEmpty {
+                        update()
+                    }
+                }}}}
+ */
     /** Removes the friend observer. This should be done when leaving the view that uses the observer. */
     
     // MARK: - All requests
