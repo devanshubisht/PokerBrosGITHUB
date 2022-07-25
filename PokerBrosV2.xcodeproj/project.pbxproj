@@ -17,6 +17,7 @@
 		B81BBACB283E5FD900FA89EB /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACA283E5FD900FA89EB /* MainPage.swift */; };
 		B81BBACD283E5FEE00FA89EB /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */; };
 		B81BBACF283E5FFA00FA89EB /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81BBACE283E5FFA00FA89EB /* LogInPage.swift */; };
+		B8299045288EC9F600EC868B /* HandEquityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8299044288EC9F600EC868B /* HandEquityViewController.swift */; };
 		B863A9452889AEF400D6F523 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B863A9442889AEF400D6F523 /* LeaderboardViewController.swift */; };
 		B869946E288DB59800A8B97D /* ReusableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8699460288DB59800A8B97D /* ReusableText.swift */; };
 		B869946F288DB59800A8B97D /* OptionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8699461288DB59800A8B97D /* OptionsGridView.swift */; };
@@ -106,6 +107,7 @@
 		B81BBACA283E5FD900FA89EB /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		B81BBACC283E5FEE00FA89EB /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		B81BBACE283E5FFA00FA89EB /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		B8299044288EC9F600EC868B /* HandEquityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandEquityViewController.swift; sourceTree = "<group>"; };
 		B863A9442889AEF400D6F523 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		B8699460288DB59800A8B97D /* ReusableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableText.swift; sourceTree = "<group>"; };
 		B8699461288DB59800A8B97D /* OptionsGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsGridView.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				B8E83DF7287D4AF600411614 /* UserListViewController.swift */,
 				B81AA7C82875336300B79D2C /* FriendViewController.swift */,
 				B8E83DF9287D4EE000411614 /* RequestViewController.swift */,
+				B8299044288EC9F600EC868B /* HandEquityViewController.swift */,
 				C78B64EA28440D98001989BA /* App Functions */,
 				B8A79971283D2A8700F80FFD /* Main.storyboard */,
 				B81AA7CE28757AAE00B79D2C /* UserCell.swift */,
@@ -670,6 +673,7 @@
 				C7D265C22860EED200CEF89A /* ExpenseViewModel.swift in Sources */,
 				C7D265C82861D0B100CEF89A /* FilteredDetailView.swift in Sources */,
 				B8699473288DB59800A8B97D /* QuizModel.swift in Sources */,
+				B8299045288EC9F600EC868B /* HandEquityViewController.swift in Sources */,
 				C74666E92844BF14000931E7 /* BasicRulesQuizPage.swift in Sources */,
 				C7D265CA28625C6200CEF89A /* ExpenseCard.swift in Sources */,
 				C705178F2859021D0085795D /* GameListViewModel.swift in Sources */,
